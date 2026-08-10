@@ -1,4 +1,5 @@
 import requests
+import re
 
 # Kaynak M3U Bağlantıları
 SOURCES = [
@@ -53,8 +54,21 @@ CATEGORIES = {
     ]
 }
 
-my_playlist = "#EXTM3U\n"
-added_channels = set()
+def get_quality_score(title, url):
+    """Yayın kalitesine göre puan verir (En yüksek çözünürlüğü seçmek için)."""
+    combined = (title + " " + url).lower()
+    if "1080" in combined or "fhd" in combined or "fullhd" in combined:
+        return 4
+    if "720" in combined or "hd" in combined:
+        return 3
+    if "480" in combined or "sd" in combined:
+        return 2
+    if "360" in combined:
+        return 1
+    return 0
+
+# Seçilen en iyi kanalları tutacak sözlük: (group_name, target_name) -> (score, stream_url)
+best_streams = {}
 
 for url in SOURCES:
     try:
@@ -66,7 +80,7 @@ for url in SOURCES:
                 line_info = lines[i]
                 stream_url = lines[i + 1] if i + 1 < len(lines) else ""
 
-                if not stream_url or stream_url in added_channels:
+                if not stream_url or not stream_url.startswith("http"):
                     continue
 
                 raw_name = line_info.split(",")[-1].strip()
@@ -74,10 +88,18 @@ for url in SOURCES:
                 for group_name, channel_list in CATEGORIES.items():
                     matched = False
                     for target_name in channel_list:
-                        if target_name.lower() in raw_name.lower():
-                            clean_extinf = f'#EXTINF:-1 group-title="{group_name}",{target_name}'
-                            my_playlist += f"{clean_extinf}\n{stream_url}\n"
-                            added_channels.add(stream_url)
+                        # Regex ile tam kelime eşleşmesi kontrolü (örn: "ATV" ararken "ATV Alanya" eşleşmez)
+                        pattern = r'(?i)\b' + re.escape(target_name) + r'\b'
+                        if re.search(pattern, raw_name):
+                            score = get_quality_score(raw_name, stream_url)
+                            key = (group_name, target_name)
+                            
+                            # Eğer daha önce eklenmemişse veya yeni linkin kalitesi daha yüksekse güncelle
+                            if key not in best_streams or score > best_streams[key]["score"]:
+                                best_streams[key] = {
+                                    "score": score,
+                                    "url": stream_url
+                                }
                             matched = True
                             break
                     if matched:
@@ -85,7 +107,13 @@ for url in SOURCES:
     except Exception as e:
         print(f"Hata ({url}): {e}")
 
+# M3U Dosyasını Oluşturma
+my_playlist = "#EXTM3U\n"
+for (group_name, target_name), data in best_streams.items():
+    clean_extinf = f'#EXTINF:-1 group-title="{group_name}",{target_name}'
+    my_playlist += f"{clean_extinf}\n{data['url']}\n"
+
 with open("custom_list.m3u", "w", encoding="utf-8") as f:
     f.write(my_playlist)
 
-print("M3U dosyası başarıyla güncellendi.")
+print("M3U dosyası tekil ve en yüksek çözünürlüklü kanallarla başarıyla güncellendi.")
