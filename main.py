@@ -17,7 +17,7 @@ SOURCES = [
 # Kategoriler ve Aratılacak Kanal İsimleri
 CATEGORIES = {
     "Türkiye - Genel": [
-        "TRT 1", "ATV", "KANAL D", "SHOW TV", "SHOW TV HD", "SHOW", "STAR TV", "TV8", "NOW TV", "NOW", "KANAL 7"
+        "TRT 1", "ATV", "KANAL D", "SHOW TV", "SHOW TV HD", "SHOW", "SHOW TV HD.tr", "STAR TV", "TV8", "NOW TV", "NOW", "KANAL 7"
     ],
     "Türkiye - Haber": [
         "TRT HABER", "HABERTÜRK", "NTV", "A HABER", "SÖZCÜ TV", "HALK TV", "CNN TÜRK"
