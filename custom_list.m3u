@@ -3,919 +3,121 @@
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",ATV
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://cdn-alanyatv.yayin.com.tr/alanyatv/alanyatv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-http://stream2.taksimbilisim.com:1935/alanyatv/alanyatv.smil/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8
+https://86fdc85a.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfQmxvb21iZXJnT3JpZ2luYWxzX0hMUw/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",HABERTÜRK
 https://tv.ensonhaber.com/haberturk/haberturk.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",HALK TV
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",KANAL 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL 7
-https://kanal7.blutv.com/blutv_kanal7_live/live.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL 7
-https://livetv.radyotvonline.net/kanal7live/kanal7avr/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",KANAL D
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL D
-http://8.243.126.131:8000/play/a0mn/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL D
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL D
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Müzik",KRAL POP
 https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Çocuk",MINIKA GO
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
-#EXTINF:-1 group-title="Türkiye - Çocuk",MINIKA GO
-http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-http://116.202.238.88/FOXTV_TR/index.m3u8
+https://amg00170-amg00170c4-samsung-gb-4232.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
+https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8
 #EXTINF:-1 group-title="Türkiye - Müzik",POWER TV
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Müzik",POWER TV
-https://live.artidijitalmedya.com/artidijital_powertv/powertv/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Belgesel",TGRT BELGESEL
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Belgesel",TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",TRT HABER
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="Türkiye - Müzik",TRT MÜZİK
+https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Türkiye - Çocuk",ZAROK TV
 https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",STAR TV
 https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8l4w3lst4co5&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL D
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
 #EXTINF:-1 group-title="Türkiye - Genel",TRT 1
 https://tv-trt1.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL D
-http://190.93.224.42/KANAL-D-DRAMA/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",BBC FOUR
 http://193.46.58.239:8080/CbeebiesHD/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://jmp2.uk/plu-62619405c733e8000732d1fe.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://e96a7526.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0Jsb29tYmVyZ09yaWdpbmFsc19ITFM/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://86fdc85a.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfQmxvb21iZXJnT3JpZ2luYWxzX0hMUw/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://bloomberg.com/media-manifest/streams/qt.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-http://23.237.104.106:8080/USA_BLOOMBERG/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://bloomberg.com/media-manifest/streams/asia.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://bloomberg.com/media-manifest/streams/asia-event.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://bloomberg.com/media-manifest/streams/aus.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://bloomberg.com/media-manifest/streams/eu-event.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://bloomberg.com/media-manifest/streams/eu.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://bloomberg.com/media-manifest/streams/us-event.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://bloomberg.com/media-manifest/streams/politics.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://d8975dc3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9CbG9vbWJlcmdUVlBsdXNfSExT/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://86ebec83.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0Jsb29tYmVyZ1RWUGx1c19ITFM/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://pe-ak-lp01a-9c9media.akamaized.net/live/News1BNNDigi/p/dash/00000001/1bba52dc66e4c68e/manifest.mpd
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-#EXTVLCOPT:http-referrer=https://www.timesnownews.com/
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://d32gxr3r1ksq2p.cloudfront.net/master.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://jmp2.uk/plu-61c0925c738ecd000882450a.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
 http://45.162.64.114/ARTE1/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://video2.lhdserver.es/asiritv/live.m3u8
-#EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
-https://59d7d6f47d7fc.streamlock.net/auroraarte/auroraarte/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Belgesel",BBC FOUR
-https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_four_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 group-title="Türkiye - Genel",STAR TV
-https://livefta.malimarcdn.com/ftaedge00/hmongstartv.sdp/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://5.188.159.128:8070/ntvmir_TV/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
-http://tv02.logicahost.com.br:1935/tvdasartes/tvdasartes/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Haber",AL JAZEERA
 https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",CGTN DOCUMENTARY
 https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://amg00170-amg00170c4-samsung-gb-4232.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://amg00376-magellan-amg00376c5-samsung-au-1708.playouts.now.amagi.tv/playlist/amg00376-magellantv-magellantvnowww-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",TV8
-http://315e5a5d.ottrast.com/iptv/8KSD5KFDXA6H88/2454/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://reflect-creatv.cablecast.tv/live-14/live/live.m3u8
-#EXTINF:-1 group-title="Türkiye - Çocuk",DA VINCI
-http://hls127.freeott.top:8080/Da_Vinci_Learning/video.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-#EXTVLCOPT:http-referrer=https://www.dens.tv/
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://thinkkast.dpdns.org/tkk-ph/i7/knowledge_channel/knowledge-channel.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://d1wal6k3d7ssin.cloudfront.net/out/v1/ea91db0906c847a4931b46a9ec36e77b/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-http://unitvaovivo.ufrgs.br:8080/live.ogg
-#EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
-https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
-http://145.239.5.177/300/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
-https://dash4.antik.sk/live/test_arte_avc_25p/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://rtmpcontrol.com:1936/atvplus/ngrp:atvplus_all/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-http://115.42.65.142:9981/stream/channelid/299762256
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://bsmbialogard.pl/live/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",CANALE 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-#EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
-https://jmp2.uk/plu-61c1dda0fe470d00080f85b8.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://tv.num221tech.com:5443/LiveApp/streams/dntv.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://pb-aexv6wqzkg929.akamaized.net/ElectricNOW.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://stream.oursnetworktv.com/latin/gardeniasTv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://2-fss-2.streamhoster.com/pl_120/201950-2724904-1/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://jmp2.uk/plu-61f07513227feb00073ee6bc.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://thm-it-roku.otteravision.com/thm/it/it.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://live.eac-news.com/Khmer/streams/ITVHD.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://ca1.buximedia.com/itv/life/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://amg00779-latv-amg00779c1-cineverse-us-1746.playouts.now.amagi.tv/playlist/amg00779-latvnetworkllc-latv-cineverseus/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",M2
-http://88.212.15.19/live/m2_hun/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-http://tv.istbolivia.com:1935/megatv/megatv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://rds3.desdeparaguay.net/mitv/mitv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://mntv.livebox.co.in/mntvhls/live.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://cdn.livespanel.com/nossatv/nossatv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-http://145.239.5.177/308/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://avr.host247.net/live/emantv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Belgesel",3SAT
-https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://linear-710.frequency.stream/dist/stirr/710/hls/master/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://s.emisoras.tv:8081/atv/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ANTENA 3
-http://177.10.184.193:8000/play/a06a/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://unlimited6-cl.dps.live/atv/atv.smil/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://live.zendzend.com/mpegts/29375_107244/media_mpegts_0.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://guineetvdirect.online:3320/live/atvguineelive.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://stream.atv.hu/atvlive/atvstream_2_aac/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://d19e55ehz2il4i.cloudfront.net/ts:abr.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-http://190.93.224.42/ATV/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-http://212.186.45.34:9981/stream/channelid/692531719?profile=pass
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/atvsur.stream/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://reflect-aurora.cablecast.tv/live-8/live/live.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",STAR TV
-https://live.livestreamtv.ca/azstar/amlst:azstar/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_channel_islands/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_yorkshire/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_midlands/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_midlands/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_london/iptv_hd_abr_v1.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-http://193.46.58.239:8080/BBCOneHD/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_east/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_east/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_west/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_west/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_northern_ireland_hd/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_northern_ireland_hd/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_scotland_hd/pc_hd_abr_v2.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_scotland_hd/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south_east/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south_west/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_wales_hd/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_west/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_west_midlands/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_yorks/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC TWO
-http://193.46.58.239:8080/BBCTwoHD/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC TWO
-https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_northern_ireland_hd/pc_hd_abr_v2.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC TWO
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_northern_ireland_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",BBC TWO
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_wales_digital/iptv_hd_abr_v1.mpd
-#EXTINF:-1 group-title="Uluslararası - Müzik",CITY TV
-https://edge-f.swagit.com/live/carlsbadca/live-3-a-1/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://cbcrclinear-tor.akamaized.net/hls/live/2042756/CBCRCLINEAR_TOR_2/master5.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",TV8
 https://1740288887.rsc.cdn77.org/1740288887/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",CHANNEL 4
-https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8
+#EXTINF:-1 group-title="Uluslararası - Genel",ARD
+https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
+#EXTINF:-1 group-title="Türkiye - Çocuk",DA VINCI
+http://hls127.freeott.top:8080/Da_Vinci_Learning/video.m3u8
+#EXTINF:-1 group-title="Uluslararası - Genel",ITV
+https://ca1.buximedia.com/itv/persian/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Uluslararası - Müzik",M2
+http://88.212.15.19/live/m2_hun/index.m3u8
+#EXTINF:-1 group-title="Uluslararası - Belgesel",3SAT
+https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8
+#EXTINF:-1 group-title="Uluslararası - Genel",ANTENA 3
+http://177.10.184.193:8000/play/a06a/index.m3u8
+#EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_midlands/hevc_iptv_mse_v0.mpd
+#EXTINF:-1 group-title="Uluslararası - Genel",BBC TWO
+http://193.46.58.239:8080/BBCTwoHD/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",CITY TV
-https://citytv.hu/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://live20.bozztv.com/akamaissh101/ssh101/ctv8hd/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://stream.crealatv.com/live.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://reflect-creatv.cablecast.tv/live-19/live/live.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://reflect-creatv.cablecast.tv/live-13/live/live.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://reflect-creatv.cablecast.tv/live-16/live/live.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",TV8
-https://server.dtvhd.com/memfs/92d5968d-1b58-486d-a1ba-7b5a3f21c16c.m3u8
+https://edge-f.swagit.com/live/carlsbadca/live-3-a-1/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",DAS ERSTE
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://live20.bozztv.com/giatvplayout7/giatv-211474/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://live.field59.com/kbsi/kbsi1/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 2
 http://69.64.57.208/france2/mono.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 3
-http://89.187.185.76:8080/France3/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 3
 http://5.180.164.197:8080/FRANCE3/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",FRANCE 5
 http://69.64.57.208/france5/mono.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://webstream.multistream.it/memfs/a3195c96-f884-4c74-924f-2648814fc0b5_output_0.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",M1
-https://d2qm50imcbcfqx.cloudfront.net/nlpo/clr-nlpo/haarlem105/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://cloudstreamhntv.tek4tv.vn/capture/smil:HN1.smil/chunklist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://cloudstreamhntv.tek4tv.vn/live/smil:HN2.smil/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://tv.streambox.ro/hls/itv/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://cdn10.live-tv.cloud/itvrv/abr-lq/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://xemzi.short.gy/1000011
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://xemzi.short.gy/1000012
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://redirector.dps.live/hls/itv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL D
-https://stream1.kanald.ro/iphone/knd-live.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://playtv4k.live/live/kassouatv/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://ms7.mx-cd.net/tv/Omroep_de_Kempen.smil/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://fuel-streaming-prod01.fuelmedia.io/v1/sem/c4067ddc-0e67-4928-b7ec-624481f721a6.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://d368vp0qqzvkid.cloudfront.net/11603/88889711/hls/master.m3u8?ads.xumo_channelId=88889711a&ads.xumo_ifaType=&ads.xumo_providerId=3822&ads.xumo_providerName=NBCNBA
-#EXTINF:-1 group-title="Uluslararası - Genel",LA 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 VLC/3.0.21 LibVLC/3.0.21
 #EXTINF:-1 group-title="Uluslararası - Genel",LA 1
 https://ztnr.rtve.es/ztnr/5190066.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",LA 1
-https://ztnr.rtve.es/ztnr/3293681.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",LA 1
-http://185.47.212.25:8080/tdp_HD/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",CITY TV
-https://reflect-live-lawndale.cablecast.tv/live-4/live/live.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://5db313b643fd8.streamlock.net/lmbiatv/lmbiatv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://59bb40cf810aa.streamlock.net:4443/streamingvincente/streamingvincente/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://cdn.vegasplus.us/vegas/mmn01/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",CHANNEL 4
-https://livestream.telvue.com/madrivervalleytv1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",CHANNEL 4
-https://livestream.telvue.com/madrivervalleytv2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://sstv.ssplay.mv/hls/local-channel/ntv-e3d4300b49c8c901e9339174215d7580/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://s-pl-01.mediatool.tv/playout/ntv-abr/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://94.230.128.107:8080/HTB/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://tonton-live-switch-ssar.akamaized.net/stream-ntv7/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://strhlslb01.streamakaci.tv/str_ntv_ntv/str_ntv_ntv_multi/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://tvsen5.aynascope.net/ntveurope/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?e=2077050299&s=HSWg81JrQ3OqmwuWkEIDAQ&scheme=https
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://lon.rtsp.me/dEqnY-myGj84bKrieCIPfA/1743271667/hls/3dH3YAD6.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://tvsen7.aynascope.net/NTV_Itahari/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://tvsen7.aynascope.net/NTV_Kohalpur/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://cdn.ntv.ru/vitrina/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://ms2.mx-cd.net/tv/272-2641704/Hoeksche_Waard_TV.smil/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://highvolume02.streampartner.nl/omroeplingewaard_1/omroeplingewaard_1/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://streamunoapp.com:3520/live/oxitvcanal36live.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://live-evg7.tv360.bitel.com.pe/bitel/piuratvSRT/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RTL
 https://rtlradio-streaming.rtl.lu/rtlradiowebtv/smil:rtlradiowebtv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://live-edge.rtl.lu/channel1/smil:channel1/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://live-edge.rtl.lu/channel2/smil:channel2/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://ap02.iqplay.tv:8082/iqb8002/s2tve/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
-https://live20.bozztv.com/akamaissh101/ssh101/stimmungsgarten/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://5db313b643fd8.streamlock.net/SUPERSIXLombardia/SUPERSIXLombardia/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",M1
-http://69.64.57.208/tm1/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://tntv-samsung-fr.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",TV8
-https://k20.usastreams.com:8081/tv8/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://tigocloud.desdeparaguay.net/800tv/800tv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://vcp6.myplaytv.com/unitv/unitv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://streamer01.myvideoplace.tv/streamer02/hls/ATV_DIRECT_EV_111018.m3u8
 #EXTINF:-1 group-title="Türkiye - Çocuk",MOONBUG
 https://moonbug-rokuus.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",RU.TV
-https://rutvkids.ru/live/efir/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://jmp2.uk/plu-5d6792bd6be2998ad0ccce30.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://jmp2.uk/plu-656ef4af4261ca00083c8f37.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://jmp2.uk/plu-61c0bbd95df1da0007bed5a0.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://jmp2.uk/plu-61c1da718a80a4000704013e.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://jmp2.uk/plu-61c185e36faf920007f04b6e.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://jmp2.uk/plu-62e95265c9fd030007268fb9.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://jmp2.uk/plu-5d0c16d686454ead733d08f8.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://cdn3.wowza.com/5/cXdyRHF0Z3kxN0k2/brevardfl/G2111_002/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",CITY TV
-https://edge-f.swagit.com/live/chinohillsca/live-1-a/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",CITY TV
-https://capitalcityconnection.cablecast.tv/live/stream-1/live.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",CHANNEL 4
-https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/olelo/G0125_009/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",CITY TV
-https://cdn3.wowza.com/5/bGZUOHp2TnhudnM2/santamonica/G0039_002/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://d11r33s5i066xh.cloudfront.net/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://45.190.28.50/FASHION_TV_HD/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://68f1accef2154d2195cae87dec183843.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_FashionTV/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://edge-fast3.evrideo.tv/bfdbb576-83f7-11f0-9f89-0200170e3e04_1000028043_HLS/manifest.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=67c0c39764ad6f7dab07aa0b&AV_APPNAME=[ADS.APP_NAME]&AV_APPPKGNAME=[ADS.APP_BUNDLE]&AV_APPSTOREURL=[ADS.APP_STORE_URL]&AV_CCPA=[ADS.US_PRIVACY]&AV_CLIENT_SECTION=ftv_secrets&AV_CONSENT=[ADS.GDPR_CONSENT]&AV_CONTENT_CAT=IAB7&AV_CONTENT_CHANNEL=&AV_CONTENT_CONTEXT=&AV_CONTENT_EPISODE=&AV_CONTENT_GENRE=fashion+and+lifestyle&AV_CONTENT_ID=[ADS.VIDAA_ADS_CONTENTID]&AV_CONTENT_KEYWORDS=&AV_CONTENT_LANGUAGE=en&AV_CONTENT_LENGTH=&AV_CONTENT_NETWORK=&AV_CONTENT_PROVIDER=FTV&AV_CONTENT_RATING=R&AV_CONTENT_SEASON=&AV_CONTENT_SERIES=&AV_CONTENT_TITLE=&AV_CONTENT_URL=&AV_DNT=[ADS.DNT]&AV_GDPR=[ADS.GDPR]&AV_HEIGHT=[ADS.H]&AV_IDFA=[ADS.IFA]&AV_IFA_TYPE=[ADS.IFA_TYPE]&AV_LANGUAGE=[ADS.DEVICE_LANGUAGE]&AV_OSVERS=[ADS.DEVICE_OSV]&AV_RTB_DEVICE_TYPE=[ADS.DEVICE_TYPE]&AV_VAUTH=[ADS.VAUTH]&AV_WIDTH=[ADS.W]&Content_Id=[ADS.ADS_CONTENTID]&ads.vidaa_ads_param=1191723366&cb=[CACHEBUSTER]&content_channel_name=ftv+-fashiontv+Secrets&content_livestream=1
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a16fa020f4c411f09ddaa1978319689a/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://hls127.freeott.top:8080/NTV_STIL_TV/video.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-http://149.71.34.166:8000/play/a05t/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-http://103.161.153.165:8000/play/mnh/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://jmp2.uk/plu-673247127d5da5000817b4d6.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-http://103.157.248.140:8000/play/a015/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://bel-live-hls.akamaized.net/hls/live/2038650/BEL-Live-HLS/master.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",CITY TV
-https://tv.city.bg/play/tshls/citytv/index.m3u8
+https://bl.rutube.ru/livestream/b1eb8e90d7e636677b3eb73b4fcbb717/index.m3u8?e=2069285076&s=d-E-bxKy2v3EEJ94RQX9CA&scheme=https
 #EXTINF:-1 group-title="Uluslararası - Müzik",DELUXE MUSIC
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",ESKA TV
 http://91.246.72.88:8000/play/a002/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://tv2.fastcast4u.com:3310/live/famatvlive.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-#EXTVLCOPT:http-referrer=https://www.heinow.com.py/
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://tv1.intv.mk:1935/live/intv/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://ca1.buximedia.com/itv/afrobeats/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://ca1.buximedia.com/itv/arabic/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://ca1.buximedia.com/itv/indian/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://ca1.buximedia.com/itv/latin/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://ca1.buximedia.com/itv/persian/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://ca1.buximedia.com/itv/love2/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://streamtv.intervenhosting.net:3718/live/kandelamedioslive.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",KISS TV
 https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",KISS TV
-https://tv.broadcasting.ro/kisstv/a629c031-2170-4ee9-a36d-87a891aa3131.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",LA 1
-https://mdstrm.com/live-stream-playlist/68b74fd1d6512526f1f7c75a.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://cloud2.streaminglivehd.com:1936/liratv/liratv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",M2
-https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",M6
 http://145.239.5.177/320/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",MUSIC BOX
 http://45.190.28.50/MUSIC_BOX_HD/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",MUSIC BOX
-http://88.212.15.19/live/mb_classic/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",MUSIC BOX
-http://88.212.15.19/live/mb_dance/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",MUSIC BOX
-http://88.212.15.19/live/mb_hits/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",MUSIC BOX
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTINF:-1 group-title="Uluslararası - Müzik",MUSIC BOX
-http://88.212.15.19/live/mb_sexy/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",MUZ-TV
 http://46.32.176.50/muztv/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://lightning-now70s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now70s-rakuten/CDN/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://lightningnow70-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://lightning-now80s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now80s-rakuten/CDN/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://lightningnow80-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://lightning-now90s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now90s-rakuten/CDN/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://videostream.jpbgdigital.com/NOWTV.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",NRJ HITS
 https://test.946985.filegear-sg.me/proxy/a23981548880f405
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/rtl2.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S76960628/OEPHRUIctA0M/playlist_video.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S75007890/MUGHuxc9dQ3b/playlist_video.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S8448465/zTYa1Z5Op9ue/playlist_video.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S51100361/0Fb4R3k82b5Z/playlist_video.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S27134503/0f9AhuwKlhnZ/playlist_video.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist_video.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist_video.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://stream.rtl.lu/data/live/tele/rtlgold/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://stream.rtl.lu/data/live/tele/rtltodayradio/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",RU.TV
-https://bl.rutube.ru/livestream/b1eb8e90d7e636677b3eb73b4fcbb717/index.m3u8?e=2069285076&s=d-E-bxKy2v3EEJ94RQX9CA&scheme=https
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://cloudvideo.servers10.com:8081/8026/tracks-v1a1/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",THE VOICE
 https://bss1.neterra.tv/thevoice/thevoice.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",AL JAZEERA
-https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",AL JAZEERA
-https://live-hls-web-aja2-gcp.thehlive.com/AJA2/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",AL JAZEERA
-https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",AL JAZEERA
-http://stream.mcquack.net/131/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",AL JAZEERA
-https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",AL JAZEERA
-https://live-hls-apps-ajm24-fa.getaj.net/AJM24/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",AL JAZEERA
-https://live-hls-apps-ajm2-fa.getaj.net/AJM2/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://tv.streaming.com.bo/atvargentina/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-http://45.171.108.253:8888/ATV/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Haber",BBC NEWS
 https://pb-iiczlgfysam0q.akamaized.net/v1/amcnetworks_bbcnews_1/samsungheadend_us/latest/main/hls/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BBC NEWS
-https://xemzi.short.gy/1000015
-#EXTINF:-1 group-title="Uluslararası - Haber",BBC NEWS
-https://vs-cmaf-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 group-title="Uluslararası - Haber",BBC NEWS
-https://thinkkast.dpdns.org/thinkkast/bbcworld_news_sd/versiglia/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BBC NEWS
-http://138.121.15.230:9002/BBC-NEWS/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BBC NEWS
-http://23.237.104.106:8080/USA_BBC_NEWS/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BBC NEWS
-http://45.153.96.44:8001
-#EXTINF:-1 group-title="Uluslararası - Müzik",M2
-https://d1ib1gsg71oarf.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-scp7wda722jph/BFM2_FR.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://chardikalatimestv.gigabitcdn.net/in-chardikala/chardikala-gurbani-tv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://chardikalagurbanitv.gigabitcdn.net/in-chardikala/chardikala-timetv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://chardikalanorthamerica.gigabitcdn.net/in-chardikala/chardikala-north-usa/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
 https://cdn-euronews.akamaized.net/live/eds/euronews-pl/26382/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://jmp2.uk/plu-6639d7d4b18d700008da5316.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://gjirafa-video-live.gjirafa.net/gjvideo-live/2dw-zuf-1c9-pxu/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://jmp2.uk/plu-61de96114757070008d33cae.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-http://45.190.28.50/EURONEWS_HD/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-http://nue01-edge01.itdc.ge/euronewsgeorgia/mpegts
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://cdn-euronews.akamaized.net/live/eds/euronews-el/25068/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://cdn-euronews.akamaized.net/live/eds/euronews-hu/25075/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://acb6ca89.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0l0YWxpYW5vX0hMUw/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://jmp2.uk/plu-619e6614c9d9650007a2b171.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://cdn-euronews.akamaized.net/live/eds/euronews-ru/25071/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://jmp2.uk/plu-60d3583ef310610007fb02b1.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 2
-https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 2
-https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/master_5000.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 2
-https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 2
-https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_5000.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://cdn-edge1.streamcomedia.com/abr_tngr969fm/abr-tngr969fm_streams/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://tv.hamdardtv.com/hamdard/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://hls.iranfarda.live/hls/stream.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://pb-k5p02dtnr2162.akamaized.net/LiveNOW_from_FOX.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-http://40.160.24.53/MSNBC/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_channelId=88896001
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://live.nowtelly.com/now_arabic/live/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://nowhls.wns.live/hls/stream.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://live.nowtelly.com/now_spanish/live/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://live.nowtelly.com/now_usa/live_usa/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://protokolldns.xyz/ntv.l.i.v.e5547892023/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://mumbai-edge.smartplaytv.in/NTVTelugu/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Müzik",POWER TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://live-evg11.tv360.bitel.com.pe/bitel/selvaticaSRT/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/TimesNowNavbharat.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-http://103.72.101.252:8080/live/876.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://cloudflare.streamgato.us:3300/live/tribunatvlive.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9hinjzgtpe/liveabr/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://ott3.streann.com/loadbalancer/services/public/channels/5d23d5882cdce61dae029fd8/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://amg00327-coxmediagroup-wsocbreaking-plex-t51et.amagi.tv/playlist/amg00327-coxmediagroup-wsocbreaking-plex/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Belgesel",AGRO TV
-https://restr2.bgtv.bg/agro/hls/agro.m3u8
 #EXTINF:-1 group-title="Türkiye - Belgesel",AGRO TV
 https://live-evg8.tv360.bitel.com.pe/bitel/agroSRT/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Belgesel",AGRO TV
-https://agrotv.streamnet.ro/mobile_tv/agrotv.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://ardbtv.ardb.com.kh:8443/tv-live/tv-online.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://iptv.almahditv.com/almahditv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://stream.atvsat.com/atvsatlive/smil:atvsatlive.smil/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://unlimited1-us.dps.live/isb/isb.smil/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-#EXTVLCOPT:http-referrer=http://japan.cgntv.net/HD_player_jp.html
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://du35ivadp6cxj.cloudfront.net/out/v1/81781d23cbbf490990b2aa9181d4ce19/CGNWebLiveKR.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-http://43.252.18.195:5080/live/streams/CITVChannel.playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",STAR TV
-https://live-mcl.cdn01.net/smarttv/48vy43564/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://avr.host247.net/live/FarmodaTV/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://tgn.bozztv.com/lifevision/lifevision/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://jstre.am/live/jsl:2gNjpghXRLE.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://mediaprod1.nowcast.cc:5443/LiveApp/streams/anZPy7eaVWLyDMZB1697488814699.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://avr.host247.net/live/WiseHumanTv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://jmp2.uk/plu-69173ce8abd4703b27f71d44.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://jmp2.uk/plu-62bc1784120ba80007935aaa.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://cdn-dvr.ntv.ru/th_serial/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://cdn-dvr.ntv.ru/th_hit/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",M2
-https://streaming.softwarecreation.it/GM24/GM24/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://stirr.b-cdn.net/stirr/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://pb-wm04vonaerv0k.akamaized.net/billi.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-http://media4.tripsmarter.com:1935/LiveTV/MTVHD/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://linear-696.frequency.stream/dist/stirr/696/hls/master/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://liveh12.vtvprime.vn/hls/ANNINHTV/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://streamservers.atv.hu/atvliveedge/_definst_/atvstream_2_aac/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BBC NEWS
-https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_afghan_tv/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://d2zmd59prfyzho.cloudfront.net/Billboard_TV.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://streams2.sofast.tv/WiseM3U8_18/sofast/cleanhls/master.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://samson.streamerr.co:8081/carinatv/tracks-v1a1/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://amagi-streams.akamaized.net/hls/live/2113391/cbcheartland/master.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://amg00170-curiositystream-amg00170c3-rakuten-us-2289.playouts.now.amagi.tv/playlist/amg00170-curiositystreamllcfast-curiositynowrow-rakutenus/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://tv2.bitstreaming.net:3539/live/deltanetlive.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://d310j9emjmcwry.cloudfront.net/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://jmp2.uk/plu-61de8e502c8e9400077e5de7.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 2
-https://amg00106-amg00106c1-rakuten-uk-4654.playouts.now.amagi.tv/playlist/amg00106-france24fast-france24-rakutenuk/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://aegis-cloudfront-1.tubi.video/b82a751c-18e0-417c-92c1-d476319da423/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://all3media-gardening-with-monty-don-us.xumo.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883037
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://amg00627-banijay-amg00627c8-samsung-au-1827.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://amg00627-banijay-amg00627c8-samsung-nz-1828.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://amg00627-amg00627c8-rakuten-uk-4801.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://jmp2.uk/plu-691b012d1148fa1cd8a75d5c.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://jmp2.uk/plu-6909fc4b74601d957a380613.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://pb-a0c87g3b3mtrw.akamaized.net/Heartland.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://d1nzda2a2b3swt.cloudfront.net/History_Warfare_Now.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://d28gzbv9fhdm3h.cloudfront.net/playlist/amg00376-magellantv-historyandwarfarenowaunzin-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://amg00376-magellan-amg00376c19-samsung-nz-1735.playouts.now.amagi.tv/playlist/amg00376-magellantv-historyandwarfarenowaunzin-samsungnz/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://8f2546fe.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0hvYXJkZXJzX0hMUw/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://eada4a55.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9Ib2FyZGVyc19ITFM/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://jmp2.uk/plu-698a040b48d98175cb870fc5.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://d1klo92zvoj2of.cloudfront.net/v1/aenetworks_hoarders_1/samsungheadend_us/latest/main/hls/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://fast-rakuten.okast.tv/fa2e8c4385712f9a3b579747e448699c/channels/34d82f76-b51f-4bf5-9b35-769fb5904e79/a4226699-b685-4f5d-9cb6-2a6cac14c377/media_.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://amg00654-itvstudios-itvchoice-samsungau-2bacj.amagi.tv/playlist/amg00654-itvstudios-itvchoice-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://amg00654-itv-amg00654c32-rakuten-fr-6134.playouts.now.amagi.tv/playlist/amg00654-itvstudiosfast-unvillagesfrancais-rakutenfr/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL D
-https://stream2.kanald.ro/iphone/knd2-live.m3u8
-#EXTINF:-1 group-title="Uluslararası - Belgesel",FRANCE 5
-https://jmp2.uk/plu-685a999bd33909bdd7d2fb1e.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://5a44e5b800a41.streamlock.net/liveVLR3/mp4:Klasika/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://amg02703-amg02703c20-samsung-au-9093.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://odmedia-mojitv-1-be.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://odmedia-mojitv-1-nl.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://jmp2.uk/plu-64c37e710e086a0009e824ab.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://jmp2.uk/plu-6490254fd2c47c00083a5743.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://43.252.18.195:5080/LiveApp/streams/ntvhd.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://hls127.freeott.top:8080/NTV_PRAVO_TV/video.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://2-fss-1.streamhoster.com/pl_122/201748-1431018-1/chunklist.m3u8
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-http://122.248.43.242:1935/PONTV/_definst_/myStream/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://jmp2.uk/plu-69440d0611f6c6384ab78306.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://d1uvnirn6lhs2f.cloudfront.net/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",PROSIEBEN
 https://dash4.antik.sk/live/test_pro_sieben_tizen/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Müzik",NUMBER ONE
 https://56b50ada2d659.streamlock.net/RN1TV/livestream/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RAI 1
-https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RAI 1
 https://srv1.adriatelekom.com/Rai1/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RAI 2
 https://srv1.adriatelekom.com/Rai2/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RAI 3
 https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://jmp2.uk/plu-692ec3a76f84242a60f75f59.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://budapest-cache-1.antik.sk/live/test_film_plus_2_hungary_1200_atk/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://tvi-live-hls.akamaized.net/hls/live/2038650/TVI-Live-HLS/master.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
-#EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://cdn-2.pishow.tv/live/475/master.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-http://158.69.124.9:1935/sardaritv/sardaritv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://seatv.netlinkbroadcaster.com/hls/test.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://live-evg7.tv360.bitel.com.pe/bitel/selvatv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",STAR TV
-https://f-tx-edge-87.christianworldmedia.com/shinetvpak2/mp4:shinetvpak2/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://vivo.solumedia.com:19360/sicarditv/sicarditv.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",CITY TV
-https://cs2.push2stream.com/SOUNDCITY/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RTL
-#EXTVLCOPT:http-referrer=https://www.2ix2.com/super-rtl-live/
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://v2.siar.us/tatv/live.sdp/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",M1
 https://cdnapisec.kaltura.com/p/1719221/sp/171922100/playManifest/entryId/1_ljzy3evp/format/applehttp/protocol/https/a.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",TELECINCO
 https://videohd.live:19360/8016/8016.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://1aadf145546f475282c5b4e658c0ac4b.msvdn.net/live/324149/hlbAWtl/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ZDF
-https://jmp2.uk/plu-5cb5d043a461406ffe3fb2de.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://amg00376-magellan-amg00376c12-samsung-au-1725.playouts.now.amagi.tv/playlist/amg00376-magellantv-truecrimenowaunzin-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",TV8
-https://panel.tvstream.cl:1936/sdaumqtfqf/sdaumqtfqf/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",TV8
-http://91.146.94.234:10001/play/a03b
-#EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
-https://streaming007.gestec-video.com/hls/artequatreTVA.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",ATV
-https://unlimited1-us.dps.live/uatv/uatv.smil/playlist.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-http://livestreaming.videolina.it/live/Videolina/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",KANAL D
-https://jmp2.uk/plu-639751f81a36b400072b8f5a.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",TV8
-https://live-a.fptplay53.net/live/media/vtv8/live247-hls-avc/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ARD
-https://9a81dd4ee3884d0dbcacafaf0d81327a.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BilliardsTV/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Çocuk",ZAROK TV
-https://zindisorani.zaroktv.com.tr/hls/stream.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",ZDF
 https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ZDF
+#EXTINF:-1 group-title="Uluslararası - Belgesel",ZDFINFO
 https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",ZDF
-https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
