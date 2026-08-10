@@ -111,3 +111,11 @@ https://videohd.live:19360/8016/8016.m3u8
 https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",ZDFINFO
 https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
+#EXTINF:-1 group-title="Uluslararası - Müzik",SCHLAGER DELUXE
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/26658/26658_264_live.m3u8
+#EXTINF:-1 group-title="Uluslararası - Genel",CANALE 5
+https://live02-seg.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/index.m3u8
+#EXTINF:-1 group-title="Uluslararası - Genel",CHANNEL 4
+http://176.65.146.105:8011/play/a07w/index.m3u8
+#EXTINF:-1 group-title="Uluslararası - Belgesel",NASA TV
+https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master_2000.m3u8
