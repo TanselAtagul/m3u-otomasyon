@@ -1,0 +1,34 @@
+name: M3U Otomatik Guncelleme
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # Her gece 03:00'te çalışır
+  workflow_dispatch: # İstediğiniz an manuel tetikleme butonu ekler
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodu Cek
+        uses: actions/checkout@v3
+
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Kütüphaneleri Yukle
+        run: |
+          pip install -r requirements.txt
+
+      - name: Scripti Calistir
+        run: |
+          python main.py
+
+      - name: Degisiklikleri Kaydet
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add custom_list.m3u
+          git commit -m "Auto-update playlist" || exit 0
+          git push
