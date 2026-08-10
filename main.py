@@ -1,9 +1,14 @@
 import requests
 import re
 
-# Kaynak Bağlantıları
-TR_SOURCE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u"
-GLOBAL_SOURCE = "https://iptv-org.github.io/iptv/index.category.m3u"
+# Çoklu Referans M3U Kaynakları
+SOURCES = [
+    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u",
+    "https://iptv-org.github.io/iptv/countries/tr.m3u",
+    "https://raw.githubusercontent.com/free-tv/IPTV/master/playlist.m3u",
+    "https://iptv-org.github.io/iptv/index.category.m3u",
+    "https://iptv-org.github.io/iptv/index.m3u"
+]
 
 # Kategoriler ve Aratılacak Kanal İsimleri
 CATEGORIES = {
@@ -70,17 +75,19 @@ def get_quality_score(title, url):
 def fetch_m3u_lines(url):
     try:
         res = requests.get(url, timeout=10)
-        return res.text.splitlines()
+        if res.status_code == 200:
+            return res.text.splitlines()
     except Exception as e:
-        print(f"Hata ({url}): {e}")
-        return []
-
-tr_lines = fetch_m3u_lines(TR_SOURCE)
-global_lines = fetch_m3u_lines(GLOBAL_SOURCE)
+        print(f"Kaynak okuma hatası ({url}): {e}")
+    return []
 
 best_streams = {}
 
-def process_playlist(lines, target_groups):
+# Tüm kaynakları sırayla tara ve en kaliteli linkleri havuzda topla
+for src in SOURCES:
+    lines = fetch_m3u_lines(src)
+    is_tr_source = "tr" in src.lower()
+
     for i in range(len(lines)):
         if lines[i].startswith("#EXTINF"):
             line_info = lines[i]
@@ -91,8 +98,11 @@ def process_playlist(lines, target_groups):
 
             raw_name = line_info.split(",")[-1].strip()
 
-            for group_name in target_groups:
-                channel_list = CATEGORIES[group_name]
+            for group_name, channel_list in CATEGORIES.items():
+                # Türkiye gruplarını öncelikli olarak Türkiye kaynaklarında ara
+                if group_name.startswith("Türkiye") and not is_tr_source:
+                    continue
+
                 matched = False
                 for target_name in channel_list:
                     pattern = r'(?i)\b' + re.escape(target_name) + r'\b'
@@ -123,15 +133,6 @@ def process_playlist(lines, target_groups):
                 if matched:
                     break
 
-# 1. Öncelikli olarak Türkiye kaynaklarını tara
-tr_categories = [k for k in CATEGORIES.keys() if k.startswith("Türkiye")]
-process_playlist(tr_lines, tr_categories)
-
-# 2. Uluslararası kaynakları ve Türkiye'de eksik kalan kanalları küresel listeden tamamla
-intl_categories = [k for k in CATEGORIES.keys() if k.startswith("Uluslararası")]
-process_playlist(global_lines, intl_categories)
-process_playlist(global_lines, tr_categories)
-
 # M3U Dosyasını Oluşturma
 my_playlist = "#EXTM3U\n"
 for (group_name, target_name), data in best_streams.items():
@@ -141,4 +142,4 @@ for (group_name, target_name), data in best_streams.items():
 with open("custom_list.m3u", "w", encoding="utf-8") as f:
     f.write(my_playlist)
 
-print("M3U dosyası Türkiye - Diğer grubu eklenerek başarıyla güncellendi.")
+print("M3U dosyası çoklu referans kaynaklar taranarak başarıyla oluşturuldu.")
