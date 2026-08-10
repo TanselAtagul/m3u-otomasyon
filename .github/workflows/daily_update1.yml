@@ -1,0 +1,35 @@
+name: Günlük IPTV Liste Güncelleyici (main1)
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # Her gece UTC 01:00 (TSİ 04:00)
+  workflow_dispatch: # Manuel tetikleme
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Repoyu Kopyala
+        uses: actions/checkout@v3
+
+      - name: Python Kurulumu
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Bağımlılıkları Yükle
+        run: pip install requests
+
+      - name: main1.py Çalıştır
+        run: python main1.py
+
+      - name: Değişiklikleri Kaydet
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add channels1.m3u
+          git commit -m "Günlük M3U1 güncellemesi: $(date +'%Y-%m-%d %H:%M')" || exit 0
+          git push
