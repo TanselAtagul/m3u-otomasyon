@@ -7,7 +7,11 @@ SOURCES = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://raw.githubusercontent.com/free-tv/IPTV/master/playlist.m3u",
     "https://iptv-org.github.io/iptv/index.category.m3u",
-    "https://iptv-org.github.io/iptv/index.m3u"
+    "https://iptv-org.github.io/iptv/index.m3u",
+    "https://onureroz.com/indirmeler/turk/index.m3u",
+    "https://onureroz.com/indirmeler/dunya/index.m3u",
+    "http://adultiptv.net/chs.m3u"
+    
 ]
 
 # Kategoriler ve Aratılacak Kanal İsimleri
