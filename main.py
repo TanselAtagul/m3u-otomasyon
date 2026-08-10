@@ -6,45 +6,55 @@ SOURCES = [
     "https://iptv-org.github.io/iptv/index.category.m3u",
 ]
 
-# Kategori ve İlgili Kanal Listeleri (Aranacak Kelimeler)
+# Kategoriler ve Aratılacak Kanal İsimleri
 CATEGORIES = {
     "Türkiye - Genel": [
-        "TRT 1", "ATV", "KANAL D", "SHOW TV", "STAR TV", "TV8", "NOW", "FOX", "BEYAZ TV", "KANAL 7"
+        "TRT 1", "ATV", "KANAL D", "SHOW TV", "STAR TV", "TV8", "NOW", "KANAL 7"
     ],
     "Türkiye - Haber": [
-        "TRT HABER", "HABERTÜRK", "NTV", "A HABER", "SÖZCÜ TV", "HALK TV", "TELE1", "CNN TÜRK", "24 TV", "TGRT HABER"
+        "TRT HABER", "HABERTÜRK", "NTV", "A HABER", "SÖZCÜ TV", "HALK TV", "CNN TÜRK"
     ],
     "Türkiye - Belgesel": [
-        "TRT BELGESEL", "HABERTURK BELGESEL", "TGRT BELGESEL", "AGRO TV"
+        "TRT BELGESEL", "HABERTURK BELGESEL", "TGRT BELGESEL", "AGRO TV", 
+        "TLC", "HABITAT", "YABAN TV"
     ],
     "Türkiye - Çocuk": [
-        "TRT ÇOCUK", "MINIKA ÇOCUK", "MINIKA GO", "CARTOON NETWORK"
+        "TRT ÇOCUK", "MINIKA ÇOCUK", "MINIKA GO", "CARTOON NETWORK", 
+        "ZAROK TV", "CARTOONITO", "KIDS ARENA", "SPACE TOON", 
+        "MOONBUG", "DA VINCI"
     ],
     "Türkiye - Müzik": [
-        "POWER TV", "DREAM TURK", "KRAL POP", "NR1 TV", "NUMBER ONE TURK", "TRT MÜZİK"
+        "POWER TV", "DREAM TURK", "KRAL POP", "NR1 TV", "NUMBER ONE", 
+        "TRT MÜZİK", "TATLISES"
     ],
-    "Türkiye - +18": [
-        # Kaynaklarda yetişkin kanalı varsa buraya ekleyebilirsiniz
+    "Türkiye - Radyo": [
+        "45'LİK", "FENOMEN", "JOYTÜRK", "KRAL FM", "SLOWTÜRK", 
+        "POWER FM", "ALEM FM", "SUPER FM", "METRO FM", "PAL FM"
     ],
     "Uluslararası - Genel": [
-        "BBC", "CNN", "DW", "RTI", "TV5MONDE"
-    ],
-    "Uluslararası - Haber": [
-        "BBC NEWS", "EURONEWS", "AL JAZEERA", "RUSSIA TODAY", "BLOOMBERG"
-    ],
-    "Uluslararası - Belgesel": [
-        "CGTN DOCUMENTARY", "NASA TV"
-    ],
-    "Uluslararası - Çocuk": [
-        "DISNEY CHANNEL", "NICKELODEON"
+        "BBC ONE", "BBC TWO", "ITV", "CHANNEL 4",
+        "DAS ERSTE", "ARD", "ZDF", "RTL", "PROSIEBEN",
+        "TF1", "FRANCE 2", "FRANCE 3", "M6",
+        "RAI 1", "RAI 2", "RAI 3", "CANALE 5",
+        "LA 1", "ANTENA 3", "TELECINCO"
     ],
     "Uluslararası - Müzik": [
-        "MTV", "CLUBBING TV"
+        "DELUXE MUSIC", "SCHLAGER DELUXE", "NRJ HITS", "CITY TV", "THE VOICE", 
+        "BALKANIKA", "KISS TV", "ZU TV", "UTV ROMANIA", "RU.TV", "MUZ-TV", 
+        "BRIDGE TV", "DM SAT", "IDJ TV", "ESKA TV", "POLO TV", "STARS.TV", 
+        "MUSIC BOX", "MAD TV", "M1", "M2"
+    ],
+    "Uluslararası - Haber": [
+        "BBC NEWS", "EURONEWS", "AL JAZEERA", "BLOOMBERG"
+    ],
+    "Uluslararası - Belgesel": [
+        "CGTN DOCUMENTARY", "NASA TV", "ARTE", "FRANCE 5", 
+        "ZDFINFO", "3SAT", "BBC FOUR"
     ]
 }
 
 my_playlist = "#EXTM3U\n"
-added_urls = set()
+added_channels = set()
 
 for url in SOURCES:
     try:
@@ -53,27 +63,29 @@ for url in SOURCES:
 
         for i in range(len(lines)):
             if lines[i].startswith("#EXTINF"):
-                channel_info = lines[i]
+                line_info = lines[i]
                 stream_url = lines[i + 1] if i + 1 < len(lines) else ""
 
-                if stream_url and stream_url not in added_urls:
-                    # Tanımladığımız kategorilerde arama yapıyoruz
-                    for group_name, keywords in CATEGORIES.items():
-                        matched = False
-                        for kw in keywords:
-                            if kw.lower() in channel_info.lower():
-                                # group-title parametresini ekleyerek M3U başlığını güncelliyoruz
-                                updated_info = f'#EXTINF:-1 group-title="{group_name}",{channel_info.split(",")[-1]}'
-                                my_playlist += f"{updated_info}\n{stream_url}\n"
-                                added_urls.add(stream_url)
-                                matched = True
-                                break
-                        if matched:
+                if not stream_url or stream_url in added_channels:
+                    continue
+
+                raw_name = line_info.split(",")[-1].strip()
+
+                for group_name, channel_list in CATEGORIES.items():
+                    matched = False
+                    for target_name in channel_list:
+                        if target_name.lower() in raw_name.lower():
+                            clean_extinf = f'#EXTINF:-1 group-title="{group_name}",{target_name}'
+                            my_playlist += f"{clean_extinf}\n{stream_url}\n"
+                            added_channels.add(stream_url)
+                            matched = True
                             break
+                    if matched:
+                        break
     except Exception as e:
         print(f"Hata ({url}): {e}")
 
 with open("custom_list.m3u", "w", encoding="utf-8") as f:
     f.write(my_playlist)
 
-print("M3U dosyası gruplandırılarak güncellendi.")
+print("M3U dosyası başarıyla güncellendi.")
