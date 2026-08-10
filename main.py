@@ -1,16 +1,14 @@
 import requests
 import re
 
-# Kaynak M3U Bağlantıları
-SOURCES = [
-    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u",
-    "https://iptv-org.github.io/iptv/index.category.m3u",
-]
+# Kaynak Bağlantıları
+TR_SOURCE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u"
+GLOBAL_SOURCE = "https://iptv-org.github.io/iptv/index.category.m3u"
 
 # Kategoriler ve Aratılacak Kanal İsimleri
 CATEGORIES = {
     "Türkiye - Genel": [
-        "TRT 1", "ATV", "KANAL D", "SHOW TV", "STAR TV", "TV8", "NOW", "KANAL 7"
+        "TRT 1", "ATV", "KANAL D", "SHOW TV", "STAR TV", "TV8", "NOW TV", "NOW", "KANAL 7"
     ],
     "Türkiye - Haber": [
         "TRT HABER", "HABERTÜRK", "NTV", "A HABER", "SÖZCÜ TV", "HALK TV", "CNN TÜRK"
@@ -55,7 +53,6 @@ CATEGORIES = {
 }
 
 def get_quality_score(title, url):
-    """Yayın kalitesine göre puan verir (En yüksek çözünürlüğü seçmek için)."""
     combined = (title + " " + url).lower()
     if "1080" in combined or "fhd" in combined or "fullhd" in combined:
         return 4
@@ -67,45 +64,59 @@ def get_quality_score(title, url):
         return 1
     return 0
 
-# Seçilen en iyi kanalları tutacak sözlük: (group_name, target_name) -> (score, stream_url)
-best_streams = {}
-
-for url in SOURCES:
+def fetch_m3u_lines(url):
     try:
         res = requests.get(url, timeout=10)
-        lines = res.text.splitlines()
-
-        for i in range(len(lines)):
-            if lines[i].startswith("#EXTINF"):
-                line_info = lines[i]
-                stream_url = lines[i + 1] if i + 1 < len(lines) else ""
-
-                if not stream_url or not stream_url.startswith("http"):
-                    continue
-
-                raw_name = line_info.split(",")[-1].strip()
-
-                for group_name, channel_list in CATEGORIES.items():
-                    matched = False
-                    for target_name in channel_list:
-                        # Regex ile tam kelime eşleşmesi kontrolü (örn: "ATV" ararken "ATV Alanya" eşleşmez)
-                        pattern = r'(?i)\b' + re.escape(target_name) + r'\b'
-                        if re.search(pattern, raw_name):
-                            score = get_quality_score(raw_name, stream_url)
-                            key = (group_name, target_name)
-                            
-                            # Eğer daha önce eklenmemişse veya yeni linkin kalitesi daha yüksekse güncelle
-                            if key not in best_streams or score > best_streams[key]["score"]:
-                                best_streams[key] = {
-                                    "score": score,
-                                    "url": stream_url
-                                }
-                            matched = True
-                            break
-                    if matched:
-                        break
+        return res.text.splitlines()
     except Exception as e:
         print(f"Hata ({url}): {e}")
+        return []
+
+tr_lines = fetch_m3u_lines(TR_SOURCE)
+global_lines = fetch_m3u_lines(GLOBAL_SOURCE)
+
+best_streams = {}
+
+def process_playlist(lines, target_groups):
+    for i in range(len(lines)):
+        if lines[i].startswith("#EXTINF"):
+            line_info = lines[i]
+            stream_url = lines[i + 1] if i + 1 < len(lines) else ""
+
+            if not stream_url or not stream_url.startswith("http"):
+                continue
+
+            raw_name = line_info.split(",")[-1].strip()
+
+            for group_name in target_groups:
+                channel_list = CATEGORIES[group_name]
+                matched = False
+                for target_name in channel_list:
+                    pattern = r'(?i)\b' + re.escape(target_name) + r'\b'
+                    if re.search(pattern, raw_name):
+                        score = get_quality_score(raw_name, stream_url)
+                        
+                        # "NOW TV" veya "NOW" aramalarını tek bir "NOW" başlığı altında birleştir
+                        canonical_name = "NOW" if target_name in ["NOW", "NOW TV"] else target_name
+                        key = (group_name, canonical_name)
+
+                        if key not in best_streams or score > best_streams[key]["score"]:
+                            best_streams[key] = {
+                                "score": score,
+                                "url": stream_url
+                            }
+                        matched = True
+                        break
+                if matched:
+                    break
+
+# 1. Türkiye kategorilerini SADECE Türkiye M3U listesinden tara
+tr_categories = [k for k in CATEGORIES.keys() if k.startswith("Türkiye")]
+process_playlist(tr_lines, tr_categories)
+
+# 2. Uluslararası kategorileri Küresel M3U listesinden tara
+intl_categories = [k for k in CATEGORIES.keys() if k.startswith("Uluslararası")]
+process_playlist(global_lines, intl_categories)
 
 # M3U Dosyasını Oluşturma
 my_playlist = "#EXTM3U\n"
@@ -116,4 +127,4 @@ for (group_name, target_name), data in best_streams.items():
 with open("custom_list.m3u", "w", encoding="utf-8") as f:
     f.write(my_playlist)
 
-print("M3U dosyası tekil ve en yüksek çözünürlüklü kanallarla başarıyla güncellendi.")
+print("M3U dosyası ülke kaynakları ayrıştırılarak başarıyla güncellendi.")
