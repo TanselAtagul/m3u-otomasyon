@@ -2,8 +2,11 @@ name: M3U Otomatik Guncelleme
 
 on:
   schedule:
-    - cron: '0 3 * * *' # Her gece 03:00'te çalışır
-  workflow_dispatch: # İstediğiniz an manuel tetikleme butonu ekler
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Actions'ın depoya dosya kaydetmesine izin verir
 
 jobs:
   build:
