@@ -8,7 +8,7 @@ GLOBAL_SOURCE = "https://iptv-org.github.io/iptv/index.category.m3u"
 # Kategoriler ve Aratılacak Kanal İsimleri
 CATEGORIES = {
     "Türkiye - Genel": [
-        "TRT 1", "ATV", "KANAL D", "SHOW TV", "STAR TV", "TV8", "NOW TV", "NOW", "KANAL 7"
+        "TRT 1", "ATV", "KANAL D", "SHOW TV", "SHOW TV HD", "SHOW", "STAR TV", "TV8", "NOW TV", "NOW", "KANAL 7"
     ],
     "Türkiye - Haber": [
         "TRT HABER", "HABERTÜRK", "NTV", "A HABER", "SÖZCÜ TV", "HALK TV", "CNN TÜRK"
@@ -29,6 +29,9 @@ CATEGORIES = {
     "Türkiye - Radyo": [
         "45'LİK", "FENOMEN", "JOYTÜRK", "KRAL FM", "SLOWTÜRK", 
         "POWER FM", "ALEM FM", "SUPER FM", "METRO FM", "PAL FM"
+    ],
+    "Türkiye - Diğer": [
+        "TV100", "TV 100", "BJK TV", "BESIKTAS TV", "BEŞİKTAŞ TV"
     ],
     "Uluslararası - Genel": [
         "BBC ONE", "BBC TWO", "ITV", "CHANNEL 4",
@@ -96,8 +99,18 @@ def process_playlist(lines, target_groups):
                     if re.search(pattern, raw_name):
                         score = get_quality_score(raw_name, stream_url)
                         
-                        # "NOW TV" veya "NOW" aramalarını tek bir "NOW" başlığı altında birleştir
-                        canonical_name = "NOW" if target_name in ["NOW", "NOW TV"] else target_name
+                        # Kanal isim standartlaştırma
+                        if target_name in ["NOW", "NOW TV"]:
+                            canonical_name = "NOW"
+                        elif target_name in ["SHOW TV", "SHOW TV HD", "SHOW"]:
+                            canonical_name = "SHOW TV"
+                        elif target_name in ["TV100", "TV 100"]:
+                            canonical_name = "TV100"
+                        elif target_name in ["BJK TV", "BESIKTAS TV", "BEŞİKTAŞ TV"]:
+                            canonical_name = "BJK TV"
+                        else:
+                            canonical_name = target_name
+
                         key = (group_name, canonical_name)
 
                         if key not in best_streams or score > best_streams[key]["score"]:
@@ -110,13 +123,14 @@ def process_playlist(lines, target_groups):
                 if matched:
                     break
 
-# 1. Türkiye kategorilerini SADECE Türkiye M3U listesinden tara
+# 1. Öncelikli olarak Türkiye kaynaklarını tara
 tr_categories = [k for k in CATEGORIES.keys() if k.startswith("Türkiye")]
 process_playlist(tr_lines, tr_categories)
 
-# 2. Uluslararası kategorileri Küresel M3U listesinden tara
+# 2. Uluslararası kaynakları ve Türkiye'de eksik kalan kanalları küresel listeden tamamla
 intl_categories = [k for k in CATEGORIES.keys() if k.startswith("Uluslararası")]
 process_playlist(global_lines, intl_categories)
+process_playlist(global_lines, tr_categories)
 
 # M3U Dosyasını Oluşturma
 my_playlist = "#EXTM3U\n"
@@ -127,4 +141,4 @@ for (group_name, target_name), data in best_streams.items():
 with open("custom_list.m3u", "w", encoding="utf-8") as f:
     f.write(my_playlist)
 
-print("M3U dosyası ülke kaynakları ayrıştırılarak başarıyla güncellendi.")
+print("M3U dosyası Türkiye - Diğer grubu eklenerek başarıyla güncellendi.")
