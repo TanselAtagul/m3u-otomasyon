@@ -3,8 +3,6 @@
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",ATV
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://86fdc85a.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfQmxvb21iZXJnT3JpZ2luYWxzX0hMUw/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",HABERTÜRK
 https://tv.ensonhaber.com/haberturk/haberturk.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",HALK TV
@@ -18,9 +16,9 @@ https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Çocuk",MINIKA GO
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",NOW
-https://amg00170-amg00170c4-samsung-gb-4232.playouts.now.amagi.tv/playlist.m3u8
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",NTV
-https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8
+https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
 #EXTINF:-1 group-title="Türkiye - Müzik",POWER TV
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye - Belgesel",TGRT BELGESEL
@@ -39,18 +37,16 @@ https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8l4w3lst4co5&app=a20ac41
 https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",BBC FOUR
 http://193.46.58.239:8080/CbeebiesHD/index.m3u8
+#EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
+https://86fdc85a.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfQmxvb21iZXJnT3JpZ2luYWxzX0hMUw/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
 http://45.162.64.114/ARTE1/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Haber",AL JAZEERA
 https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",CGTN DOCUMENTARY
 https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",TV8
-https://1740288887.rsc.cdn77.org/1740288887/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",ARD
 https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
-#EXTINF:-1 group-title="Türkiye - Çocuk",DA VINCI
-http://hls127.freeott.top:8080/Da_Vinci_Learning/video.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",ITV
 https://ca1.buximedia.com/itv/persian/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",M2
@@ -77,8 +73,6 @@ http://69.64.57.208/france5/mono.m3u8
 https://ztnr.rtve.es/ztnr/5190066.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RTL
 https://rtlradio-streaming.rtl.lu/rtlradiowebtv/smil:rtlradiowebtv/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Çocuk",MOONBUG
-https://moonbug-rokuus.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",RU.TV
 https://bl.rutube.ru/livestream/b1eb8e90d7e636677b3eb73b4fcbb717/index.m3u8?e=2069285076&s=d-E-bxKy2v3EEJ94RQX9CA&scheme=https
 #EXTINF:-1 group-title="Uluslararası - Müzik",DELUXE MUSIC
@@ -101,12 +95,8 @@ https://bss1.neterra.tv/thevoice/thevoice.m3u8
 https://pb-iiczlgfysam0q.akamaized.net/v1/amcnetworks_bbcnews_1/samsungheadend_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
 https://cdn-euronews.akamaized.net/live/eds/euronews-pl/26382/index.m3u8
-#EXTINF:-1 group-title="Türkiye - Belgesel",AGRO TV
-https://live-evg8.tv360.bitel.com.pe/bitel/agroSRT/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",PROSIEBEN
 https://dash4.antik.sk/live/test_pro_sieben_tizen/playlist.m3u8
-#EXTINF:-1 group-title="Türkiye - Müzik",NUMBER ONE
-https://56b50ada2d659.streamlock.net/RN1TV/livestream/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RAI 1
 https://srv1.adriatelekom.com/Rai1/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RAI 2
