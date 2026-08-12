@@ -23,8 +23,12 @@ https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
 #EXTINF:-1 group-title="Türkiye - Müzik",POWER TV
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
+#EXTINF:-1 group-title="Türkiye - Genel",STAR TV
+https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5
 #EXTINF:-1 group-title="Türkiye - Belgesel",TGRT BELGESEL
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
+#EXTINF:-1 group-title="Türkiye - Genel",TRT 1
+https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Türkiye - Belgesel",TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",TRT HABER
@@ -33,10 +37,6 @@ https://tv-trthaber.medya.trt.com.tr/master.m3u8
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Türkiye - Çocuk",ZAROK TV
 https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8
-#EXTINF:-1 group-title="Türkiye - Genel",STAR TV
-https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8l4w3lst4co5&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
-#EXTINF:-1 group-title="Türkiye - Genel",TRT 1
-https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",BBC FOUR
 http://193.46.58.239:8080/CbeebiesHD/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
@@ -47,8 +47,10 @@ https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8
 https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",ARD
 https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
+#EXTINF:-1 group-title="Uluslararası - Genel",CANALE 5
+https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(C5)/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",ITV
-https://ca1.buximedia.com/itv/persian/tracks-v1a1/mono.m3u8
+https://amg00654-itvstudios-itvchoice-samsungau-2bacj.amagi.tv/playlist/amg00654-itvstudios-itvchoice-samsungau/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",M2
 http://88.212.15.19/live/m2_hun/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",3SAT
@@ -63,12 +65,10 @@ http://193.46.58.239:8080/BBCTwoHD/index.m3u8
 https://edge-f.swagit.com/live/carlsbadca/live-3-a-1/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",DAS ERSTE
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 2
-http://69.64.57.208/france2/mono.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",FRANCE 3
 http://5.180.164.197:8080/FRANCE3/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",FRANCE 5
-http://69.64.57.208/france5/mono.m3u8
+http://145.239.5.177/305/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",LA 1
 https://ztnr.rtve.es/ztnr/5190066.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RTL
@@ -77,8 +77,6 @@ https://rtlradio-streaming.rtl.lu/rtlradiowebtv/smil:rtlradiowebtv/playlist.m3u8
 https://bl.rutube.ru/livestream/b1eb8e90d7e636677b3eb73b4fcbb717/index.m3u8?e=2069285076&s=d-E-bxKy2v3EEJ94RQX9CA&scheme=https
 #EXTINF:-1 group-title="Uluslararası - Müzik",DELUXE MUSIC
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
-#EXTINF:-1 group-title="Uluslararası - Müzik",ESKA TV
-http://91.246.72.88:8000/play/a002/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",KISS TV
 https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",M6
@@ -98,9 +96,7 @@ https://cdn-euronews.akamaized.net/live/eds/euronews-pl/26382/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",PROSIEBEN
 https://dash4.antik.sk/live/test_pro_sieben_tizen/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RAI 1
-https://srv1.adriatelekom.com/Rai1/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",RAI 2
-https://srv1.adriatelekom.com/Rai2/index.m3u8
+https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RAI 3
 https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",M1
@@ -113,8 +109,8 @@ https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
 https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",SCHLAGER DELUXE
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/26658/26658_264_live.m3u8
-#EXTINF:-1 group-title="Uluslararası - Genel",CANALE 5
-https://live02-seg.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/index.m3u8
+#EXTINF:-1 group-title="Uluslararası - Genel",RAI 2
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=rainet/4.0.5
 #EXTINF:-1 group-title="Uluslararası - Genel",CHANNEL 4
 http://176.65.146.105:8011/play/a07w/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",NASA TV
