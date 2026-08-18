@@ -37,6 +37,8 @@ https://tv-trthaber.medya.trt.com.tr/master.m3u8
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Türkiye - Çocuk",ZAROK TV
 https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8
+#EXTINF:-1 group-title="Türkiye - Genel",SHOW TV
+https://raw.githubusercontent.com/bnyusuf67-crypto/streams/refs/heads/main/streams/shturk.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",BBC FOUR
 http://193.46.58.239:8080/CbeebiesHD/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
