@@ -30,7 +30,7 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe46
 #EXTINF:-1 group-title="Türkiye - Genel",TRT 1
 https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Türkiye - Belgesel",TRT BELGESEL
-https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
+http://hls127.freeott.top:8080/TRT_BELGESEL_TR/video.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",TRT HABER
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Türkiye - Müzik",TRT MÜZİK
@@ -55,6 +55,8 @@ https://live02-seg.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/index.m3u8
 https://thm-it-roku.otteravision.com/thm/it/it.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",M2
 http://88.212.15.19/live/m2_hun/index.m3u8
+#EXTINF:-1 group-title="Uluslararası - Genel",TF1
+http://str2.iptvhd.ru:8080/TF1/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",3SAT
 https://dash4.antik.sk/live/test_drei_sat_tizen/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",ANTENA 3
@@ -94,7 +96,7 @@ https://legitpro.co.in/thevoicetv/thevoicetv/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Haber",BBC NEWS
 https://xemzi.short.gy/1000015
 #EXTINF:-1 group-title="Uluslararası - Haber",EURONEWS
-https://cdn1tlinkgo.tlink.cl/euronews/index.m3u8
+http://str2.iptvhd.ru:8080/Euronews/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",PROSIEBEN
 https://dash4.antik.sk/live/test_pro_sieben_tizen/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RAI 1
