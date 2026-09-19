@@ -4,7 +4,7 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",ATV
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
 #EXTINF:-1 group-title="Uluslararası - Haber",BLOOMBERG
-https://86fdc85a.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfQmxvb21iZXJnT3JpZ2luYWxzX0hMUw/playlist.m3u8
+https://bloomberg.com/media-manifest/streams/qt.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",HABERTÜRK
 https://tv.ensonhaber.com/haberturk/haberturk.m3u8
 #EXTINF:-1 group-title="Türkiye - Haber",HALK TV
@@ -39,6 +39,10 @@ https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8
 #EXTINF:-1 group-title="Türkiye - Genel",SHOW TV
 https://raw.githubusercontent.com/bnyusuf67-crypto/streams/refs/heads/main/streams/shturk.m3u8
+#EXTINF:-1 group-title="Türkiye - Müzik",DREAM TURK
+https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
+#EXTINF:-1 group-title="Türkiye - Genel",TV8
+https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
 #EXTINF:-1 group-title="Uluslararası - Belgesel",BBC FOUR
 http://193.46.58.239:8080/CbeebiesHD/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",ARTE
@@ -62,7 +66,7 @@ https://dash4.antik.sk/live/test_drei_sat_tizen/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",ANTENA 3
 http://177.10.184.193:8000/play/a06a/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",BBC ONE
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_midlands/hevc_iptv_mse_v0.mpd
+https://vs-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_london/iptv_hd_abr_v1.mpd
 #EXTINF:-1 group-title="Uluslararası - Genel",BBC TWO
 http://193.46.58.239:8080/BBCTwoHD/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",CITY TV
@@ -74,9 +78,11 @@ http://5.180.164.197:8080/FRANCE3/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Belgesel",FRANCE 5
 http://145.239.5.177/305/index.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",LA 1
-https://ztnr.rtve.es/ztnr/5190066.m3u8
+http://185.47.212.25:8080/tdp_HD/index.m3u8
+#EXTINF:-1 group-title="Uluslararası - Belgesel",NASA TV
+https://stream.nasatv.com.mk/hls/nasatv_live.m3u8
 #EXTINF:-1 group-title="Uluslararası - Genel",RTL
-https://rtlradio-streaming.rtl.lu/rtlradiowebtv/smil:rtlradiowebtv/playlist.m3u8
+https://live-edge.rtl.lu/channel1/smil:channel1/playlist.m3u8
 #EXTINF:-1 group-title="Uluslararası - Müzik",RU.TV
 https://bl.rutube.ru/livestream/b1eb8e90d7e636677b3eb73b4fcbb717/index.m3u8?e=2069285076&s=d-E-bxKy2v3EEJ94RQX9CA&scheme=https
 #EXTINF:-1 group-title="Uluslararası - Müzik",DELUXE MUSIC
@@ -117,5 +123,3 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/26658/26658_264_live.
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=rainet/4.0.5
 #EXTINF:-1 group-title="Uluslararası - Genel",CHANNEL 4
 http://176.65.146.105:8011/play/a07w/index.m3u8
-#EXTINF:-1 group-title="Uluslararası - Belgesel",NASA TV
-https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master_2000.m3u8
