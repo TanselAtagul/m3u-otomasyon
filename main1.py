@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# 🌐 Güncel Tarayıcı Header Yapısı (Engellemeleri aşmak için)
+# 🌐 Güncel Tarayıcı Header Yapısı
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept": "*/*"
@@ -23,17 +23,42 @@ SOURCES = {
     "Müzik & Klip (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
-# 🚫 Filtrelenecek Yerel / İstenmeyen Kelimeler Listesi
-EXCLUDE_KEYWORDS = [
-    "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon",
-    "antakya", "denizli", "kayseri", "konya", "tv41", "tv19", "kanal26", "kanal3",
-    "edirne", "afyon", "sivas", "malatya", "eskişehir", "samsun", "mersin", "gaziantep",
-    "balıkesir", "isparta", "tokat", "elazığ", "kocaeli", "çorum", "manisa"
+# 🇹🇷 Korunacak Ulusal Kanallar Beyaz Listesi (Kanal D, Kanal 7, TRT 1 vb. istisnalar)
+NATIONAL_WHITELIST = [
+    "TRT 1", "KANAL D", "SHOW TV", "STAR TV", "NOW TV", "TV8", "KANAL 7", 
+    "BEYAZ TV", "TEVE2", "TV360", "TV4", "TRT TURK", "TRT AVAZ", "TRT WORLD", 
+    "TRT ARABI", "TRT KURDI", "TRT 4K", "KANAL 7 AVRUPA", "EURO D", "FOX TV",
+    "HABERTURK", "NTV", "CNN TURK", "TRT HABER", "HALK TV", "A HABER", "TGRT HABER"
 ]
 
-def is_local_or_unwanted(name):
+# 🚫 Filtrelenecek Yerel / İstenmeyen Şehir ve Kelimeler Listesi
+EXCLUDE_KEYWORDS = [
+    "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon",
+    "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya", 
+    "eskişehir", "samsun", "mersin", "gaziantep", "balıkesir", "isparta", "tokat", 
+    "elazığ", "kocaeli", "çorum", "manisa", "antalya", "bodrum", "çanakkale", "kahramanmaraş"
+]
+
+def is_local_or_unwanted(name, group=""):
+    name_upper = name.strip().upper()
+    group_upper = group.strip().upper()
+
+    # 1. BEYAZ LİSTE KONTROLÜ: Doğrudan bilinen ulusal kanalsa (Kanal D, Kanal 7 vb.) ASLA eleme!
+    for national in NATIONAL_WHITELIST:
+        if national in name_upper:
+            return False
+
+    # 2. NUMARALI YEREL KANAL KONTROLÜ (Regex):
+    # Beyaz listede olmayan "Kanal 15", "Kanal 32", "TV 41", "Tivi 6" vb. numaralı kanalları eler.
+    if re.search(r"(KANAL|TIVI|TV)\s*\d+", name_upper):
+        return True
+
+    # 3. KELİME FİLTRESİ KONTROLÜ: Şehir isimleri veya "yerel" geçen kanalları eler.
     name_lower = name.lower()
-    return any(keyword in name_lower for keyword in EXCLUDE_KEYWORDS)
+    if any(keyword in name_lower for keyword in EXCLUDE_KEYWORDS):
+        return True
+
+    return False
 
 def verify_link(url):
     try:
@@ -76,8 +101,8 @@ def parse_m3u(url, default_label):
                 
                 name = line_info.split(",")[-1].strip()
                 
-                # Yerel kanal kontrolü
-                if is_local_or_unwanted(name):
+                # Yerel ve İstenmeyen Kanal Kontrolü
+                if is_local_or_unwanted(name, group):
                     continue
 
                 if i + 1 < len(lines):
@@ -93,19 +118,45 @@ def parse_m3u(url, default_label):
 
 def main():
     print(f"--- Güncelleme Başlatıldı (main1): {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ---")
-    all_channels = []
+    raw_channels = []
     
     for label, url in SOURCES.items():
-        all_channels += parse_m3u(url, label)
+        raw_channels += parse_m3u(url, label)
         
+    # 🧹 MÜKERRER ELENMESİ VE KATEGORİ STANDARTLAŞTIRILMASI
+    seen_urls = set()
+    seen_names = set()
+    cleaned_channels = []
+
+    for name, group, url in raw_channels:
+        name_clean = name.strip()
+        
+        # 1. Aynı akış URL'si daha önce eklendiyse atla
+        if url in seen_urls:
+            continue
+            
+        # 2. Aynı kanal adı daha önce eklendiyse (isteğe bağlı mükerrer isim engeli) atla
+        if name_clean.upper() in seen_names:
+            continue
+
+        seen_urls.add(url)
+        seen_names.add(name_clean.upper())
+
+        # Ulusal Türk kanallarının grup başlığını standartlaştır
+        final_group = group
+        if any(nat in name_clean.upper() for nat in NATIONAL_WHITELIST):
+            final_group = "Ulusal"
+
+        cleaned_channels.append((name_clean, final_group, url))
+
     # M3U Dosyası Oluşturma
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write("# Otomatik Oluşturulan Playlist - Türk Ulusal & Global Müzik\n")
-        for name, group, url in all_channels:
+        for name, group, url in cleaned_channels:
             f.write(f'#EXTINF:-1 group-title="{group}",{name}\n{url}\n')
             
-    print(f"--- İşlem Tamamlandı: {len(all_channels)} çalışan kanal channels1.m3u dosyasına kaydedildi. ---")
+    print(f"--- İşlem Tamamlandı: {len(cleaned_channels)} temizlenmiş kanal channels1.m3u dosyasına kaydedildi. ---")
 
 if __name__ == "__main__":
     main()
