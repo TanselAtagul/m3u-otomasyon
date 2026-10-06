@@ -3,10 +3,15 @@ import requests
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+# 🌐 Güncel Tarayıcı Header Yapısı (Engellemeleri aşmak için)
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "*/*"
+}
 TIMEOUT = 4
 MAX_WORKERS = 30
 
+# 🔗 Güncellediğiniz M3U Kaynak Adresleri
 SOURCES = {
     "Türk": "https://onureroz.com/indirmeler/turk/index.m3u",
     "Dünya": "https://onureroz.com/indirmeler/dunya/index.m3u",
@@ -46,6 +51,13 @@ def threaded_verify_links(entries):
 def parse_m3u(url, default_label):
     try:
         res = requests.get(url, headers=HEADERS, timeout=10)
+        print(f"[{default_label}] HTTP Yanıt Kodu: {res.status_code}")
+        
+        # Kaynak erişilebilir değilse çökmeden devam et
+        if res.status_code != 200:
+            print(f"[{default_label}] Kaynağa erişilemedi ({res.status_code}), bu kaynak atlanıyor.")
+            return []
+
         lines = res.text.splitlines()
         entries = []
         for i in range(len(lines)):
@@ -69,7 +81,7 @@ def parse_m3u(url, default_label):
         print(f"[{default_label}] {len(entries)} potansiyel kanal bulundu, doğrulanıyor...")
         return threaded_verify_links(entries)
     except Exception as e:
-        print(f"[{default_label}] Yükleme hatası: {e}")
+        print(f"[{default_label}] Hata oluştu: {e}")
         return []
 
 def main():
