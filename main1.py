@@ -11,17 +11,24 @@ HEADERS = {
 TIMEOUT = 4
 MAX_WORKERS = 30
 
-# 🔗 Güncellediğiniz M3U Kaynak Adresleri
+# 🔗 Yalnızca Türk Ulusal ve Dünya Geneli Müzik/Klip Kaynakları
 SOURCES = {
-    "Türk": "https://onureroz.com/indirmeler/turk/index.m3u",
-    "Dünya": "https://onureroz.com/indirmeler/dunya/index.m3u",
-    "Adult": "http://adultiptv.net/chs.m3u"
+    # Özel Türk M3U Kaynağınız
+    "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
+    
+    # Türkiye Geneli Açık Kaynak Liste (Genişletilmiş Ulusal Yayınlar)
+    "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
+    
+    # Tüm Dünyadan Canlı Müzik ve Klip Kanalları
+    "Müzik & Klip (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
-# 🚫 Filtrelenecek Yerel / İstenmeyen Kelimeler
+# 🚫 Filtrelenecek Yerel / İstenmeyen Kelimeler Listesi
 EXCLUDE_KEYWORDS = [
     "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon",
-    "antakya", "denizli", "kayseri", "konya", "tv41", "tv19", "kanal26", "kanal3"
+    "antakya", "denizli", "kayseri", "konya", "tv41", "tv19", "kanal26", "kanal3",
+    "edirne", "afyon", "sivas", "malatya", "eskişehir", "samsun", "mersin", "gaziantep",
+    "balıkesir", "isparta", "tokat", "elazığ", "kocaeli", "çorum", "manisa"
 ]
 
 def is_local_or_unwanted(name):
@@ -53,7 +60,6 @@ def parse_m3u(url, default_label):
         res = requests.get(url, headers=HEADERS, timeout=10)
         print(f"[{default_label}] HTTP Yanıt Kodu: {res.status_code}")
         
-        # Kaynak erişilebilir değilse çökmeden devam et
         if res.status_code != 200:
             print(f"[{default_label}] Kaynağa erişilemedi ({res.status_code}), bu kaynak atlanıyor.")
             return []
@@ -70,6 +76,7 @@ def parse_m3u(url, default_label):
                 
                 name = line_info.split(",")[-1].strip()
                 
+                # Yerel kanal kontrolü
                 if is_local_or_unwanted(name):
                     continue
 
@@ -94,7 +101,7 @@ def main():
     # M3U Dosyası Oluşturma
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        f.write("# Otomatik Oluşturulan Playlist - main1.py\n")
+        f.write("# Otomatik Oluşturulan Playlist - Türk Ulusal & Global Müzik\n")
         for name, group, url in all_channels:
             f.write(f'#EXTINF:-1 group-title="{group}",{name}\n{url}\n')
             
