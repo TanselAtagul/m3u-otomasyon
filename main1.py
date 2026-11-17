@@ -59,11 +59,9 @@ EXCLUDE_KEYWORDS = [
 def is_radio(name, group=""):
     text_to_check = f"{name} {group}".upper()
     
-    # 1. Regex ile tam kelime radyo/audio kontrolü
     if re.search(r'\b(FM|RADYO|RADIO|AUDIO|PODCAST|LISTEN|RADIOS)\b', text_to_check):
         return True
         
-    # 2. Bilinen spesifik radyo isimleri
     radio_clues = [
         "POWER FM", "SUPER FM", "PAL FM", "SLOW TURK", "VIRGIN", "METRO FM", 
         "JOY FM", "KRAL FM", "ALEM FM", "FENOMEN", "SHOW RADYO", "BEST FM", 
@@ -86,23 +84,24 @@ def get_category(name, original_group=""):
     name_upper = name.upper()
     orig_upper = original_group.upper()
 
-    if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]): return "Spor"
-    if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]): return "Haber"
-    if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]): return "Belgesel"
-    if any(k in name_upper for k in ["ÇOCUK", "COCUK", "KIDS", "CARTOON", "DISNEY", "MINIKA", "BABY", "NICKELODEON", "ZAROK"]): return "Çocuk"
-    if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]): return "Sinema & Dizi"
-    if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE", "STINGRAY"]): return "Müzik"
+    # 1'DEN 7'YE NUMARALANDIRILMIŞ KATEGORİLER
+    if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]): return "3. Spor"
+    if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]): return "2. Haber"
+    if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]): return "5. Belgesel"
+    if any(k in name_upper for k in ["ÇOCUK", "COCUK", "KIDS", "CARTOON", "DISNEY", "MINIKA", "BABY", "NICKELODEON", "ZAROK"]): return "6. Çocuk"
+    if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]): return "4. Sinema & Dizi"
+    if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE", "STINGRAY"]): return "7. Müzik"
 
     for nat in NATIONAL_WHITELIST:
         if nat in name_upper:
-            return "Ulusal"
+            return "1. Ulusal"
 
-    if "MUSIC" in orig_upper: return "Müzik"
-    if "NEWS" in orig_upper: return "Haber"
-    if "KIDS" in orig_upper or "ANIMATION" in orig_upper: return "Çocuk"
-    if "MOVIE" in orig_upper or "CINEMA" in orig_upper: return "Sinema & Dizi"
-    if "DOCUMENTARY" in orig_upper: return "Belgesel"
-    if "SPORTS" in orig_upper: return "Spor"
+    if "MUSIC" in orig_upper: return "7. Müzik"
+    if "NEWS" in orig_upper: return "2. Haber"
+    if "KIDS" in orig_upper or "ANIMATION" in orig_upper: return "6. Çocuk"
+    if "MOVIE" in orig_upper or "CINEMA" in orig_upper: return "4. Sinema & Dizi"
+    if "DOCUMENTARY" in orig_upper: return "5. Belgesel"
+    if "SPORTS" in orig_upper: return "3. Spor"
 
     return "Diğer"
 
@@ -110,28 +109,22 @@ def is_local_or_unwanted(name, group=""):
     name_upper = name.strip().upper()
     group_upper = group.upper()
 
-    # 1. KESİN YASAKLILAR
     if any(block in name_upper for block in STRICT_BLOCK_WORDS):
         return True
 
-    # 2. Radyo Kontrolü (Gelişmiş)
     if is_radio(name, group):
         return True
 
-    # 3. Ulusal listede varsa KABUL ET
     for national in NATIONAL_WHITELIST:
         if national in name_upper:
             return False
 
-    # 🎵 MÜZİK KANALLARINA ÖZEL İZİN (Yasaklı kelimelere takılmamaları için)
     if "MUSIC" in group_upper or any(m in name_upper for m in ["MUSIC", "MTV", "VEVO", "TRACE", "STINGRAY", "XITE"]):
         return False
 
-    # 4. Numaralı TV kanalları (Örn: TV 41)
     if re.search(r"(KANAL|TIVI|TV)\s*\d+", name_upper):
         return True
 
-    # 5. Yasaklı Kelimeler
     name_lower = name.lower()
     pattern = r'\b(' + '|'.join(re.escape(kw) for kw in EXCLUDE_KEYWORDS) + r')\b'
     if re.search(pattern, name_lower):
@@ -213,12 +206,12 @@ def main():
 
         final_group = get_category(normalized_name, group)
         
-        # 🗑️ BİLİNMEYEN "DİĞER" KATEGORİSİNİ TAMAMEN SİL (Sadece temiz kanallar kalır)
         if final_group == "Diğer":
             continue
 
         cleaned_channels.append((name.strip(), final_group, url))
 
+    # Kategori adının başındaki numaraya göre (Örn: "1. Ulusal") otomatik sıralayacak.
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
     with open("channels1.m3u", "w", encoding="utf-8") as f:
