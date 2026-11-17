@@ -49,21 +49,20 @@ LOGOS = {
     "CNBC-E": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png"
 }
 
-# 🇹🇷 Ana Kanallar Listesi
+# 🇹🇷 Beyaz Liste (Kaynakta kalmışlarsa çekilecekler)
 NATIONAL_WHITELIST = [
-    "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
-    "TV 8", "TV8", "KANAL 7", "KANAL7", "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
+    "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
     "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", "NTV", "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
     "A HABER", "AHABER", "TGRT HABER", "TGRTHABER", "HABER GLOBAL", "HABERGLOBAL",
     "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT", "HALK TV", "HALKTV",
     "TV 100", "TV100", "TELE 1", "TELE1", "KRT TV", "KRT", "ULUSAL KANAL", "ULUSALKANAL",
-    "TRT 1", "TRT1", "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
+    "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
     "TRT WORLD", "TRT SPOR", "TRTSPOR", "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
     "TRT MÜZİK", "TRT MUZIK", "TRTMÜZİK", "TRTMUZIK",
     "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA"
 ]
 
-# 🛑 MUTLAK YASAKLILAR (Bu kelimeler tek başına veya kelime içinde geçerse kanalı siler)
+# 🛑 MUTLAK YASAKLILAR
 STRICT_BLOCK_WORDS = [
     "DIYANET", "DİYANET", "SEMERKAND", "LALEGUL", "LALEGÜL", "KABE", "QURAN", "MENZIL", 
     "MEKKE", "MEDINE", "MADINAH", "MAKKAH", "ZAHRA", "RAFIDAIN", "THAQALAYN", "MUKABELE", 
@@ -103,7 +102,6 @@ def is_radio(name, group=""):
     return False
 
 def normalize_channel_name(name):
-    # Kanal adının sonundaki HD, (Turkiye), (1080p) gibi ekleri temizle
     clean = re.sub(r'[\(\[\{].*?[\)\]\}]', '', name)
     clean = re.sub(r'\b(HD|FHD|SD|UHD|4K|1080P|720P|CANLI|LIVE|TR|TURK|TURKEY)\b', '', clean, flags=re.IGNORECASE)
     clean = re.sub(r'\s+', ' ', clean).strip().upper()
@@ -113,11 +111,9 @@ def get_category(name, original_group=""):
     name_upper = name.upper()
     orig_upper = original_group.upper()
 
-    # 1. YETİŞKİN
     if any(a in orig_upper for a in ["YETİŞKİN", "YETISKIN", "ADULT", "XXX", "+18", "18+"]): return "8. Yetişkin"
     if any(k in name_upper for k in ["ADULT", "XXX", "18+", "PORN", "BRAZZERS", "HUSTLER", "DORCEL", "PLAYBOY", "PRIVATE", "BABES", "TUSHY", "BLACKED", "BANG BROS"]): return "8. Yetişkin"
 
-    # 2. DİĞER KATEGORİLER
     if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]): return "3. Spor"
     if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]): return "2. Haber"
     if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]): return "5. Belgesel"
@@ -125,7 +121,6 @@ def get_category(name, original_group=""):
     if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]): return "4. Sinema & Dizi"
     if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE", "STINGRAY"]): return "7. Müzik"
     
-    # 3. ULUSAL ONAY (Gevşetilmiş arama - doğrudan kelime eşleşmesi)
     for nat in NATIONAL_WHITELIST:
         if re.search(r'\b' + re.escape(nat) + r'\b', name_upper):
             return "1. Ulusal"
@@ -143,27 +138,22 @@ def is_local_or_unwanted(name, group=""):
     name_upper = name.strip().upper()
     group_upper = group.upper()
 
-    # 1. MUTLAK YASAKLILAR
     if any(block in name_upper for block in STRICT_BLOCK_WORDS):
         return True
 
-    # 2. RADYO KONTROLÜ
     if is_radio(name, group):
         return True
 
-    # 3. VIP PASS (Müzik ve Yetişkin Filtreye Takılmaz)
     if "MUSIC" in group_upper or any(m in name_upper for m in ["MUSIC", "MTV", "VEVO", "TRACE", "STINGRAY", "XITE"]):
         return False
     if any(a in group_upper for a in ["YETİŞKİN", "ADULT", "XXX", "+18", "18+"]) or any(a in name_upper for a in ["XXX", "BRAZZERS", "HUSTLER", "ADULT"]):
         return False
 
-    # 4. YEREL/ŞEHİR FİLTRESİ
     name_lower = name.lower()
     pattern_exclude = r'\b(' + '|'.join(re.escape(kw) for kw in EXCLUDE_KEYWORDS) + r')\b'
     if re.search(pattern_exclude, name_lower):
         return True
 
-    # 5. ULUSAL ONAY
     for national in NATIONAL_WHITELIST:
         if re.search(r'\b' + re.escape(national) + r'\b', name_upper):
             return False
@@ -172,30 +162,6 @@ def is_local_or_unwanted(name, group=""):
         return True
 
     return False
-
-def verify_link(url):
-    try:
-        res = requests.get(url, headers=HEADERS, timeout=TIMEOUT, stream=False)
-        return url if res.status_code == 200 else None
-    except:
-        return None
-
-def threaded_verify_links(entries):
-    if not CHECK_LINKS:
-        return entries
-        
-    valid_results = []
-    print(f"[{len(entries)} kanal için link doğrulaması yapılıyor...]")
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        future_map = {
-            executor.submit(verify_link, link): (name, group, logo, link)
-            for name, group, logo, link in entries
-        }
-        for future in as_completed(future_map):
-            name, group, logo, link = future_map[future]
-            if future.result():
-                valid_results.append((name, group, logo, link))
-    return valid_results
 
 def parse_m3u(url, default_label):
     try:
@@ -223,8 +189,7 @@ def parse_m3u(url, default_label):
                     link = lines[i + 1].strip()
                     if link.startswith("http"):
                         entries.append((name, group, logo, link))
-        
-        return threaded_verify_links(entries)
+        return entries
     except Exception as e:
         print(f"[{default_label}] Hata oluştu: {e}")
         return []
@@ -259,6 +224,22 @@ def main():
 
         cleaned_channels.append((name.strip(), final_group, final_logo, url))
 
+    # --- ANA KANALLARIN KESİN EKLENMESİ ---
+    # Bu liste dış kaynaklardan bağımsız olarak her zaman m3u dosyanızda görünür.
+    manual_channels = [
+        ("ATV HD", "1. Ulusal", LOGOS["ATV"], "https://trkvz-live.daioncdn.net/atv/atv.m3u8"),
+        ("Kanal D HD", "1. Ulusal", LOGOS["KANAL D"], "https://demiroren.daioncdn.net/kanald/kanald.m3u8"),
+        ("Show TV HD", "1. Ulusal", LOGOS["SHOW TV"], "https://ciner.daioncdn.net/showtv/showtv.m3u8"),
+        ("Star TV HD", "1. Ulusal", LOGOS["STAR TV"], "https://dogus.daioncdn.net/startv/startv.m3u8"),
+        ("NOW TV HD", "1. Ulusal", LOGOS["NOW TV"], "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"),
+        ("TV 8 HD", "1. Ulusal", LOGOS["TV 8"], "https://tv8.daioncdn.net/tv8/tv8.m3u8"),
+        ("Kanal 7 HD", "1. Ulusal", LOGOS["KANAL 7"], "https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8"),
+        ("TRT 1 HD", "1. Ulusal", LOGOS["TRT 1"], "https://tv-trt1.medya.trt.com.tr/master_720.m3u8"),
+    ]
+    
+    cleaned_channels.extend(manual_channels)
+
+    # A'dan Z'ye Sıralama (1. Ulusal -> 8. Yetişkin)
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
     with open("channels1.m3u", "w", encoding="utf-8") as f:
