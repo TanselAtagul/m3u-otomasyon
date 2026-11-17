@@ -1,3 +1,6 @@
+
+    
+
 import re
 import requests
 from datetime import datetime
@@ -11,9 +14,11 @@ TIMEOUT = 5
 MAX_WORKERS = 30
 CHECK_LINKS = False 
 
+# 🌐 Kaynaklara Yeni Yetişkin (+18) Listesi Eklendi
 SOURCES = {
     "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
     "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
+    "Yetişkin (+18)": "https://raw.githubusercontent.com/Izanami1618/AdultChannels/refs/heads/main/%2B18%20Channels"
     #"Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
@@ -39,7 +44,7 @@ LOGOS = {
     "CNBC-E": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png"
 }
 
-# 🇹🇷 Dinamik Olarak Çekilecek Diğer Kanallar (Ana kanallar Manuel'e taşındığı için buradan çıkarıldı)
+# 🇹🇷 Dinamik Olarak Çekilecek Diğer Kanallar
 NATIONAL_WHITELIST = [
     "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
     "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", "NTV", "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
@@ -106,6 +111,10 @@ def get_category(name, original_group=""):
     if any(k in name_upper for k in ["ÇOCUK", "COCUK", "KIDS", "CARTOON", "DISNEY", "MINIKA", "BABY", "NICKELODEON", "ZAROK"]): return "6. Çocuk"
     if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]): return "4. Sinema & Dizi"
     if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE", "STINGRAY"]): return "7. Müzik"
+    
+    # Yeni Eklenen Yetişkin Kategori Yönlendirmesi
+    if any(k in name_upper for k in ["ADULT", "XXX", "18+", "PORN", "BRAZZERS", "HUSTLER", "DORCEL", "PLAYBOY", "PRIVATE", "BABES", "TUSHY", "BLACKED", "BANG BROS"]): return "8. Yetişkin"
+    if any(a in orig_upper for a in ["YETİŞKİN", "YETISKIN", "ADULT", "XXX", "+18", "18+"]): return "8. Yetişkin"
 
     for nat in NATIONAL_WHITELIST:
         if nat in name_upper:
@@ -130,7 +139,10 @@ def is_local_or_unwanted(name, group=""):
     if is_radio(name, group):
         return True
 
+    # MÜZİK VE YETİŞKİN KANALLARINA ÖZEL İZİN (Bu kanallar filtreye takılıp silinmez)
     if "MUSIC" in group_upper or any(m in name_upper for m in ["MUSIC", "MTV", "VEVO", "TRACE", "STINGRAY", "XITE"]):
+        return False
+    if any(a in group_upper for a in ["YETİŞKİN", "ADULT", "XXX", "+18", "18+"]) or any(a in name_upper for a in ["XXX", "BRAZZERS", "HUSTLER", "ADULT"]):
         return False
 
     name_lower = name.lower()
@@ -235,9 +247,8 @@ def main():
 
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
-    # --- MANUEL EKLENEN KANALLAR (Resmi & Kesintisiz Yayınlar) ---
+    # --- MANUEL EKLENEN KANALLAR (Resmi & Kesintisiz Ulusal Yayınlar) ---
     manual_channels = [
-        # Resmi Ulusal Kanallar (Logoları ile Birlikte)
         ("ATV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png", "https://trkvz-live.daioncdn.net/atv/atv.m3u8"),
         ("Kanal D HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png", "https://demiroren.daioncdn.net/kanald/kanald.m3u8"),
         ("Show TV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png", "https://ciner.daioncdn.net/showtv/showtv.m3u8"),
@@ -245,21 +256,9 @@ def main():
         ("NOW TV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png", "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"),
         ("TV8 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png", "https://tv8.daioncdn.net/tv8/tv8.m3u8"),
         ("Kanal 7 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png", "https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8"),
-        ("TRT 1 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png", "https://tv-trt1.medya.trt.com.tr/master_720.m3u8"),
-        
-        # Yetişkin Kanalları
-        ("Brazzers HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/e/e1/Brazzers_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6182/index.m3u8"),
-        ("Dorcel TV HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/2/23/Dorcel_TV_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/245/index.m3u8"),
-        ("Hustler HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hustler_TV.svg/1200px-Hustler_TV.svg.png", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/9065/index.m3u8"),
-        ("Playboy TV", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/e/e0/Playboy_TV_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/527/index.m3u8"),
-        ("Private TV", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/3/30/Private_Media_Group_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/243/index.m3u8"),
-        ("Vixen HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/c/cf/Vixen_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6265/index.m3u8"),
-        ("Blacked HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/5/5a/Blacked_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6178/index.m3u8"),
-        ("Tushy HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/0/08/Tushy_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6261/index.m3u8"),
-        ("Bang Bros HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/5/54/BangBros_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6173/index.m3u8")
+        ("TRT 1 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png", "https://tv-trt1.medya.trt.com.tr/master_720.m3u8")
     ]
     
-    # Kanalları birleştirip, en son halleriyle tekrar (A-Z) sıralıyoruz ki manuel eklenenler listenin en başında/ortasında doğru yere otursun
     cleaned_channels.extend(manual_channels)
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
     # ----------------------------------------------
