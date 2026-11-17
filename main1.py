@@ -21,15 +21,33 @@ SOURCES = {
 
 # 🇹🇷 Ana Kanallar Listesi
 NATIONAL_WHITELIST = [
-    "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", "ATV FHD",
-    "TV 8", "TV8", "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
-    "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", "NTV", "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
-    "A HABER", "AHABER", "TGRT HABER", "TGRTHABER", "HABER GLOBAL", "HABERGLOBAL",
+    "ATV", "ATV FHD",
+    "KANAL D", "KANALD", 
+    "SHOW TV", "SHOWTV", 
+    "STAR TV", "STARTV", 
+    "NOW TV", "NOWTV", 
+    "TV 8", "TV8", 
+    "TEVE 2", "TEVE2", "TV 2", "TV2", 
+    "DMAX", "D MAX", 
+    "TLC", 
+    "CNBC-E", "CNBCE",
+    "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", 
+    "NTV", 
+    "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
+    "A HABER", "AHABER",
+    "TGRT HABER", "TGRTHABER",
+    "HABER GLOBAL", "HABERGLOBAL",
     "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT",
-    "TRT 1", "TRT1", "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
-    "TRT SPOR", "TRTSPOR", "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
+    "TRT 1", "TRT1", "TRT 4K", 
+    "TRT HABER", "TRTHABER", 
+    "TRT BELGESEL", "TRTBELGESEL",
+    "TRT SPOR", "TRTSPOR", 
+    "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
     "TRT MÜZİK", "TRT MUZIK", "TRTMÜZİK", "TRTMUZIK",
-    "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA"
+    "A SPOR", "ASPOR", 
+    "A NEWS", "ANEWS", 
+    "MİNİKA", 
+    "MINIKA"
 ]
 
 # 🛑 MUTLAK YASAKLILAR
@@ -86,7 +104,7 @@ def get_category(name, original_group=""):
 
     if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]): return "3. Spor"
     if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]): return "2. Haber"
-    if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]): return "5. Belgesel"
+    if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "CNBC-E", "CNBCE", "DMAX", "WILD", "ANIMAL"]): return "5. Belgesel"
     if any(k in name_upper for k in ["ÇOCUK", "COCUK", "KIDS", "CARTOON", "DISNEY", "MINIKA", "BABY", "NICKELODEON", "ZAROK"]): return "6. Çocuk"
     if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]): return "4. Sinema & Dizi"
     if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE", "STINGRAY"]): return "7. Müzik"
