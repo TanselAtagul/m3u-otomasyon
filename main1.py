@@ -13,43 +13,15 @@ CHECK_LINKS = False
 
 # 🌐 TÜM KAYNAKLAR
 SOURCES = {
-    "turk": "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
+   # "turk": "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
    # "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
    # "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
    # "Free-TV Türkiye": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8",
-    "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u",
+   # "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u",
     "Yetişkin (+18)": "https://raw.githubusercontent.com/Izanami1618/AdultChannels/refs/heads/main/%2B18%20Channels"
 }
 
-# 🇹🇷 Kanal Logoları Kütüphanesi
-LOGOS = {
-    "ATV": "https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png",
-    "KANAL D": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png",
-    "SHOW TV": "https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png",
-    "STAR TV": "https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png",
-    "NOW TV": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png",
-    "TV 8": "https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png",
-    "KANAL 7": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png",
-    "TRT 1": "https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png",
-    "TRT HABER": "https://upload.wikimedia.org/wikipedia/commons/b/b3/TRT_Haber_logo_2021.png",
-    "TRT SPOR": "https://upload.wikimedia.org/wikipedia/commons/a/ae/TRT_Spor_logo_2021.png",
-    "TRT BELGESEL": "https://upload.wikimedia.org/wikipedia/commons/8/82/TRT_Belgesel_logo_2021.png",
-    "TRT ÇOCUK": "https://upload.wikimedia.org/wikipedia/commons/7/7b/TRT_%C3%87ocuk_logo_2021.png",
-    "TRT MÜZİK": "https://upload.wikimedia.org/wikipedia/commons/8/8f/TRT_M%C3%BCzik_logo_2021.png",
-    "A SPOR": "https://upload.wikimedia.org/wikipedia/commons/2/23/A_Spor_logo.png",
-    "A HABER": "https://upload.wikimedia.org/wikipedia/commons/5/52/A_Haber_logo.png",
-    "NTV": "https://upload.wikimedia.org/wikipedia/commons/3/36/NTV_logo.png",
-    "CNN TURK": "https://upload.wikimedia.org/wikipedia/commons/8/80/CNN_T%C3%BCrk_logo.png",
-    "HABERTURK": "https://upload.wikimedia.org/wikipedia/commons/6/61/Habert%C3%BCrk_TV_logo.png",
-    "HALK TV": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Halk_TV_logo.png",
-    "TELE 1": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Tele1_logo.png",
-    "KRT TV": "https://upload.wikimedia.org/wikipedia/commons/7/7c/KRT_TV_logo.png",
-    "TV 100": "https://upload.wikimedia.org/wikipedia/commons/5/55/Tv100_logo.png",
-    "24 TV": "https://upload.wikimedia.org/wikipedia/commons/5/50/24_TV_logo.png",
-    "DMAX": "https://upload.wikimedia.org/wikipedia/commons/8/87/DMAX_Turkey_logo.png",
-    "TLC": "https://upload.wikimedia.org/wikipedia/commons/3/36/TLC_Turkey_logo.png",
-    "CNBC-E": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png"
-}
+
 
 # 🇹🇷 Ana Kanallar Listesi (Tümü GitHub havuzlarından .m3u8 formatında çekilecek)
 NATIONAL_WHITELIST = [
@@ -251,19 +223,7 @@ def main():
 
         cleaned_channels.append((name.strip(), final_group, final_logo, url))
 
-    # SADECE YETİŞKİN KANALLARI MANUEL EKLENİYOR
-    manual_channels = [
-        ("Brazzers HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/e/e1/Brazzers_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6182/index.m3u8"),
-        ("Dorcel TV HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/2/23/Dorcel_TV_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/245/index.m3u8"),
-        ("Hustler HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hustler_TV.svg/1200px-Hustler_TV.svg.png", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/9065/index.m3u8"),
-        ("Playboy TV", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/e/e0/Playboy_TV_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/527/index.m3u8"),
-        ("Private TV", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/3/30/Private_Media_Group_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/243/index.m3u8"),
-        ("Vixen HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/c/cf/Vixen_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6265/index.m3u8"),
-        ("Blacked HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/5/5a/Blacked_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6178/index.m3u8"),
-        ("Tushy HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/0/08/Tushy_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6261/index.m3u8"),
-        ("Bang Bros HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/5/54/BangBros_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6173/index.m3u8")
-    ]
-    
+       
     cleaned_channels.extend(manual_channels)
 
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
