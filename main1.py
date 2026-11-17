@@ -11,50 +11,69 @@ TIMEOUT = 5
 MAX_WORKERS = 30
 CHECK_LINKS = False 
 
-# NOT: Sadece Türk kanallarını istiyorsanız "Müzik TV (Global)" satırını silebilirsiniz.
 SOURCES = {
     "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
     "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
-    "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u" 
+    "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
 # 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları
 NATIONAL_WHITELIST = [
-    "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", "NOW",
+    "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
     "TV 8", "TV8", "TV 8.5", "TV8.5", "TV8,5", "TV85", "KANAL 7", "KANAL7", "BEYAZ TV", "BEYAZTV",
-    "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", 
+    "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", "TABII", "TABİİ",
     "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", "NTV", "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
     "A HABER", "AHABER", "TGRT HABER", "TGRTHABER", "HABER GLOBAL", "HABERGLOBAL",
     "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT", "HALK TV", "HALKTV",
-    "SÖZCÜ TV", "SOZCU TV", "SÖZCÜTV", "SOZCUTV", "SZC TV", "SZCTV", "TV 100", "TV100",
+    "SÖZCÜ TV", "SOZCU TV", "SÖZCÜTV", "SOZCUTV", "SZC TV", "SZCTV", "TV 100", "TV100", "TVNET", "TV NET",
     "TELE 1", "TELE1", "KRT TV", "KRT", "ULUSAL KANAL", "ULUSALKANAL",
     "BENGÜTÜRK", "BENGUTURK", "BENGÜ TÜRK", "BENGU TURK",
-    "TRT 1", "TRT1", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
+    "TRT 1", "TRT1", "TRT 2", "TRT 3", "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
+    "TRT TÜRK", "TRT TURK", "TRT WORLD",
     "TRT SPOR", "TRTSPOR", "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
     "TRT MÜZİK", "TRT MUZIK", "TRTMÜZİK", "TRTMUZIK",
     "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA", "VAV TV", "VAVTV"
 ]
 
-# 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler (Regex ile Tam Kelime)
+# 🛑 MUTLAK YASAKLILAR (Bu kelimeler varsa kanal Whitelist'te olsa bile SİLİNİR)
+STRICT_BLOCK_WORDS = [
+    "DIYANET", "DİYANET", "SEMERKAND", "LALEGUL", "LALEGÜL", "KABE", "QURAN", "MENZIL", 
+    "MEKKE", "MEDINE", "MADINAH", "MAKKAH", "ZAHRA", "RAFIDAIN", "THAQALAYN", "MUKABELE", 
+    "SERCEM", "IKRA", "İSVİÇRE", "ISVICRE", "AVRUPA", "GURBET", "TAGESSCHAU", "RAKUTEN", 
+    "SHEMAROO", "ALMAHRIAH", "MEKAMELEEN", "NDR", "INTV", "AUSTRALIA", "AL QURAN"
+]
+
+# 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler
 EXCLUDE_KEYWORDS = [
     "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon", "dost", "fb", "bjk", "gs", 
     "avaz", "arabi", "eba", "tempo", "fanatik", "mercan", "vuslat", "arma", "hür", "damar", "bürüksel",
     "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya", "sağlık", "kurdi", "sıla", "ezo", "zeyno", "bengü", 
     "fırat", "genc", "mbc", "maisum", "persiana", "hope", "eskişehir", "samsun", "mersin", "gaziantep", "balıkesir", "isparta", "tokat", 
     "elazığ", "kocaeli", "çorum", "manisa", "antalya", "bodrum", "çanakkale", "kahramanmaraş",
-    "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli"
+    "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli",
+    "alanya", "aksu", "aras", "brüksel", "cekmekoy", "erciyes", "hunat", "icel", "izmir", 
+    "kardelen", "kent", "metropol", "mugla", "olay", "pazarcik", "urfa", "van", "deniz", "derin",
+    "ada", "bric", "ciftci", "tarim", "finest", "ilke", "life", "sun", "ton", "tva", "kanal z"
 ]
-
-# 📻 RADYO FİLTRESİ
-RADIO_KEYWORDS = ["RADYO", "RADIO", " FM ", "FM1", "FM2", "AUDIO", "RJD", "POWER FM", "SUPER FM", "PAL FM", "SLOW TURK"]
 
 def is_radio(name, group=""):
     text_to_check = f"{name} {group}".upper()
-    for key in RADIO_KEYWORDS:
-        if key in text_to_check:
-            return True
-    if re.search(r'\b\w+FM\b', text_to_check):
+    
+    # 1. Regex ile tam kelime radyo/audio kontrolü
+    if re.search(r'\b(FM|RADYO|RADIO|AUDIO|PODCAST|LISTEN|RADIOS)\b', text_to_check):
         return True
+        
+    # 2. Bilinen spesifik radyo isimleri
+    radio_clues = [
+        "POWER FM", "SUPER FM", "PAL FM", "SLOW TURK", "VIRGIN", "METRO FM", 
+        "JOY FM", "KRAL FM", "ALEM FM", "FENOMEN", "SHOW RADYO", "BEST FM", 
+        "BABA RADYO", "LIG RADYO", "TRT FM", "RJD"
+    ]
+    
+    for clue in radio_clues:
+        if clue in text_to_check:
+            return True
+            
     return False
 
 def normalize_channel_name(name):
@@ -64,58 +83,55 @@ def normalize_channel_name(name):
     return clean
 
 def get_category(name, original_group=""):
-    """Kanal isimlerini ve eski gruplarını analiz edip temiz Türkçe kategorilere ayırır."""
     name_upper = name.upper()
     orig_upper = original_group.upper()
 
-    # 1. İsme Göre Kesin Kategori Atamaları (Öncelikli)
-    if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]):
-        return "Spor"
-    if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]):
-        return "Haber"
-    if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]):
-        return "Belgesel"
-    if any(k in name_upper for k in ["ÇOCUK", "COCUK", "KIDS", "CARTOON", "DISNEY", "MINIKA", "BABY", "NICKELODEON", "ZAROK"]):
-        return "Çocuk"
-    if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]):
-        return "Sinema & Dizi"
-    if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE"]):
-        return "Müzik"
-    if any(k in name_upper for k in ["DIYANET", "DİYANET", "SEMERKAND", "LALEGUL", "LALEGÜL", "KABE", "QURAN", "MENZIL"]):
-        return "Dini"
+    if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]): return "Spor"
+    if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]): return "Haber"
+    if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]): return "Belgesel"
+    if any(k in name_upper for k in ["ÇOCUK", "COCUK", "KIDS", "CARTOON", "DISNEY", "MINIKA", "BABY", "NICKELODEON", "ZAROK"]): return "Çocuk"
+    if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]): return "Sinema & Dizi"
+    if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE", "STINGRAY"]): return "Müzik"
 
-    # 2. Üstteki kategorilere girmediyse ve Beyaz Listede varsa "Ulusal" yap
     for nat in NATIONAL_WHITELIST:
         if nat in name_upper:
             return "Ulusal"
 
-    # 3. İsimden anlaşılamadıysa orijinal M3U grubuna bakarak Türkçeleştir
     if "MUSIC" in orig_upper: return "Müzik"
     if "NEWS" in orig_upper: return "Haber"
     if "KIDS" in orig_upper or "ANIMATION" in orig_upper: return "Çocuk"
     if "MOVIE" in orig_upper or "CINEMA" in orig_upper: return "Sinema & Dizi"
     if "DOCUMENTARY" in orig_upper: return "Belgesel"
-    if "RELIGIOUS" in orig_upper: return "Dini"
     if "SPORTS" in orig_upper: return "Spor"
 
-    # 4. Hiçbirine uymuyorsa
     return "Diğer"
 
 def is_local_or_unwanted(name, group=""):
     name_upper = name.strip().upper()
+    group_upper = group.upper()
 
+    # 1. KESİN YASAKLILAR
+    if any(block in name_upper for block in STRICT_BLOCK_WORDS):
+        return True
+
+    # 2. Radyo Kontrolü (Gelişmiş)
     if is_radio(name, group):
         return True
 
-    # Ulusal listede varsa DİREKT KABUL ET
+    # 3. Ulusal listede varsa KABUL ET
     for national in NATIONAL_WHITELIST:
         if national in name_upper:
             return False
 
+    # 🎵 MÜZİK KANALLARINA ÖZEL İZİN (Yasaklı kelimelere takılmamaları için)
+    if "MUSIC" in group_upper or any(m in name_upper for m in ["MUSIC", "MTV", "VEVO", "TRACE", "STINGRAY", "XITE"]):
+        return False
+
+    # 4. Numaralı TV kanalları (Örn: TV 41)
     if re.search(r"(KANAL|TIVI|TV)\s*\d+", name_upper):
         return True
 
-    # Yasaklı kelimeleri "Tam Kelime" (Regex) olarak kontrol et
+    # 5. Yasaklı Kelimeler
     name_lower = name.lower()
     pattern = r'\b(' + '|'.join(re.escape(kw) for kw in EXCLUDE_KEYWORDS) + r')\b'
     if re.search(pattern, name_lower):
@@ -195,12 +211,14 @@ def main():
         seen_urls.add(url)
         seen_normalized_names.add(normalized_name)
 
-        # YENİ KATEGORİ SİSTEMİNİ UYGULA
         final_group = get_category(normalized_name, group)
+        
+        # 🗑️ BİLİNMEYEN "DİĞER" KATEGORİSİNİ TAMAMEN SİL (Sadece temiz kanallar kalır)
+        if final_group == "Diğer":
+            continue
 
         cleaned_channels.append((name.strip(), final_group, url))
 
-    # Dosyayı kategoriye (group-title) göre A'dan Z'ye sıralayarak yaz
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
     with open("channels1.m3u", "w", encoding="utf-8") as f:
