@@ -19,7 +19,7 @@ SOURCES = {
 # 🇹🇷 Sadece Kabul Edilecek Temel Ulusal TV Kanalları
 NATIONAL_WHITELIST = [
     "TRT 1", "KANAL D", "SHOW TV", "STAR TV", "NOW TV", "TV8", "KANAL 7", 
-    "FOX TV","HABERTURK", "NTV", "CNN TURK", "TRT HABER", "HALK TV", "A HABER", "TGRT HABER",
+    "FOX TV","HABERTURK", "NTV", "CNN TURK", "TRT HABER","A HABER", "TGRT HABER",
     "HABER GLOBAL", "24 TV"
 ]
 
