@@ -14,7 +14,7 @@ CHECK_LINKS = False
 # 🌐 TÜM KAYNAKLAR
 SOURCES = {
     "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
-    "Türk Yayınları": "https://streams.uzunmuhalefet.com/lists/tr.m3u",
+    "Türk Yayınları": "https://onureroz.com/indirmeler/turk/index.m3u",
     "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u",
     "Yetişkin (+18)": "https://raw.githubusercontent.com/Izanami1618/AdultChannels/refs/heads/main/%2B18%20Channels"
 }
