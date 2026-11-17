@@ -19,10 +19,8 @@ SOURCES = {
 # 🇹🇷 Sadece Kabul Edilecek Temel Ulusal TV Kanalları
 NATIONAL_WHITELIST = [
     "TRT 1", "KANAL D", "SHOW TV", "STAR TV", "NOW TV", "TV8", "KANAL 7", 
-    "BEYAZ TV", "TEVE2", "TV360", "TV4", "TRT TURK", "TRT AVAZ", "TRT WORLD", 
-    "TRT ARABI", "TRT KURDI", "TRT 4K", "KANAL 7 AVRUPA", "EURO D", "FOX TV",
-    "HABERTURK", "NTV", "CNN TURK", "TRT HABER", "HALK TV", "A HABER", "TGRT HABER",
-    "HABER GLOBAL", "24 TV", "EKOL TV", "TELE1", "ULKE TV", "TV 8.5"
+    "FOX TV","HABERTURK", "NTV", "CNN TURK", "TRT HABER", "HALK TV", "A HABER", "TGRT HABER",
+    "HABER GLOBAL", "24 TV"
 ]
 
 # 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler
@@ -30,7 +28,7 @@ EXCLUDE_KEYWORDS = [
     "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon","turk","türk","dost","film","top","tv","fb","bjk","gs" 
     "avaz","halk","diyanet","beyaz","arabi","eba","life","tempo","ton","fanatik","mercan","vuslat","sun","arma","hür","damar","bürüksel"
     "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya","sağlık","sinema","kurdi","sıla","ezo","zeyno","bengü","tjk",
-    
+    "","","","","","","","","","","","","","","","","","","","","","",
     "eskişehir", "samsun", "mersin", "gaziantep", "balıkesir", "isparta", "tokat", 
     "elazığ", "kocaeli", "çorum", "manisa", "antalya", "bodrum", "çanakkale", "kahramanmaraş",
     "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli"
