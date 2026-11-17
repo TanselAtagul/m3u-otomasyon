@@ -49,14 +49,15 @@ LOGOS = {
     "CNBC-E": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png"
 }
 
-# 🇹🇷 Beyaz Liste (Kaynakta kalmışlarsa çekilecekler)
+# 🇹🇷 Ana Kanallar Listesi (Tümü GitHub havuzlarından .m3u8 formatında çekilecek)
 NATIONAL_WHITELIST = [
-    "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
+    "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
+    "TV 8", "TV8", "KANAL 7", "KANAL7", "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
     "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", "NTV", "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
     "A HABER", "AHABER", "TGRT HABER", "TGRTHABER", "HABER GLOBAL", "HABERGLOBAL",
     "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT", "HALK TV", "HALKTV",
     "TV 100", "TV100", "TELE 1", "TELE1", "KRT TV", "KRT", "ULUSAL KANAL", "ULUSALKANAL",
-    "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
+    "TRT 1", "TRT1", "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
     "TRT WORLD", "TRT SPOR", "TRTSPOR", "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
     "TRT MÜZİK", "TRT MUZIK", "TRTMÜZİK", "TRTMUZIK",
     "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA"
@@ -163,6 +164,30 @@ def is_local_or_unwanted(name, group=""):
 
     return False
 
+def verify_link(url):
+    try:
+        res = requests.get(url, headers=HEADERS, timeout=TIMEOUT, stream=False)
+        return url if res.status_code == 200 else None
+    except:
+        return None
+
+def threaded_verify_links(entries):
+    if not CHECK_LINKS:
+        return entries
+        
+    valid_results = []
+    print(f"[{len(entries)} kanal için link doğrulaması yapılıyor...]")
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_map = {
+            executor.submit(verify_link, link): (name, group, logo, link)
+            for name, group, logo, link in entries
+        }
+        for future in as_completed(future_map):
+            name, group, logo, link = future_map[future]
+            if future.result():
+                valid_results.append((name, group, logo, link))
+    return valid_results
+
 def parse_m3u(url, default_label):
     try:
         res = requests.get(url, headers=HEADERS, timeout=10)
@@ -224,22 +249,21 @@ def main():
 
         cleaned_channels.append((name.strip(), final_group, final_logo, url))
 
-    # --- ANA KANALLARIN KESİN EKLENMESİ ---
-    # Bu liste dış kaynaklardan bağımsız olarak her zaman m3u dosyanızda görünür.
+    # SADECE YETİŞKİN KANALLARI MANUEL EKLENİYOR
     manual_channels = [
-        ("ATV HD", "1. Ulusal", LOGOS["ATV"], "https://trkvz-live.daioncdn.net/atv/atv.m3u8"),
-        ("Kanal D HD", "1. Ulusal", LOGOS["KANAL D"], "https://demiroren.daioncdn.net/kanald/kanald.m3u8"),
-        ("Show TV HD", "1. Ulusal", LOGOS["SHOW TV"], "https://ciner.daioncdn.net/showtv/showtv.m3u8"),
-        ("Star TV HD", "1. Ulusal", LOGOS["STAR TV"], "https://dogus.daioncdn.net/startv/startv.m3u8"),
-        ("NOW TV HD", "1. Ulusal", LOGOS["NOW TV"], "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"),
-        ("TV 8 HD", "1. Ulusal", LOGOS["TV 8"], "https://tv8.daioncdn.net/tv8/tv8.m3u8"),
-        ("Kanal 7 HD", "1. Ulusal", LOGOS["KANAL 7"], "https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8"),
-        ("TRT 1 HD", "1. Ulusal", LOGOS["TRT 1"], "https://tv-trt1.medya.trt.com.tr/master_720.m3u8"),
+        ("Brazzers HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/e/e1/Brazzers_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6182/index.m3u8"),
+        ("Dorcel TV HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/2/23/Dorcel_TV_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/245/index.m3u8"),
+        ("Hustler HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hustler_TV.svg/1200px-Hustler_TV.svg.png", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/9065/index.m3u8"),
+        ("Playboy TV", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/e/e0/Playboy_TV_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/527/index.m3u8"),
+        ("Private TV", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/3/30/Private_Media_Group_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/243/index.m3u8"),
+        ("Vixen HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/c/cf/Vixen_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6265/index.m3u8"),
+        ("Blacked HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/5/5a/Blacked_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6178/index.m3u8"),
+        ("Tushy HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/0/08/Tushy_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6261/index.m3u8"),
+        ("Bang Bros HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/5/54/BangBros_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6173/index.m3u8")
     ]
     
     cleaned_channels.extend(manual_channels)
 
-    # A'dan Z'ye Sıralama (1. Ulusal -> 8. Yetişkin)
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
     with open("channels1.m3u", "w", encoding="utf-8") as f:
