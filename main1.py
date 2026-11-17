@@ -13,17 +13,13 @@ CHECK_LINKS = False
 
 # 🌐 TÜM KAYNAKLAR
 SOURCES = {
-   # "turk": "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
-   # "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
-   # "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
-   # "Free-TV Türkiye": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8",
-   # "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u",
+    "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
+    "Free-TV Türkiye": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8",
+    "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u",
     "Yetişkin (+18)": "https://raw.githubusercontent.com/Izanami1618/AdultChannels/refs/heads/main/%2B18%20Channels"
 }
 
-
-
-# 🇹🇷 Ana Kanallar Listesi (Tümü GitHub havuzlarından .m3u8 formatında çekilecek)
+# 🇹🇷 Ana Kanallar Listesi
 NATIONAL_WHITELIST = [
     "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
     "TV 8", "TV8", "KANAL 7", "KANAL7", "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
@@ -138,30 +134,6 @@ def is_local_or_unwanted(name, group=""):
 
     return False
 
-def verify_link(url):
-    try:
-        res = requests.get(url, headers=HEADERS, timeout=TIMEOUT, stream=False)
-        return url if res.status_code == 200 else None
-    except:
-        return None
-
-def threaded_verify_links(entries):
-    if not CHECK_LINKS:
-        return entries
-        
-    valid_results = []
-    print(f"[{len(entries)} kanal için link doğrulaması yapılıyor...]")
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        future_map = {
-            executor.submit(verify_link, link): (name, group, logo, link)
-            for name, group, logo, link in entries
-        }
-        for future in as_completed(future_map):
-            name, group, logo, link = future_map[future]
-            if future.result():
-                valid_results.append((name, group, logo, link))
-    return valid_results
-
 def parse_m3u(url, default_label):
     try:
         res = requests.get(url, headers=HEADERS, timeout=10)
@@ -175,10 +147,6 @@ def parse_m3u(url, default_label):
                 line_info = lines[i]
                 group_match = re.search(r'group-title="([^"]+)"', line_info)
                 group = group_match.group(1) if group_match else default_label
-                
-                logo_match = re.search(r'tvg-logo="([^"]+)"', line_info, re.IGNORECASE)
-                logo = logo_match.group(1) if logo_match else ""
-
                 name = line_info.split(",")[-1].strip()
                 
                 if is_local_or_unwanted(name, group):
@@ -187,7 +155,7 @@ def parse_m3u(url, default_label):
                 if i + 1 < len(lines):
                     link = lines[i + 1].strip()
                     if link.startswith("http"):
-                        entries.append((name, group, logo, link))
+                        entries.append((name, group, link))
         return entries
     except Exception as e:
         print(f"[{default_label}] Hata oluştu: {e}")
@@ -204,7 +172,7 @@ def main():
     seen_normalized_names = set()
     cleaned_channels = []
 
-    for name, group, logo, url in raw_channels:
+    for name, group, url in raw_channels:
         normalized_name = normalize_channel_name(name)
         nospace_name = normalized_name.replace(" ", "")
         
@@ -218,22 +186,15 @@ def main():
         if final_group == "Diğer":
             continue
 
-        dict_logo = LOGOS.get(normalized_name, "")
-        final_logo = dict_logo if dict_logo else logo
-
-        cleaned_channels.append((name.strip(), final_group, final_logo, url))
-
-       
-    cleaned_channels.extend(manual_channels)
+        cleaned_channels.append((name.strip(), final_group, url))
 
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write("# Otomatik Oluşturulan Playlist - Sadece TV Kanalları (Radyosuz)\n")
-        for name, group, logo, url in cleaned_channels:
-            logo_attr = f' tvg-logo="{logo}"' if logo else ""
-            f.write(f'#EXTINF:-1 group-title="{group}"{logo_attr},{name}\n{url}\n')
+        for name, group, url in cleaned_channels:
+            f.write(f'#EXTINF:-1 group-title="{group}",{name}\n{url}\n')
             
     print(f"--- İşlem Tamamlandı: {len(cleaned_channels)} adet TV kanalı 'channels1.m3u' dosyasına kaydedildi. ---")
 
