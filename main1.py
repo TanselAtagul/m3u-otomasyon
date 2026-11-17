@@ -49,7 +49,7 @@ LOGOS = {
     "CNBC-E": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png"
 }
 
-# 🇹🇷 Beyaz Liste (Dinamik Çekilecek Kanallar)
+# 🇹🇷 Ana Kanallar Listesi
 NATIONAL_WHITELIST = [
     "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
     "TV 8", "TV8", "KANAL 7", "KANAL7", "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
@@ -63,7 +63,7 @@ NATIONAL_WHITELIST = [
     "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA"
 ]
 
-# 🛑 MUTLAK YASAKLILAR (İçinde "ATV" geçse bile acımaz, siler)
+# 🛑 MUTLAK YASAKLILAR (Bu kelimeler tek başına veya kelime içinde geçerse kanalı siler)
 STRICT_BLOCK_WORDS = [
     "DIYANET", "DİYANET", "SEMERKAND", "LALEGUL", "LALEGÜL", "KABE", "QURAN", "MENZIL", 
     "MEKKE", "MEDINE", "MADINAH", "MAKKAH", "ZAHRA", "RAFIDAIN", "THAQALAYN", "MUKABELE", 
@@ -72,7 +72,7 @@ STRICT_BLOCK_WORDS = [
     "BENGU", "BENGÜ", "BEYAZ", "SOZCU", "SÖZCÜ", "SZC", "TABII", "TABİİ", "TRT 2", "TRT 3", 
     "TRT TURK", "TRT TÜRK", "TV 8.5", "TV8.5", "TV 8,5", "TV85", "TVNET", "TV NET", "VAV",
     "TV 25", "TV 264", "HABER 61", "HABER61", "AS TV", "OLAYTURK", "TH TURK HABER", "TURKHABER",
-    "FAMA", "ALTERNA", "LIRA", "SPEKTRA", "KANDELA", "IMPACT", "ALANYA", "EKOTURK", "GUNEYDOGU", "HMI PROMZ"
+    "FAMA", "ALTERNA", "LIRA", "SPEKTRA", "KANDELA", "IMPACT", "ALANYA", "EKOTURK", "GUNEYDOGU", "HMI PROMZ", "BABY TIME"
 ]
 
 # 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler
@@ -103,6 +103,7 @@ def is_radio(name, group=""):
     return False
 
 def normalize_channel_name(name):
+    # Kanal adının sonundaki HD, (Turkiye), (1080p) gibi ekleri temizle
     clean = re.sub(r'[\(\[\{].*?[\)\]\}]', '', name)
     clean = re.sub(r'\b(HD|FHD|SD|UHD|4K|1080P|720P|CANLI|LIVE|TR|TURK|TURKEY)\b', '', clean, flags=re.IGNORECASE)
     clean = re.sub(r'\s+', ' ', clean).strip().upper()
@@ -116,7 +117,7 @@ def get_category(name, original_group=""):
     if any(a in orig_upper for a in ["YETİŞKİN", "YETISKIN", "ADULT", "XXX", "+18", "18+"]): return "8. Yetişkin"
     if any(k in name_upper for k in ["ADULT", "XXX", "18+", "PORN", "BRAZZERS", "HUSTLER", "DORCEL", "PLAYBOY", "PRIVATE", "BABES", "TUSHY", "BLACKED", "BANG BROS"]): return "8. Yetişkin"
 
-    # 2. DİĞER ANA KATEGORİLER
+    # 2. DİĞER KATEGORİLER
     if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]): return "3. Spor"
     if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]): return "2. Haber"
     if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]): return "5. Belgesel"
@@ -124,10 +125,10 @@ def get_category(name, original_group=""):
     if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]): return "4. Sinema & Dizi"
     if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE", "STINGRAY"]): return "7. Müzik"
     
-    # 3. ULUSAL (Regex Tam Kelime Taraması ile Liratv vb. engellenir)
-    pattern_white = r'\b(' + '|'.join(re.escape(nw) for nw in NATIONAL_WHITELIST) + r')\b'
-    if re.search(pattern_white, name_upper):
-        return "1. Ulusal"
+    # 3. ULUSAL ONAY (Gevşetilmiş arama - doğrudan kelime eşleşmesi)
+    for nat in NATIONAL_WHITELIST:
+        if re.search(r'\b' + re.escape(nat) + r'\b', name_upper):
+            return "1. Ulusal"
 
     if "MUSIC" in orig_upper: return "7. Müzik"
     if "NEWS" in orig_upper: return "2. Haber"
@@ -142,27 +143,30 @@ def is_local_or_unwanted(name, group=""):
     name_upper = name.strip().upper()
     group_upper = group.upper()
 
+    # 1. MUTLAK YASAKLILAR
     if any(block in name_upper for block in STRICT_BLOCK_WORDS):
         return True
 
+    # 2. RADYO KONTROLÜ
     if is_radio(name, group):
         return True
 
-    # VIP PASS
+    # 3. VIP PASS (Müzik ve Yetişkin Filtreye Takılmaz)
     if "MUSIC" in group_upper or any(m in name_upper for m in ["MUSIC", "MTV", "VEVO", "TRACE", "STINGRAY", "XITE"]):
         return False
     if any(a in group_upper for a in ["YETİŞKİN", "ADULT", "XXX", "+18", "18+"]) or any(a in name_upper for a in ["XXX", "BRAZZERS", "HUSTLER", "ADULT"]):
         return False
 
+    # 4. YEREL/ŞEHİR FİLTRESİ
     name_lower = name.lower()
     pattern_exclude = r'\b(' + '|'.join(re.escape(kw) for kw in EXCLUDE_KEYWORDS) + r')\b'
     if re.search(pattern_exclude, name_lower):
         return True
 
-    # ULUSAL ONAY (Sadece Regex Tam Kelime)
-    pattern_white = r'\b(' + '|'.join(re.escape(nw) for nw in NATIONAL_WHITELIST) + r')\b'
-    if re.search(pattern_white, name_upper):
-        return False
+    # 5. ULUSAL ONAY
+    for national in NATIONAL_WHITELIST:
+        if re.search(r'\b' + re.escape(national) + r'\b', name_upper):
+            return False
 
     if re.search(r"(KANAL|TIVI|TV)\s*\d+", name_upper):
         return True
