@@ -7,8 +7,12 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept": "*/*"
 }
-TIMEOUT = 4
+TIMEOUT = 5
 MAX_WORKERS = 30
+
+# LİNKLERİN ÇALIŞIP ÇALIŞMADIĞINI TEST ETMEK İSTİYORSANIZ True YAPIN.
+# (Ücretsiz IPTV listelerinde link testi genellikle kanalların %90'ını siler)
+CHECK_LINKS = False 
 
 SOURCES = {
     "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
@@ -16,89 +20,46 @@ SOURCES = {
     "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
-# 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları (Tüm Varyasyonlar, Bitişik/Ayrı, TR/EN Karakterler)
+# 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları
 NATIONAL_WHITELIST = [
-    # KANAL D
-    "KANAL D", "KANALD", 
-    # SHOW TV
-    "SHOW TV", "SHOWTV", 
-    # STAR TV
-    "STAR TV", "STARTV", 
-    # NOW (Eski FOX)
-    "NOW TV", "NOWTV", "NOW",
-    # TV8 & TV8.5
-    "TV 8", "TV8", "TV 8.5", "TV8.5", "TV8,5", "TV85",
-    # KANAL 7
-    "KANAL 7", "KANAL7",
-    # BEYAZ TV
-    "BEYAZ TV", "BEYAZTV",
-    # TEVE2 / TV2
-    "TEVE 2", "TEVE2", "TV 2", "TV2",
-    # DMAX & TLC
-    "DMAX", "D MAX", "TLC", 
-    
-    # HABER KANALLARI
-    "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK",
-    "NTV", 
-    "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
-    "A HABER", "AHABER",
-    "TGRT HABER", "TGRTHABER",
-    "HABER GLOBAL", "HABERGLOBAL",
-    "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT",
-    "HALK TV", "HALKTV",
-    "SÖZCÜ TV", "SOZCU TV", "SÖZCÜTV", "SOZCUTV", "SZC TV", "SZCTV",
-    "TV 100", "TV100",
-    "TELE 1", "TELE1",
-    "KRT TV", "KRT",
-    "ULUSAL KANAL", "ULUSALKANAL",
+    "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", "NOW",
+    "TV 8", "TV8", "TV 8.5", "TV8.5", "TV8,5", "TV85", "KANAL 7", "KANAL7", "BEYAZ TV", "BEYAZTV",
+    "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", 
+    "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", "NTV", "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
+    "A HABER", "AHABER", "TGRT HABER", "TGRTHABER", "HABER GLOBAL", "HABERGLOBAL",
+    "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT", "HALK TV", "HALKTV",
+    "SÖZCÜ TV", "SOZCU TV", "SÖZCÜTV", "SOZCUTV", "SZC TV", "SZCTV", "TV 100", "TV100",
+    "TELE 1", "TELE1", "KRT TV", "KRT", "ULUSAL KANAL", "ULUSALKANAL",
     "BENGÜTÜRK", "BENGUTURK", "BENGÜ TÜRK", "BENGU TURK",
-
-    # TRT KANALLARI (Bitişik, Ayrı, TR-EN Karakter)
-    "TRT 1", "TRT1",
-    "TRT HABER", "TRTHABER",
-    "TRT BELGESEL", "TRTBELGESEL",
-    "TRT SPOR", "TRTSPOR",
-    "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
+    "TRT 1", "TRT1", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
+    "TRT SPOR", "TRTSPOR", "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
     "TRT MÜZİK", "TRT MUZIK", "TRTMÜZİK", "TRTMUZIK",
-    
-    # DİĞER TEMATİK VE SPOR
-    "A SPOR", "ASPOR",
-    "A NEWS", "ANEWS",
-    "MİNİKA", "MINIKA",
-    "VAV TV", "VAVTV"
+    "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA", "VAV TV", "VAVTV"
 ]
 
-# 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler
+# 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler (Genel kelimeler çıkarıldı)
 EXCLUDE_KEYWORDS = [
-    "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon","turk","türk","dost","film","top","tv","fb","bjk","gs", 
-    "avaz","halk","diyanet","beyaz","arabi","eba","life","tempo","ton","fanatik","mercan","vuslat","sun","arma","hür","damar","bürüksel",
-    "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya","sağlık","sinema","kurdi","sıla","ezo","zeyno","bengü","tjk",
-    "ada","avrupa","euro","tabii","plus","fırat","krt","genc","mbc","spor","next","maisum","persiana","hope",
-    "eskişehir", "samsun", "mersin", "gaziantep", "balıkesir", "isparta", "tokat", 
+    "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon", "dost", "fb", "bjk", "gs", 
+    "avaz", "diyanet", "arabi", "eba", "tempo", "fanatik", "mercan", "vuslat", "arma", "hür", "damar", "bürüksel",
+    "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya", "sağlık", "kurdi", "sıla", "ezo", "zeyno", "bengü", "tjk",
+    "fırat", "genc", "mbc", "maisum", "persiana", "hope", "eskişehir", "samsun", "mersin", "gaziantep", "balıkesir", "isparta", "tokat", 
     "elazığ", "kocaeli", "çorum", "manisa", "antalya", "bodrum", "çanakkale", "kahramanmaraş",
     "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli"
 ]
 
-# 📻 RADYO FİLTRESİ: İsmi veya grubu radyoyu çağrıştıran yayınları engeller
+# 📻 RADYO FİLTRESİ
 RADIO_KEYWORDS = ["RADYO", "RADIO", " FM ", "FM1", "FM2", "AUDIO", "RJD", "POWER FM", "SUPER FM", "PAL FM", "SLOW TURK"]
 
 def is_radio(name, group=""):
-    """Yayın isminde veya grubunda radyo ibaresi olup olmadığını kontrol eder."""
     text_to_check = f"{name} {group}".upper()
-    
-    # İsmin içinde açıkça radyo / fm geçiyorsa
     for key in RADIO_KEYWORDS:
         if key in text_to_check:
             return True
-            
-    # Kelime sonunda .FM bitişleri (örneğin "Virgin.FM", "MetroFM")
     if re.search(r'\b\w+FM\b', text_to_check):
         return True
-        
     return False
 
 def normalize_channel_name(name):
-    """Kanal ismindeki çözünürlük ve ek bilgileri temizler."""
     clean = re.sub(r'[\(\[\{].*?[\)\]\}]', '', name)
     clean = re.sub(r'\b(HD|FHD|SD|UHD|4K|1080P|720P|CANLI|LIVE|TR|TURK|TURKEY)\b', '', clean, flags=re.IGNORECASE)
     clean = re.sub(r'\s+', ' ', clean).strip().upper()
@@ -107,35 +68,39 @@ def normalize_channel_name(name):
 def is_local_or_unwanted(name, group=""):
     name_upper = name.strip().upper()
 
-    # 1. RADYO KONTROLÜ (Açıksa doğrudan engelle)
     if is_radio(name, group):
         return True
 
-    # 2. Ulusal TV kanalı beyaz listesindeyse izin ver
+    # Ulusal listede varsa DİREKT KABUL ET
     for national in NATIONAL_WHITELIST:
         if national in name_upper:
             return False
 
-    # 3. Numaralı yerel TV kanallarını engelle (Kanal 15, TV 41 vb.)
     if re.search(r"(KANAL|TIVI|TV)\s*\d+", name_upper):
         return True
 
-    # 4. Şehir ve bölge kelimelerini engelle
+    # Yasaklı kelimeleri "Tam Kelime" (Regex) olarak kontrol et
     name_lower = name.lower()
-    if any(keyword in name_lower for keyword in EXCLUDE_KEYWORDS):
+    pattern = r'\b(' + '|'.join(re.escape(kw) for kw in EXCLUDE_KEYWORDS) + r')\b'
+    if re.search(pattern, name_lower):
         return True
 
     return False
 
 def verify_link(url):
     try:
-        res = requests.get(url, headers=HEADERS, timeout=TIMEOUT, stream=True)
+        # stream=False yapıldı, sadece başlıklar (headers) çekilerek hızlandırıldı
+        res = requests.get(url, headers=HEADERS, timeout=TIMEOUT, stream=False)
         return url if res.status_code == 200 else None
     except:
         return None
 
 def threaded_verify_links(entries):
+    if not CHECK_LINKS:
+        return entries # Link kontrolü kapalıysa direkt listeyi döndür
+        
     valid_results = []
+    print(f"[{len(entries)} kanal için link doğrulaması yapılıyor. Bu işlem uzun sürebilir...]")
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_map = {
             executor.submit(verify_link, link): (name, group, link)
@@ -162,7 +127,6 @@ def parse_m3u(url, default_label):
                 group = group_match.group(1) if group_match else default_label
                 name = line_info.split(",")[-1].strip()
                 
-                # Yerel TV veya Radyo ise atla
                 if is_local_or_unwanted(name, group):
                     continue
 
@@ -177,7 +141,7 @@ def parse_m3u(url, default_label):
         return []
 
 def main():
-    print(f"--- Güncelleme Başlatıldı (main1): {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ---")
+    print(f"--- Güncelleme Başlatıldı: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ---")
     raw_channels = []
     
     for label, url in SOURCES.items():
@@ -190,25 +154,18 @@ def main():
     for name, group, url in raw_channels:
         normalized_name = normalize_channel_name(name)
         
-        # 1. URL Mükerrerliği Engeli
-        if url in seen_urls:
-            continue
-            
-        # 2. İsim Mükerrerliği Engeli
-        if normalized_name in seen_normalized_names:
+        if url in seen_urls or normalized_name in seen_normalized_names:
             continue
 
         seen_urls.add(url)
         seen_normalized_names.add(normalized_name)
 
-        # Grup Adını Standartlaştır
         final_group = group
         if any(nat in normalized_name for nat in NATIONAL_WHITELIST):
-            final_group = "Ulusal"
+            final_group = "Ulusal TV"
 
         cleaned_channels.append((name.strip(), final_group, url))
 
-    # M3U Dosyasını Yaz
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write("# Otomatik Oluşturulan Playlist - Sadece TV Kanalları (Radyosuz)\n")
