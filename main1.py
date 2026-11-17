@@ -1,6 +1,3 @@
-
-    
-
 import re
 import requests
 from datetime import datetime
@@ -14,16 +11,24 @@ TIMEOUT = 5
 MAX_WORKERS = 30
 CHECK_LINKS = False 
 
-# 🌐 Kaynaklara Yeni Yetişkin (+18) Listesi Eklendi
+# 🌐 TÜM KAYNAKLAR (Türkiye, Müzik ve Yetişkin Havuzları)
 SOURCES = {
-    "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
     "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
+    "Free-TV Türkiye": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8",
+    "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u",
     "Yetişkin (+18)": "https://raw.githubusercontent.com/Izanami1618/AdultChannels/refs/heads/main/%2B18%20Channels"
-    #"Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
 # 🇹🇷 Kanal Logoları Kütüphanesi
 LOGOS = {
+    "ATV": "https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png",
+    "KANAL D": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png",
+    "SHOW TV": "https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png",
+    "STAR TV": "https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png",
+    "NOW TV": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png",
+    "TV 8": "https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png",
+    "KANAL 7": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png",
+    "TRT 1": "https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png",
     "TRT HABER": "https://upload.wikimedia.org/wikipedia/commons/b/b3/TRT_Haber_logo_2021.png",
     "TRT SPOR": "https://upload.wikimedia.org/wikipedia/commons/a/ae/TRT_Spor_logo_2021.png",
     "TRT BELGESEL": "https://upload.wikimedia.org/wikipedia/commons/8/82/TRT_Belgesel_logo_2021.png",
@@ -38,20 +43,21 @@ LOGOS = {
     "TELE 1": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Tele1_logo.png",
     "KRT TV": "https://upload.wikimedia.org/wikipedia/commons/7/7c/KRT_TV_logo.png",
     "TV 100": "https://upload.wikimedia.org/wikipedia/commons/5/55/Tv100_logo.png",
-    "24 TV": "https://upload.wikimedia.org/wikipedia/commons/5/50/24_TV_logo.png",
+    "24 TV": "https://upload.wikimedia.org/commons/5/50/24_TV_logo.png",
     "DMAX": "https://upload.wikimedia.org/wikipedia/commons/8/87/DMAX_Turkey_logo.png",
     "TLC": "https://upload.wikimedia.org/wikipedia/commons/3/36/TLC_Turkey_logo.png",
     "CNBC-E": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png"
 }
 
-# 🇹🇷 Dinamik Olarak Çekilecek Diğer Kanallar
+# 🇹🇷 Dinamik Olarak Çekilecek Ana Kanallar
 NATIONAL_WHITELIST = [
-    "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
+    "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
+    "TV 8", "TV8", "KANAL 7", "KANAL7", "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
     "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", "NTV", "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
     "A HABER", "AHABER", "TGRT HABER", "TGRTHABER", "HABER GLOBAL", "HABERGLOBAL",
     "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT", "HALK TV", "HALKTV",
     "TV 100", "TV100", "TELE 1", "TELE1", "KRT TV", "KRT", "ULUSAL KANAL", "ULUSALKANAL",
-    "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
+    "TRT 1", "TRT1", "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
     "TRT WORLD", "TRT SPOR", "TRTSPOR", "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
     "TRT MÜZİK", "TRT MUZIK", "TRTMÜZİK", "TRTMUZIK",
     "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA"
@@ -78,7 +84,7 @@ EXCLUDE_KEYWORDS = [
     "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli",
     "alanya", "aksu", "aras", "brüksel", "cekmekoy", "erciyes", "hunat", "icel", "izmir", 
     "kardelen", "kent", "metropol", "mugla", "olay", "pazarcik", "urfa", "van", "deniz", "derin",
-    "ada", "bric", "ciftci", "tarim", "finest", "ilke", "life", "sun", "ton", "tva", "kanal z", "atv"
+    "ada", "bric", "ciftci", "tarim", "finest", "ilke", "life", "sun", "ton", "tva", "kanal z"
 ]
 
 def is_radio(name, group=""):
@@ -105,6 +111,10 @@ def get_category(name, original_group=""):
     name_upper = name.upper()
     orig_upper = original_group.upper()
 
+    # 1. ÖNCELİK: YETİŞKİN KANALLARI (Farklı kategorilere sızmaması için en üste)
+    if any(a in orig_upper for a in ["YETİŞKİN", "YETISKIN", "ADULT", "XXX", "+18", "18+"]): return "8. Yetişkin"
+    if any(k in name_upper for k in ["ADULT", "XXX", "18+", "PORN", "BRAZZERS", "HUSTLER", "DORCEL", "PLAYBOY", "PRIVATE", "BABES", "TUSHY", "BLACKED", "BANG BROS"]): return "8. Yetişkin"
+
     if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]): return "3. Spor"
     if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]): return "2. Haber"
     if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]): return "5. Belgesel"
@@ -112,10 +122,6 @@ def get_category(name, original_group=""):
     if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]): return "4. Sinema & Dizi"
     if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE", "STINGRAY"]): return "7. Müzik"
     
-    # Yeni Eklenen Yetişkin Kategori Yönlendirmesi
-    if any(k in name_upper for k in ["ADULT", "XXX", "18+", "PORN", "BRAZZERS", "HUSTLER", "DORCEL", "PLAYBOY", "PRIVATE", "BABES", "TUSHY", "BLACKED", "BANG BROS"]): return "8. Yetişkin"
-    if any(a in orig_upper for a in ["YETİŞKİN", "YETISKIN", "ADULT", "XXX", "+18", "18+"]): return "8. Yetişkin"
-
     for nat in NATIONAL_WHITELIST:
         if nat in name_upper:
             return "1. Ulusal"
@@ -133,23 +139,27 @@ def is_local_or_unwanted(name, group=""):
     name_upper = name.strip().upper()
     group_upper = group.upper()
 
+    # 1. KESİN YASAKLILAR
     if any(block in name_upper for block in STRICT_BLOCK_WORDS):
         return True
 
+    # 2. Radyo Kontrolü
     if is_radio(name, group):
         return True
 
-    # MÜZİK VE YETİŞKİN KANALLARINA ÖZEL İZİN (Bu kanallar filtreye takılıp silinmez)
+    # 3. MÜZİK VE YETİŞKİN KANALLARINA ÖZEL İZİN (Filtrelere takılmamaları için)
     if "MUSIC" in group_upper or any(m in name_upper for m in ["MUSIC", "MTV", "VEVO", "TRACE", "STINGRAY", "XITE"]):
         return False
     if any(a in group_upper for a in ["YETİŞKİN", "ADULT", "XXX", "+18", "18+"]) or any(a in name_upper for a in ["XXX", "BRAZZERS", "HUSTLER", "ADULT"]):
         return False
 
+    # 4. YEREL/ŞEHİR FİLTRESİ (Alanya ATV gibi kanalları engeller)
     name_lower = name.lower()
     pattern = r'\b(' + '|'.join(re.escape(kw) for kw in EXCLUDE_KEYWORDS) + r')\b'
     if re.search(pattern, name_lower):
         return True
 
+    # 5. ULUSAL KANAL ONAYI (Sadece ATV, KANAL D vb. onaylanır)
     for national in NATIONAL_WHITELIST:
         if national in name_upper:
             return False
@@ -230,6 +240,7 @@ def main():
         normalized_name = normalize_channel_name(name)
         nospace_name = normalized_name.replace(" ", "")
         
+        # Mükerrerleri engelle (TRT1 ve TRT 1 çakışmasını çözer)
         if url in seen_urls or nospace_name in seen_normalized_names:
             continue
 
@@ -240,28 +251,14 @@ def main():
         if final_group == "Diğer":
             continue
 
+        # LOGO EKLEME
         dict_logo = LOGOS.get(normalized_name, "")
         final_logo = dict_logo if dict_logo else logo
 
         cleaned_channels.append((name.strip(), final_group, final_logo, url))
 
+    # A-Z Sıralama (1. Ulusal, 2. Haber... 8. Yetişkin)
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
-
-    # --- MANUEL EKLENEN KANALLAR (Resmi & Kesintisiz Ulusal Yayınlar) ---
-    manual_channels = [
-        ("ATV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png", "https://trkvz-live.daioncdn.net/atv/atv.m3u8"),
-        ("Kanal D HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png", "https://demiroren.daioncdn.net/kanald/kanald.m3u8"),
-        ("Show TV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png", "https://ciner.daioncdn.net/showtv/showtv.m3u8"),
-        ("Star TV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png", "https://dogus.daioncdn.net/startv/startv.m3u8"),
-        ("NOW TV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png", "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"),
-        ("TV8 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png", "https://tv8.daioncdn.net/tv8/tv8.m3u8"),
-        ("Kanal 7 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png", "https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8"),
-        ("TRT 1 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png", "https://tv-trt1.medya.trt.com.tr/master_720.m3u8")
-    ]
-    
-    cleaned_channels.extend(manual_channels)
-    cleaned_channels.sort(key=lambda x: (x[1], x[0]))
-    # ----------------------------------------------
 
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
