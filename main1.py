@@ -17,16 +17,8 @@ SOURCES = {
     #"Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
-# 🇹🇷 Kanal Logoları (tvg-logo) Kütüphanesi
+# 🇹🇷 Kanal Logoları Kütüphanesi
 LOGOS = {
-    "ATV": "https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png",
-    "KANAL D": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png",
-    "SHOW TV": "https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png",
-    "STAR TV": "https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png",
-    "NOW TV": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png",
-    "TV 8": "https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png",
-    "KANAL 7": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png",
-    "TRT 1": "https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png",
     "TRT HABER": "https://upload.wikimedia.org/wikipedia/commons/b/b3/TRT_Haber_logo_2021.png",
     "TRT SPOR": "https://upload.wikimedia.org/wikipedia/commons/a/ae/TRT_Spor_logo_2021.png",
     "TRT BELGESEL": "https://upload.wikimedia.org/wikipedia/commons/8/82/TRT_Belgesel_logo_2021.png",
@@ -47,15 +39,14 @@ LOGOS = {
     "CNBC-E": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png"
 }
 
-# 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları
+# 🇹🇷 Dinamik Olarak Çekilecek Diğer Kanallar (Ana kanallar Manuel'e taşındığı için buradan çıkarıldı)
 NATIONAL_WHITELIST = [
-    "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
-    "TV 8", "TV8", "KANAL 7", "KANAL7", "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
+    "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
     "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", "NTV", "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
     "A HABER", "AHABER", "TGRT HABER", "TGRTHABER", "HABER GLOBAL", "HABERGLOBAL",
     "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT", "HALK TV", "HALKTV",
     "TV 100", "TV100", "TELE 1", "TELE1", "KRT TV", "KRT", "ULUSAL KANAL", "ULUSALKANAL",
-    "TRT 1", "TRT1", "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
+    "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
     "TRT WORLD", "TRT SPOR", "TRTSPOR", "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
     "TRT MÜZİK", "TRT MUZIK", "TRTMÜZİK", "TRTMUZIK",
     "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA"
@@ -82,7 +73,7 @@ EXCLUDE_KEYWORDS = [
     "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli",
     "alanya", "aksu", "aras", "brüksel", "cekmekoy", "erciyes", "hunat", "icel", "izmir", 
     "kardelen", "kent", "metropol", "mugla", "olay", "pazarcik", "urfa", "van", "deniz", "derin",
-    "ada", "bric", "ciftci", "tarim", "finest", "ilke", "life", "sun", "ton", "tva", "kanal z"
+    "ada", "bric", "ciftci", "tarim", "finest", "ilke", "life", "sun", "ton", "tva", "kanal z", "atv"
 ]
 
 def is_radio(name, group=""):
@@ -237,7 +228,6 @@ def main():
         if final_group == "Diğer":
             continue
 
-        # LOGO KONTROLÜ: Sözlükte varsa kullan, yoksa orijinalini bırak
         dict_logo = LOGOS.get(normalized_name, "")
         final_logo = dict_logo if dict_logo else logo
 
@@ -245,8 +235,19 @@ def main():
 
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
-    # --- MANUEL YETİŞKİN KANALLARI (tvg-logo adresleri dahil) ---
-    adult_channels = [
+    # --- MANUEL EKLENEN KANALLAR (Resmi & Kesintisiz Yayınlar) ---
+    manual_channels = [
+        # Resmi Ulusal Kanallar (Logoları ile Birlikte)
+        ("ATV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png", "https://trkvz-live.daioncdn.net/atv/atv.m3u8"),
+        ("Kanal D HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png", "https://demiroren.daioncdn.net/kanald/kanald.m3u8"),
+        ("Show TV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png", "https://ciner.daioncdn.net/showtv/showtv.m3u8"),
+        ("Star TV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png", "https://dogus.daioncdn.net/startv/startv.m3u8"),
+        ("NOW TV HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png", "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"),
+        ("TV8 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png", "https://tv8.daioncdn.net/tv8/tv8.m3u8"),
+        ("Kanal 7 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png", "https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8"),
+        ("TRT 1 HD", "1. Ulusal", "https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png", "https://tv-trt1.medya.trt.com.tr/master_720.m3u8"),
+        
+        # Yetişkin Kanalları
         ("Brazzers HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/e/e1/Brazzers_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6182/index.m3u8"),
         ("Dorcel TV HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/2/23/Dorcel_TV_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/245/index.m3u8"),
         ("Hustler HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hustler_TV.svg/1200px-Hustler_TV.svg.png", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/9065/index.m3u8"),
@@ -257,7 +258,11 @@ def main():
         ("Tushy HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/0/08/Tushy_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6261/index.m3u8"),
         ("Bang Bros HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/5/54/BangBros_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6173/index.m3u8")
     ]
-    cleaned_channels.extend(adult_channels)
+    
+    # Kanalları birleştirip, en son halleriyle tekrar (A-Z) sıralıyoruz ki manuel eklenenler listenin en başında/ortasında doğru yere otursun
+    cleaned_channels.extend(manual_channels)
+    cleaned_channels.sort(key=lambda x: (x[1], x[0]))
+    # ----------------------------------------------
 
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
