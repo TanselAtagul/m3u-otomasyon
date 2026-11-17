@@ -9,15 +9,13 @@ HEADERS = {
 }
 TIMEOUT = 5
 MAX_WORKERS = 30
-
-# LİNKLERİN ÇALIŞIP ÇALIŞMADIĞINI TEST ETMEK İSTİYORSANIZ True YAPIN.
-# (Ücretsiz IPTV listelerinde link testi genellikle kanalların %90'ını siler)
 CHECK_LINKS = False 
 
+# NOT: Sadece Türk kanallarını istiyorsanız "Müzik TV (Global)" satırını silebilirsiniz.
 SOURCES = {
     "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
     "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
-    "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
+    "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u" 
 }
 
 # 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları
@@ -37,11 +35,11 @@ NATIONAL_WHITELIST = [
     "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA", "VAV TV", "VAVTV"
 ]
 
-# 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler (Genel kelimeler çıkarıldı)
+# 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler (Regex ile Tam Kelime)
 EXCLUDE_KEYWORDS = [
     "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon", "dost", "fb", "bjk", "gs", 
-    "avaz", "diyanet", "arabi", "eba", "tempo", "fanatik", "mercan", "vuslat", "arma", "hür", "damar", "bürüksel",
-    "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya", "sağlık", "kurdi", "sıla", "ezo", "zeyno", "bengü", "tjk",
+    "avaz", "arabi", "eba", "tempo", "fanatik", "mercan", "vuslat", "arma", "hür", "damar", "bürüksel",
+    "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya", "sağlık", "kurdi", "sıla", "ezo", "zeyno", "bengü", 
     "fırat", "genc", "mbc", "maisum", "persiana", "hope", "eskişehir", "samsun", "mersin", "gaziantep", "balıkesir", "isparta", "tokat", 
     "elazığ", "kocaeli", "çorum", "manisa", "antalya", "bodrum", "çanakkale", "kahramanmaraş",
     "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli"
@@ -64,6 +62,44 @@ def normalize_channel_name(name):
     clean = re.sub(r'\b(HD|FHD|SD|UHD|4K|1080P|720P|CANLI|LIVE|TR|TURK|TURKEY)\b', '', clean, flags=re.IGNORECASE)
     clean = re.sub(r'\s+', ' ', clean).strip().upper()
     return clean
+
+def get_category(name, original_group=""):
+    """Kanal isimlerini ve eski gruplarını analiz edip temiz Türkçe kategorilere ayırır."""
+    name_upper = name.upper()
+    orig_upper = original_group.upper()
+
+    # 1. İsme Göre Kesin Kategori Atamaları (Öncelikli)
+    if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]):
+        return "Spor"
+    if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]):
+        return "Haber"
+    if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]):
+        return "Belgesel"
+    if any(k in name_upper for k in ["ÇOCUK", "COCUK", "KIDS", "CARTOON", "DISNEY", "MINIKA", "BABY", "NICKELODEON", "ZAROK"]):
+        return "Çocuk"
+    if any(k in name_upper for k in ["SİNEMA", "SINEMA", "FILM", "MOVIE", "ACTION", "COMEDY", "DRAMA", "DIZI", "DİZİ", "YESILCAM"]):
+        return "Sinema & Dizi"
+    if any(k in name_upper for k in ["MÜZİK", "MUZIK", "MUSIC", "MTV", "POWER", "KRAL", "NR1", "NUMBER", "VIVA", "DREAM", "AKUSTIK", "TRACE", "VEVO", "XITE"]):
+        return "Müzik"
+    if any(k in name_upper for k in ["DIYANET", "DİYANET", "SEMERKAND", "LALEGUL", "LALEGÜL", "KABE", "QURAN", "MENZIL"]):
+        return "Dini"
+
+    # 2. Üstteki kategorilere girmediyse ve Beyaz Listede varsa "Ulusal" yap
+    for nat in NATIONAL_WHITELIST:
+        if nat in name_upper:
+            return "Ulusal"
+
+    # 3. İsimden anlaşılamadıysa orijinal M3U grubuna bakarak Türkçeleştir
+    if "MUSIC" in orig_upper: return "Müzik"
+    if "NEWS" in orig_upper: return "Haber"
+    if "KIDS" in orig_upper or "ANIMATION" in orig_upper: return "Çocuk"
+    if "MOVIE" in orig_upper or "CINEMA" in orig_upper: return "Sinema & Dizi"
+    if "DOCUMENTARY" in orig_upper: return "Belgesel"
+    if "RELIGIOUS" in orig_upper: return "Dini"
+    if "SPORTS" in orig_upper: return "Spor"
+
+    # 4. Hiçbirine uymuyorsa
+    return "Diğer"
 
 def is_local_or_unwanted(name, group=""):
     name_upper = name.strip().upper()
@@ -89,7 +125,6 @@ def is_local_or_unwanted(name, group=""):
 
 def verify_link(url):
     try:
-        # stream=False yapıldı, sadece başlıklar (headers) çekilerek hızlandırıldı
         res = requests.get(url, headers=HEADERS, timeout=TIMEOUT, stream=False)
         return url if res.status_code == 200 else None
     except:
@@ -97,7 +132,7 @@ def verify_link(url):
 
 def threaded_verify_links(entries):
     if not CHECK_LINKS:
-        return entries # Link kontrolü kapalıysa direkt listeyi döndür
+        return entries
         
     valid_results = []
     print(f"[{len(entries)} kanal için link doğrulaması yapılıyor. Bu işlem uzun sürebilir...]")
@@ -160,11 +195,13 @@ def main():
         seen_urls.add(url)
         seen_normalized_names.add(normalized_name)
 
-        final_group = group
-        if any(nat in normalized_name for nat in NATIONAL_WHITELIST):
-            final_group = "Ulusal TV"
+        # YENİ KATEGORİ SİSTEMİNİ UYGULA
+        final_group = get_category(normalized_name, group)
 
         cleaned_channels.append((name.strip(), final_group, url))
+
+    # Dosyayı kategoriye (group-title) göre A'dan Z'ye sıralayarak yaz
+    cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
