@@ -6,10 +6,16 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
 #EXTINF:-1 group-title="1. Ulusal",Kanal D (Turkiye) (1080p)
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+#EXTINF:-1 group-title="1. Ulusal",SHOW TV
+https://ciner-live.daioncdn.net/showtv/showtv_1080p.m3u8
 #EXTINF:-1 group-title="1. Ulusal",Star TV (Turkiye) (720p)
 https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5
+#EXTINF:-1 group-title="1. Ulusal",TEVE 2
+https://live.duhnet.tv/S2/HLS_LIVE/teve2np/track_4_1000/playlist.m3u8
 #EXTINF:-1 group-title="1. Ulusal",TRT 1 (1440p)
 https://tv-trt1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="1. Ulusal",TV 8 INT
+https://tgn.bozztv.com/dvrfl05/gin-tv8int/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="1. Ulusal",TV8 (Turkiye) (1080p)
 https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
 #EXTINF:-1 group-title="2. Haber",24 TV (720p)
@@ -24,10 +30,14 @@ https://mumbai-edge.smartplaytv.in/BloombergHT/index.m3u8
 http://85.117.61.84/cnnturk/index.m3u8
 #EXTINF:-1 group-title="2. Haber",DHA (720p) [Not 24/7]
 https://603c568fccdf5.streamlock.net/live/dhaweb1_C5efC/playlist.m3u8
+#EXTINF:-1 group-title="2. Haber",FLASH HABER
+https://ythls.kekikakademi.org/youtube/channel/UCNcjCb2RnA3eMMhTZSxZu3A.m3u8
 #EXTINF:-1 group-title="2. Haber",Finans Turk TV (720p)
 https://yayin30.haber100.com/live/finansturk/playlist.m3u8
 #EXTINF:-1 group-title="2. Haber",Flash Haber TV
 https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/playlist.m3u8
+#EXTINF:-1 group-title="2. Haber",HABERTURK
+https://ciner-live.daioncdn.net/haberturktv/haberturktv_1080p.m3u8
 #EXTINF:-1 group-title="2. Haber",Haber Global (720p) [Not 24/7]
 https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
 #EXTINF:-1 group-title="2. Haber",Haberturk TV (720p) [Not 24/7]
@@ -58,22 +68,26 @@ https://bcovlive-a.akamaihd.net/29c60f23ea4840ba8726925a77fcfd0b/eu-central-1/64
 https://tjktv-live.tjk.org/tjktv.m3u8
 #EXTINF:-1 group-title="3. Spor",TJK TV 2 (1080p) [Not 24/7]
 https://tjktv-live.tjk.org/tjktv2/tjktv2.m3u8
+#EXTINF:-1 group-title="3. Spor",TJK TV YURT DISI
+https://tjktv-live.tjk.org/tjktv2/tjktv2_1080p.m3u8
 #EXTINF:-1 group-title="3. Spor",TRT Spor (720p)
 https://corestream.siteyaptim.live/trt-spor/index.m3u8
-#EXTINF:-1 group-title="3. Spor",TRT Spor 2 Ⓖ
-https://tv-trtspor2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="3. Spor",TRT Spor Yildiz (1440p) [Geo-blocked]
 https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor
-#EXTINF:-1 group-title="3. Spor",TRT Spor Ⓖ
-https://tv-trtspor1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="3. Spor",beIN SPORTS HABER
+https://tgn.bozztv.com/dvrfl05/gin-beinsportshaber/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="4. Sinema & Dizi",Movie Music by Stingray (1080p)
 https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/master.m3u8
 #EXTINF:-1 group-title="4. Sinema & Dizi",MovieSmart Turk (576p)
 http://playhdnewjj.xyz:8080/recc121412/KVqfhtdJ2nQ7/174
+#EXTINF:-1 group-title="5. Belgesel",DMAX
+https://dogus-live.daioncdn.net/dmax/dmax_720p.m3u8
 #EXTINF:-1 group-title="5. Belgesel",GZT (1080p)
 https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
 #EXTINF:-1 group-title="5. Belgesel",TGRT Belgesel (576p) [Not 24/7]
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
+#EXTINF:-1 group-title="5. Belgesel",TLC
+https://dogus-live.daioncdn.net/tlc/tlc_720p.m3u8
 #EXTINF:-1 group-title="5. Belgesel",TRT Belgesel (720p)
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="6. Çocuk",BabyTV Turkiye [Geo-blocked]
@@ -478,6 +492,8 @@ https://juicex.nz/hls/mystream.m3u8
 https://k100streymi.mbl.is/beint/k100/index.m3u8
 #EXTINF:-1 group-title="7. Müzik",KN Music TV
 https://cdn4.yayin.com.tr/kntv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="7. Müzik",KRAL POP
+http://dygvideo.dygdigital.com/live/hls/kralpop
 #EXTINF:-1 group-title="7. Müzik",Kalika TV (576p)
 http://server.applelive.in/kalikatv/kalikatv.m3u8
 #EXTINF:-1 group-title="7. Müzik",Karibena (720p)
@@ -698,6 +714,10 @@ https://ads.its-newid.net/api/manifest.m3u8?ads.service_id=GB17000088V&channel_i
 https://jmp2.uk/stvp-IN460001373
 #EXTINF:-1 group-title="7. Müzik",NOW Rock (1080p)
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="7. Müzik",NR1
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e17cd6360b_1/playlist.m3u8
+#EXTINF:-1 group-title="7. Müzik",NR1 FASHION ONE
+http://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2ee6997cb_1/playlist.m3u8
 #EXTINF:-1 group-title="7. Müzik",NRG 91 (720p) [Not 24/7]
 http://tv.nrg91.gr:1935/onweb/live/master.m3u8
 #EXTINF:-1 group-title="7. Müzik",NRJ Hits
@@ -770,6 +790,14 @@ https://pmchls.wns.live/hls/stream.m3u8
 https://pmcrohls.wns.live/hls/stream.m3u8
 #EXTINF:-1 group-title="7. Müzik",POP World TV (720p)
 https://janus.xpbroadcasting.com:8443/hls/popworld.m3u8
+#EXTINF:-1 group-title="7. Müzik",POWER TURK
+https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/chunklist_b5250000_sltur.m3u8
+#EXTINF:-1 group-title="7. Müzik",POWER TURK AKUSTIK
+https://listen.powerapp.com.tr/pturkakustik/akustik.smil/chunklist_b1028000_sltur.m3u8
+#EXTINF:-1 group-title="7. Müzik",POWER TURK SLOW
+https://listen.powerapp.com.tr/pturkslow/slow.smil/chunklist_b1028000_sltur.m3u8
+#EXTINF:-1 group-title="7. Müzik",POWER TURK TAPTAZE
+http://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
 #EXTINF:-1 group-title="7. Müzik",PTC Chakde (720p)
 https://cdn.pishow.tv/ott/live/449/master.m3u8
 #EXTINF:-1 group-title="7. Müzik",PTC Music (720p)
