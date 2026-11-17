@@ -12,8 +12,8 @@ MAX_WORKERS = 30
 
 SOURCES = {
    # "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
-    "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u"
-   # "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
+   # "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u"
+    "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
 # 🇹🇷 Sadece Kabul Edilecek Temel Ulusal TV Kanalları
