@@ -27,8 +27,10 @@ NATIONAL_WHITELIST = [
 
 # 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler
 EXCLUDE_KEYWORDS = [
-    "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon",
-    "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya", 
+    "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon","turk","türk","dost","film","top","tv","fb","bjk","gs" 
+    "avaz","halk","diyanet","beyaz","arabi","eba","life","tempo","ton","fanatik","mercan","vuslat","sun","arma","hür","damar","bürüksel"
+    "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya","sağlık","sinema","kurdi","sıla","ezo","zeyno","bengü","tjk",
+    
     "eskişehir", "samsun", "mersin", "gaziantep", "balıkesir", "isparta", "tokat", 
     "elazığ", "kocaeli", "çorum", "manisa", "antalya", "bodrum", "çanakkale", "kahramanmaraş",
     "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli"
