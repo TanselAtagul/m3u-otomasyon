@@ -1,29 +1,27 @@
 #EXTM3U
 # Otomatik Oluşturulan Playlist - Sadece TV Kanalları (Radyosuz)
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png",ATV
-http://89.187.191.41/ATV-HD-TR/video.m3u8
+#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png",ATV HD
+https://trkvz-live.daioncdn.net/atv/atv.m3u8
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png",CNBC-e
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png",KANAL 7
+#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png",Kanal 7 HD
 https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png",KANAL D
-https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png",NOW TV
+#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png",Kanal D HD
+https://demiroren.daioncdn.net/kanald/kanald.m3u8
+#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png",NOW TV HD
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png",SHOW TV HD
-https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png",STAR TV
-https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=1740db13-3ee9-4858-8d2c-b1a9cfaa3718
+#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png",Show TV HD
+https://ciner.daioncdn.net/showtv/showtv.m3u8
+#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png",Star TV HD
+https://dogus.daioncdn.net/startv/startv.m3u8
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/turkey/teve2-tr.png",TEVE2
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/teve2/teve2_1080p.m3u8
+#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png",TRT 1 HD
+https://tv-trt1.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/turkey/trt-world-tr.png",TRT WORLD
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 group-title="1. Ulusal",TRT1
-http://176.65.146.171:9981/stream/channelid/838617424?profile=htsp
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png",TV 8
-https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8_1080p.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/1f/TV8.5_Logosu.png/revision/latest?cb=20170827103605",TV 8bucuk
-https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk_1080p.m3u8
+#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png",TV8 HD
+https://tv8.daioncdn.net/tv8/tv8.m3u8
 #EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/50/24_TV_logo.png",24 TV (720p)
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/52/A_Haber_logo.png",A Haber (1080p)
@@ -186,6 +184,10 @@ https://live.artidijitalmedya.com/artidijital_powerturktv/powerturktv/playlist.m
 https://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
 #EXTINF:-1 group-title="7. Müzik" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/turkey/trt-muzik-tr.png",TRT MUZIK
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/54/BangBros_logo.svg",Bang Bros HD
+http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6173/index.m3u8
+#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5a/Blacked_logo.svg",Blacked HD
+http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6178/index.m3u8
 #EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/Brazzers_logo.svg",Brazzers HD
 http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6182/index.m3u8
 #EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/23/Dorcel_TV_logo.svg",Dorcel TV HD
@@ -196,11 +198,7 @@ http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/9065/index.m3u8
 http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/527/index.m3u8
 #EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/30/Private_Media_Group_logo.svg",Private TV
 http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/243/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cf/Vixen_logo.svg",Vixen HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6265/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5a/Blacked_logo.svg",Blacked HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6178/index.m3u8
 #EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/08/Tushy_logo.svg",Tushy HD
 http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6261/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/54/BangBros_logo.svg",Bang Bros HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6173/index.m3u8
+#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cf/Vixen_logo.svg",Vixen HD
+http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6265/index.m3u8
