@@ -2,24 +2,12 @@
 # Otomatik Oluşturulan Playlist - Sadece TV Kanalları (Radyosuz)
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png",ATV (Turkiye) (1080p)
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://tv.alterna.ar/alternatv.png",AlternaTV (720p) [Not 24/7]
-https://tv.alterna.ar/stream/hls/live.m3u8
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png",CNBC-e
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://i.ibb.co/tMmRp18/Fama-TV-cor-whitebg-hotizontal.jpg",Famatv (1080p) [Not 24/7]
-https://tv2.fastcast4u.com:3310/live/famatvlive.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwL2-8r1l1NDdmA6jkZYvHxPFrsIA7a8m-XdSpwC6Z&s=10",Impact TV 2 (1080p)
-https://online.tvimpact.live/hls/impact_tv2.m3u8
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png",Kanal 7 (720p)
 https://kanal7.blutv.com/blutv_kanal7_live/live.m3u8
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png",Kanal D (Turkiye) (1080p)
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://i.imgur.com/cCFxyIp.jpg",KandelaTV (480p)
-https://streamtv.intervenhosting.net:3718/live/kandelamedioslive.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://i.imgur.com/hBswXYZ.png",LiraTV (720p)
-https://cloud2.streaminglivehd.com:1936/liratv/liratv/playlist.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://i.imgur.com/0zCt8e4.png",SpektraTV (720p)
-https://cloudvideo.servers10.com:8081/8026/tracks-v1a1/index.m3u8
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png",Star TV (Turkiye) (720p)
 https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png",TRT 1 (1440p)
@@ -28,7 +16,7 @@ https://tv-trt1.medya.trt.com.tr/master.m3u8
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/thumb/6/68/Tv8_Yeni_Logo.png/960px-Tv8_Yeni_Logo.png",TV8 (Turkiye) (1080p)
 https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/commons/5/50/24_TV_logo.png",24 TV (720p)
+#EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/50/24_TV_logo.png",24 TV (720p)
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1 group-title="2. Haber" tvg-logo="https://i.imgur.com/agn47sQ.png",360 (720p) [Not 24/7]
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
@@ -40,16 +28,10 @@ https://mumbai-edge.smartplaytv.in/BloombergHT/index.m3u8
 http://85.117.61.84/cnnturk/index.m3u8
 #EXTINF:-1 group-title="2. Haber" tvg-logo="https://i.imgur.com/VZhag2x.png",DHA (720p) [Not 24/7]
 https://603c568fccdf5.streamlock.net/live/dhaweb1_C5efC/playlist.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://www.dsmart.com.tr/epg/images/0x60/5ffc18c6cfef0b15933a8b65",Ekoturk (720p)
-https://cdn.ekoturk.net/hls/master.m3u8
 #EXTINF:-1 group-title="2. Haber" tvg-logo="https://i.ibb.co/wBwmB1T/iY0osc7.png",Finans Turk TV (720p)
 https://yayin30.haber100.com/live/finansturk/playlist.m3u8
 #EXTINF:-1 group-title="2. Haber",Flash Haber TV
 https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/playlist.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://i.imgur.com/JT5pp3Y.png",Guneydogu TV (720p)
-https://edge1.socialsmart.tv/gtv/bant1/playlist.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://i.imgur.com/gwPaw3v.png",HMI PROMZ NEWS (720p)
-https://video1.getstreamhosting.com:1936/8326/8326/playlist.m3u8
 #EXTINF:-1 group-title="2. Haber" tvg-logo="https://i.imgur.com/fu6XeGS.png",Haber Global (720p) [Not 24/7]
 https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
 #EXTINF:-1 group-title="2. Haber" tvg-logo="https://i.imgur.com/6Tw3rUp.png",Haberturk TV (720p) [Not 24/7]
@@ -472,10 +454,6 @@ https://edge1-us-miami.picarto.tv/stream/hls/golive%2bXSTUDIOCODE/0_1/index.m3u8
 https://rtmp.info/iqtv/envivo/playlist.m3u8
 #EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Atsf6Cd.png",Identite Tele Caraibes (548p)
 https://vdo2.pro-fhi.net:3769/stream/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/G5mNdpE.png",Impact TV Dance (1080p)
-https://online.tvimpact.live/hls/dancetv.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/4JdnUAd.png",Impact TV Manele (1080p)
-https://online.tvimpact.live/hls/impact_tv.m3u8
 #EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/1nHxdkR.png",Infinita TV (1080p)
 https://s2.tvdatta.com:3753/hybrid/play.m3u8
 #EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Insync.png",Insync (576p)
@@ -1022,8 +1000,6 @@ https://lotus.stingray.com/manifest/naturescape-a003-montreal/samsungtvplus/mast
 https://lotus.stingray.com/manifest/ose-142ads-montreal/samsungtvplus/master.m3u8
 #EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/duwc8E8.png",Stingray Remember the 80s
 https://d39g1vxj2ef6in.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/68cc5f97-cf6c-4ff7-9125-f56f272dbcb6/1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/mt8ulVX.png",Stingray Rock Alternative (1080p)
-https://lotus.stingray.com/manifest/ose-102ads-montreal/samsungtvplus/master.m3u8
 #EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Stingray_Music_logo.svg/960px-Stingray_Music_logo.svg.png",Stingray Romance Latino (1080p)
 https://lotus.stingray.com/manifest/ose-202ads-montreal/samsungtvplus/master.m3u8
 #EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/h1DsOzH.png",Stingray Smooth Jazz (1080p)
