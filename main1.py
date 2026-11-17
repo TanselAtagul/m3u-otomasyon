@@ -14,7 +14,7 @@ CHECK_LINKS = False
 # 🌐 TÜM KAYNAKLAR
 SOURCES = {
     "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
-    "Türk Yayınları": "https://raw.githubusercontent.com/rideordie16/tv/main/tv2.m3u",
+    "Türk Yayınları": "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u",
     "Yetişkin (+18)": "https://raw.githubusercontent.com/Izanami1618/AdultChannels/refs/heads/main/%2B18%20Channels"
 }
@@ -37,7 +37,7 @@ STRICT_BLOCK_WORDS = [
     "DIYANET", "DİYANET", "SEMERKAND", "LALEGUL", "LALEGÜL", "KABE", "QURAN", "MENZIL", 
     "MEKKE", "MEDINE", "MADINAH", "MAKKAH", "ZAHRA", "RAFIDAIN", "THAQALAYN", "MUKABELE", 
     "SERCEM", "IKRA", "İSVİÇRE", "ISVICRE", "AVRUPA", "GURBET", "TAGESSCHAU", "RAKUTEN", 
-    "SHEMAROO", "ALMAHRIAH", "MEKAMELEEN", "NDR", "INTV", "AUSTRALIA", "AL QURAN",
+    "SHEMAROO", "ALMAHRIAH", "MEKAMELEEN", "NDR", "INTV", "AUSTRALIA", "AL QURAN","INT","İNT",
     "BENGU", "BENGÜ", "BEYAZ", "SOZCU", "SÖZCÜ", "SZC", "TABII", "TABİİ", "TRT 2", "TRT 3", 
     "TRT TURK", "TRT TÜRK", "TV 8.5", "TV8.5", "TV 8,5", "TV85", "TVNET", "TV NET", "VAV",
     "TV 25", "TV 264", "HABER 61", "HABER61", "AS TV", "OLAYTURK", "TH TURK HABER", "TURKHABER",
