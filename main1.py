@@ -11,13 +11,13 @@ TIMEOUT = 5
 MAX_WORKERS = 30
 CHECK_LINKS = False 
 
-# 🌐 Sadece Türkiye kaynakları aktif
 SOURCES = {
     "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
-    "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u"
+    "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
+    #"Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
-# 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları (ATV eklendi, gereksizler çıkarıldı)
+# 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları
 NATIONAL_WHITELIST = [
     "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
     "TV 8", "TV8", "KANAL 7", "KANAL7", "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
@@ -31,7 +31,7 @@ NATIONAL_WHITELIST = [
     "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA"
 ]
 
-# 🛑 MUTLAK YASAKLILAR (Bu kelimeler varsa kanal Whitelist'te olsa bile SİLİNİR)
+# 🛑 MUTLAK YASAKLILAR
 STRICT_BLOCK_WORDS = [
     "DIYANET", "DİYANET", "SEMERKAND", "LALEGUL", "LALEGÜL", "KABE", "QURAN", "MENZIL", 
     "MEKKE", "MEDINE", "MADINAH", "MAKKAH", "ZAHRA", "RAFIDAIN", "THAQALAYN", "MUKABELE", 
@@ -103,25 +103,31 @@ def is_local_or_unwanted(name, group=""):
     name_upper = name.strip().upper()
     group_upper = group.upper()
 
+    # 1. KESİN YASAKLILAR
     if any(block in name_upper for block in STRICT_BLOCK_WORDS):
         return True
 
+    # 2. Radyo Kontrolü
     if is_radio(name, group):
         return True
 
+    # 3. MÜZİK KANALLARINA ÖZEL İZİN
+    if "MUSIC" in group_upper or any(m in name_upper for m in ["MUSIC", "MTV", "VEVO", "TRACE", "STINGRAY", "XITE"]):
+        return False
+
+    # 4. YEREL/ŞEHİR FİLTRESİ (Beyaz listeden önce kontrol edilecek, Alanya ATV'yi engelleyecek)
+    name_lower = name.lower()
+    pattern = r'\b(' + '|'.join(re.escape(kw) for kw in EXCLUDE_KEYWORDS) + r')\b'
+    if re.search(pattern, name_lower):
+        return True
+
+    # 5. ULUSAL KANAL ONAYI
     for national in NATIONAL_WHITELIST:
         if national in name_upper:
             return False
 
-    if "MUSIC" in group_upper or any(m in name_upper for m in ["MUSIC", "MTV", "VEVO", "TRACE", "STINGRAY", "XITE"]):
-        return False
-
+    # 6. Numaralı yerel TV'ler (TV 41 vb.)
     if re.search(r"(KANAL|TIVI|TV)\s*\d+", name_upper):
-        return True
-
-    name_lower = name.lower()
-    pattern = r'\b(' + '|'.join(re.escape(kw) for kw in EXCLUDE_KEYWORDS) + r')\b'
-    if re.search(pattern, name_lower):
         return True
 
     return False
@@ -141,13 +147,13 @@ def threaded_verify_links(entries):
     print(f"[{len(entries)} kanal için link doğrulaması yapılıyor...]")
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_map = {
-            executor.submit(verify_link, link): (name, group, link)
-            for name, group, link in entries
+            executor.submit(verify_link, link): (name, group, logo, link)
+            for name, group, logo, link in entries
         }
         for future in as_completed(future_map):
-            name, group, link = future_map[future]
+            name, group, logo, link = future_map[future]
             if future.result():
-                valid_results.append((name, group, link))
+                valid_results.append((name, group, logo, link))
     return valid_results
 
 def parse_m3u(url, default_label):
@@ -163,6 +169,11 @@ def parse_m3u(url, default_label):
                 line_info = lines[i]
                 group_match = re.search(r'group-title="([^"]+)"', line_info)
                 group = group_match.group(1) if group_match else default_label
+                
+                # Orijinal logoyu (varsa) yakala
+                logo_match = re.search(r'tvg-logo="([^"]+)"', line_info, re.IGNORECASE)
+                logo = logo_match.group(1) if logo_match else ""
+
                 name = line_info.split(",")[-1].strip()
                 
                 if is_local_or_unwanted(name, group):
@@ -171,7 +182,7 @@ def parse_m3u(url, default_label):
                 if i + 1 < len(lines):
                     link = lines[i + 1].strip()
                     if link.startswith("http"):
-                        entries.append((name, group, link))
+                        entries.append((name, group, logo, link))
         
         return threaded_verify_links(entries)
     except Exception as e:
@@ -189,7 +200,7 @@ def main():
     seen_normalized_names = set()
     cleaned_channels = []
 
-    for name, group, url in raw_channels:
+    for name, group, logo, url in raw_channels:
         normalized_name = normalize_channel_name(name)
         nospace_name = normalized_name.replace(" ", "")
         
@@ -204,27 +215,30 @@ def main():
         if final_group == "Diğer":
             continue
 
-        cleaned_channels.append((name.strip(), final_group, url))
+        cleaned_channels.append((name.strip(), final_group, logo, url))
 
-    # Kategorilere (A-Z) göre sırala
+    # A-Z Sıralama
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
-    # --- MANUEL YETİŞKİN KANALLARI EKLEME BLOĞU ---
+    # --- MANUEL YETİŞKİN KANALLARI ---
+    # Logosu olmayanlar için logo parametresini boş ("") bırakıyoruz.
     adult_channels = [
-        ("Brazzers TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin1.m3u8"),
-        ("Hustler TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin2.m3u8"),
-        ("Dorcel TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin3.m3u8"),
-        ("Playboy TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin4.m3u8"),
-        ("Private TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin5.m3u8")
+        ("Brazzers TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin1.m3u8"),
+        ("Hustler TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin2.m3u8"),
+        ("Dorcel TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin3.m3u8"),
+        ("Playboy TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin4.m3u8"),
+        ("Private TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin5.m3u8")
     ]
     cleaned_channels.extend(adult_channels)
-    # ----------------------------------------------
 
+    # M3U Dosyasını Yaz
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write("# Otomatik Oluşturulan Playlist - Sadece TV Kanalları (Radyosuz)\n")
-        for name, group, url in cleaned_channels:
-            f.write(f'#EXTINF:-1 group-title="{group}",{name}\n{url}\n')
+        for name, group, logo, url in cleaned_channels:
+            # tvg-logo özelliğini koruyarak satırı oluştur
+            logo_attr = f' tvg-logo="{logo}"' if logo else ""
+            f.write(f'#EXTINF:-1 group-title="{group}"{logo_attr},{name}\n{url}\n')
             
     print(f"--- İşlem Tamamlandı: {len(cleaned_channels)} adet TV kanalı 'channels1.m3u' dosyasına kaydedildi. ---")
 
