@@ -16,11 +16,56 @@ SOURCES = {
     "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
-# 🇹🇷 Sadece Kabul Edilecek Temel Ulusal TV Kanalları
+# 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları (Tüm Varyasyonlar, Bitişik/Ayrı, TR/EN Karakterler)
 NATIONAL_WHITELIST = [
-    "TRT 1", "KANAL D", "SHOW TV", "STAR TV", "NOW TV", "TV8", "KANAL 7", 
-    "FOX TV","HABERTURK", "NTV", "CNN TURK", "TRT HABER","A HABER", "TGRT HABER",
-    "HABER GLOBAL", "24 TV"
+    # KANAL D
+    "KANAL D", "KANALD", 
+    # SHOW TV
+    "SHOW TV", "SHOWTV", 
+    # STAR TV
+    "STAR TV", "STARTV", 
+    # NOW (Eski FOX)
+    "NOW TV", "NOWTV", "NOW",
+    # TV8 & TV8.5
+    "TV 8", "TV8", "TV 8.5", "TV8.5", "TV8,5", "TV85",
+    # KANAL 7
+    "KANAL 7", "KANAL7",
+    # BEYAZ TV
+    "BEYAZ TV", "BEYAZTV",
+    # TEVE2 / TV2
+    "TEVE 2", "TEVE2", "TV 2", "TV2",
+    # DMAX & TLC
+    "DMAX", "D MAX", "TLC", 
+    
+    # HABER KANALLARI
+    "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK",
+    "NTV", 
+    "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
+    "A HABER", "AHABER",
+    "TGRT HABER", "TGRTHABER",
+    "HABER GLOBAL", "HABERGLOBAL",
+    "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT",
+    "HALK TV", "HALKTV",
+    "SÖZCÜ TV", "SOZCU TV", "SÖZCÜTV", "SOZCUTV", "SZC TV", "SZCTV",
+    "TV 100", "TV100",
+    "TELE 1", "TELE1",
+    "KRT TV", "KRT",
+    "ULUSAL KANAL", "ULUSALKANAL",
+    "BENGÜTÜRK", "BENGUTURK", "BENGÜ TÜRK", "BENGU TURK",
+
+    # TRT KANALLARI (Bitişik, Ayrı, TR-EN Karakter)
+    "TRT 1", "TRT1",
+    "TRT HABER", "TRTHABER",
+    "TRT BELGESEL", "TRTBELGESEL",
+    "TRT SPOR", "TRTSPOR",
+    "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
+    "TRT MÜZİK", "TRT MUZIK", "TRTMÜZİK", "TRTMUZIK",
+    
+    # DİĞER TEMATİK VE SPOR
+    "A SPOR", "ASPOR",
+    "A NEWS", "ANEWS",
+    "MİNİKA", "MINIKA",
+    "VAV TV", "VAVTV"
 ]
 
 # 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler
