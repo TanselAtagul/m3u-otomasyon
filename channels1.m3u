@@ -1,1436 +1,1400 @@
 #EXTM3U
 # Otomatik Oluşturulan Playlist - Sadece TV Kanalları (Radyosuz)
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png",ATV
-http://89.187.191.41/ATV-HD-TR/video.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png",CNBC-e HD
+#EXTINF:-1 group-title="1. Ulusal",ATV (Turkiye) (1080p)
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
+#EXTINF:-1 group-title="1. Ulusal",CNBC-e
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png",KANAL 7
-https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png",KANAL D
+#EXTINF:-1 group-title="1. Ulusal",Kanal 7 (720p)
+https://kanal7.blutv.com/blutv_kanal7_live/live.m3u8
+#EXTINF:-1 group-title="1. Ulusal",Kanal D (Turkiye) (1080p)
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png",NOW TV
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png",SHOW TV HD
-https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png",STAR TV
-https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=1740db13-3ee9-4858-8d2c-b1a9cfaa3718
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/turkey/teve2-tr.png",TEVE2
-https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/teve2/teve2_1080p.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/turkey/trt-world-tr.png",TRT WORLD
-https://tv-trtworld.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 group-title="1. Ulusal",TRT1
+#EXTINF:-1 group-title="1. Ulusal",Star TV (Turkiye) (720p)
+https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5
+#EXTINF:-1 group-title="1. Ulusal",TRT 1 (1440p)
 https://tv-trt1.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 group-title="1. Ulusal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png",TV 8
-https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8_1080p.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/52/A_Haber_logo.png",A HABER FHD
+#EXTINF:-1 group-title="1. Ulusal",TRT World
+https://tv-trtworld.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="1. Ulusal",TV8 (Turkiye) (1080p)
+https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 group-title="2. Haber",24 TV (720p)
+https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
+#EXTINF:-1 group-title="2. Haber",360 (720p) [Not 24/7]
+https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
+#EXTINF:-1 group-title="2. Haber",A Haber (1080p)
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/bloomberg-ht.png",BLOOMBERG HT HD
-https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://i.ibb.co/bFsmkwJ/cnn-turk.png",CNN TURK
-http://c3921155.edmonst.net/iptv/DVHP2VB5QXL7UC/6926/index.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://i.ibb.co/4ZpZWkf/haber-global.png",HABER GLOBAL
-https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/78/HABERturk_logo.png",HABER TURK
-https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8b65nnyxpdwm&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=2
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/61/Habert%C3%BCrk_TV_logo.png",HABERTURK
-https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8c/Halk_TV_logo.png",Halk TV
-https://halktv-live.daioncdn.net/halktv/halktv_1080p.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/36/NTV_logo.png",NTV
-https://emmazbvkkf.turknet.ercdn.net/cnifuowzza/ntv/ntv_720p.m3u8
-#EXTINF:-1 group-title="2. Haber",TELE1
-https://tele1-live.ercdn.net/tele1/tele1_1080p.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_HABER_logosu.png",TGRT HABER
+#EXTINF:-1 group-title="2. Haber",Bloomberg HT (720p)
+https://mumbai-edge.smartplaytv.in/BloombergHT/index.m3u8
+#EXTINF:-1 group-title="2. Haber",CNN Turk (1080p)
+http://85.117.61.84/cnnturk/index.m3u8
+#EXTINF:-1 group-title="2. Haber",DHA (720p) [Not 24/7]
+https://603c568fccdf5.streamlock.net/live/dhaweb1_C5efC/playlist.m3u8
+#EXTINF:-1 group-title="2. Haber",Finans Turk TV (720p)
+https://yayin30.haber100.com/live/finansturk/playlist.m3u8
+#EXTINF:-1 group-title="2. Haber",Flash Haber TV
+https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/playlist.m3u8
+#EXTINF:-1 group-title="2. Haber",Haber Global (720p) [Not 24/7]
+https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
+#EXTINF:-1 group-title="2. Haber",Haberturk TV (720p) [Not 24/7]
+https://tv.ensonhaber.com/haberturk/haberturk.m3u8
+#EXTINF:-1 group-title="2. Haber",Halk TV SD (1080p)
+https://halktv-live.daioncdn.net/halktv/halktv.m3u8
+#EXTINF:-1 group-title="2. Haber",KRT (1080p)
+https://raw.githubusercontent.com/yaskar661-lgtm/stream/refs/heads/main/filbox/krthd.m3u8
+#EXTINF:-1 group-title="2. Haber",NTV (Turkiye)
+https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
+#EXTINF:-1 group-title="2. Haber",TGRT Haber (720p)
 https://canli.tgrthaber.com/tgrt.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b3/TRT_Haber_logo_2021.png",TRT HABER
-https://tv-trthaber.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1 group-title="2. Haber" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/turkey/tv100-tr.png",TV100
-https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
-#EXTINF:-1 group-title="3. Spor" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/23/A_Spor_logo.png",A SPOR
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aSPOR/aSPOR_1080p.m3u8
-#EXTINF:-1 group-title="3. Spor",HT SPOR
-https://ciner-live.ercdn.net/htSPOR/htSPOR.m3u8
-#EXTINF:-1 group-title="3. Spor",SPORTS TV
-https://live.SPORtstv.com.tr/hls/low/SPORtstv_hd/index.m3u8
-#EXTINF:-1 group-title="3. Spor",TJK TV
-https://tjktv-live.tjk.org/tjktv_1080p.m3u8
-#EXTINF:-1 group-title="3. Spor" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/ae/TRT_Spor_logo_2021.png",TRT SPOR
-http://176.65.146.171:9981/stream/channelid/835819132?profile=htsp
-#EXTINF:-1 group-title="3. Spor" tvg-logo="https://tv.kolaytv.org/trt-SPOR-yildiz.png",TRT SPOR YILDIZ
-http://162.212.179.33:80/dvrfl05/gin-trtSPOR2/playlist.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi",DİZİ TV
-https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/dizi-tv/playlist/0.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/7d58e86c-d38e-4ef5-8ee0-fda0a7e65914.png",Film Screen HD
-https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CSpCdAxnLpqebMLZh6h7vMPk6LYpdqkVHA&s",Movie Music by Stingray (1080p)
+#EXTINF:-1 group-title="2. Haber",TRT Haber (720p)
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="2. Haber",Tele 1 (1080p)
+https://tele1-live.ercdn.net/tele1/tele1.m3u8
+#EXTINF:-1 group-title="3. Spor",A Spor SD (1080p)
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
+#EXTINF:-1 group-title="3. Spor",Eurosport 1 Turkiye
+https://andro.mangeinde4.lat/checklist/androstreamlivees1.m3u8
+#EXTINF:-1 group-title="3. Spor",Eurosport 2 Turkiye
+https://andro.mangeinde4.lat/checklist/androstreamlivees2.m3u8
+#EXTINF:-1 group-title="3. Spor",HTSpor TV (1080p)
+https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
+#EXTINF:-1 group-title="3. Spor",S Sport 2
+https://bcovlive-a.akamaihd.net/29c60f23ea4840ba8726925a77fcfd0b/eu-central-1/6415845530001/profile_0/chunklist.m3u8
+#EXTINF:-1 group-title="3. Spor",TJK TV (1080p)
+https://tjktv-live.tjk.org/tjktv.m3u8
+#EXTINF:-1 group-title="3. Spor",TJK TV 2 (1080p) [Not 24/7]
+https://tjktv-live.tjk.org/tjktv2/tjktv2.m3u8
+#EXTINF:-1 group-title="3. Spor",TRT Spor (720p)
+https://corestream.siteyaptim.live/trt-spor/index.m3u8
+#EXTINF:-1 group-title="3. Spor",TRT Spor 2 Ⓖ
+https://tv-trtspor2.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="3. Spor",TRT Spor Yildiz (1440p) [Geo-blocked]
+https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor
+#EXTINF:-1 group-title="3. Spor",TRT Spor Ⓖ
+https://tv-trtspor1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="4. Sinema & Dizi",Movie Music by Stingray (1080p)
 https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://dsmart-static-v2.ercdn.net//resize-width/400//content/e/ZI/13863/Thumbnail.png?v=636987856299906443",Moviesmart Türk HD
-https://ds.ayakkabiparti.lol/mvturk/index.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://e7.pngegg.com/pngimages/879/420/png-clipart-film-video-production-television-graphy-cine-miscellaneous-label-thumbnail.png",SiNEMA 1
-https://host.onlineradyotv.net:8081/sdmtv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinema1001_logo_CA7B6954-4A94-455B-9A1F-5FC54D88B982.png",SiNEMA 1001
-https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://65.108.239.207/sinema1001/index.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinema1002_logo_FEC606FA-0E12-4B71-AE3A-E9879A6AB678.png",SiNEMA 1002
-https://m3u8-proxy-1-urh0.onrender.com/proxy?url=https://goldvod.org/live/hpgdisco/123456/175.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinemaaile_logo_B2AC3808-8447-4546-80EF-EA50B34D6089.png",SiNEMA Aile
-http://65.108.239.207/sinemaaile/index.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinemaaile2_logo_AD8E0B38-BE08-48CD-ACF5-28DB2419266C.png",SiNEMA Aile 2
-https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://apx-me.com:8880/live/live:persian_share/Hs6guU9ziF/49302.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinemaaksiyon_logo_ECCA8162-A617-4236-82AD-BE14CFBE4C8D.png",SiNEMA Aksiyon
-http://65.108.239.207/sinemaaksiyon/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinemaaksiyon2_logo_1E3AE25E-8ED5-4388-BF6E-6A902F87DF27.png",SiNEMA Aksiyon 2
-https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://65.108.239.207/sinemaaksiyon2/index.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinemakomedi_logo_16AD0158-3FF7-4897-93A7-26577BC1EC33.png",SiNEMA Komedi
-https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://65.108.239.207/sinemakomedi/index.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinemakomedi2_logo_D70C1FCF-C2FF-4A95-980E-1454B5728647.png",SiNEMA Komedi 2
-https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://apx-me.com:8880/live/live:persian_share/Hs6guU9ziF/49306.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinematv_logo_A0CC7C58-E100-4C18-8B8D-BF961C4F785E.png",SiNEMA TV
-http://65.108.239.207/sinema/index.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinema2_logo_C0C84D85-E6DD-4807-B52F-277AD04EAE22.png",SiNEMA TV 2
-https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://65.108.239.207/sinema2/index.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinemayerli_logo_75EF9BC4-3582-455A-BB02-47FAFD00CEA0.png",SiNEMA Yerli
-https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://apx-me.com:8880/live/live:persian_share/Hs6guU9ziF/49303.m3u8
-#EXTINF:-1 group-title="4. Sinema & Dizi" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/sinemayerli2_logo_6C526B31-1CD4-4F36-B514-FDB85BF311F5.png",SiNEMA Yerli 2
-https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://apx-me.com:8880/live/live:persian_share/Hs6guU9ziF/49293.m3u8
-#EXTINF:-1 group-title="5. Belgesel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/87/DMAX_Turkey_logo.png",DMAX
-http://c3921155.edmonst.net/iptv/DVHP2VB5QXL7UC/2290/index.m3u8
-#EXTINF:-1 group-title="5. Belgesel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/36/TLC_Turkey_logo.png",TLC
-http://c3921155.edmonst.net/iptv/DVHP2VB5QXL7UC/6915/index.m3u8
-#EXTINF:-1 group-title="6. Çocuk" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/minika-cocuk.png",MINIKA COCUK HD
+#EXTINF:-1 group-title="4. Sinema & Dizi",MovieSmart Turk (576p)
+http://playhdnewjj.xyz:8080/recc121412/KVqfhtdJ2nQ7/174
+#EXTINF:-1 group-title="5. Belgesel",GZT (1080p)
+https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
+#EXTINF:-1 group-title="5. Belgesel",TGRT Belgesel (576p) [Not 24/7]
+https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
+#EXTINF:-1 group-title="5. Belgesel",TRT Belgesel (720p)
+https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="6. Çocuk",BabyTV Turkiye [Geo-blocked]
+https://saran-live.ercdn.net/babytv/index.m3u8
+#EXTINF:-1 group-title="6. Çocuk",Cartoon Network (Turkiye)
+http://176.65.153.40:6002/play/a013/index.m3u8
+#EXTINF:-1 group-title="6. Çocuk",Disney Jr. (Turkiye) (1080p) [Geo-blocked]
+https://saran-live.ercdn.net/disneyjunior/index.m3u8
+#EXTINF:-1 group-title="6. Çocuk",Minika Cocuk (720p)
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
-#EXTINF:-1 group-title="6. Çocuk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/MinikaGO_logo.png/1536px-MinikaGO_logo.png?20200428070543",MINIKA GO
-http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago_720p.m3u8?tv=1
-#EXTINF:-1 group-title="6. Çocuk" tvg-logo="https://i.ibb.co/mbvwYMB/trt-cocuk.png",TRT COCUK
-https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1 group-title="6. Çocuk" tvg-logo="http://assets.tvcdn.net/15e32d50-4058-4fa6-a6e2-3e1dbc35c70c.jpeg",Zarok TV Kürtçe
+#EXTINF:-1 group-title="6. Çocuk",Minika Go (720p)
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
+#EXTINF:-1 group-title="6. Çocuk",TRT Cocuk (1440p)
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="6. Çocuk",Zarok TV (720p)
 https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png",+MaisUm (720p)
+#EXTINF:-1 group-title="7. Müzik",+MaisUm (720p)
 https://stream.ichibansys.com:3230/hybrid/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Ymk6j5o.png",13 Festival (1080p)
+#EXTINF:-1 group-title="7. Müzik",13 Festival (1080p)
 https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/kj21hwd.png",15+ Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",15+ Music (1080p)
 https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/4Ww7CsR.png",1HD Music Television (1080p)
+#EXTINF:-1 group-title="7. Müzik",1HD Music Television (1080p)
 http://176.118.197.101/1HD/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/sZUIhGc.png",2TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",2TV (1080p)
 https://lnk5511.bstrm.net/live/687e3ff1679c8d4d68fab6c5/hd/manifest.mpd
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/gNWg9tl.png",30A Music (720p)
+#EXTINF:-1 group-title="7. Müzik",30A Music (720p)
 https://30a-tv.com/music.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/1Fyezng.png",360TuneBox (1080p)
+#EXTINF:-1 group-title="7. Müzik",360TuneBox (1080p)
 https://dash3.antik.sk/live/test_360_tunebox_medium_atk/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/iBcqT8L.png",3ABN Praise Him Music Network (720p)
+#EXTINF:-1 group-title="7. Müzik",3ABN Praise Him Music Network (720p)
 https://3abn.bozztv.com/3abn1/PraiseHim/smil:PraiseHim.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ZEWHe1B.png",4 Fun Dance
+#EXTINF:-1 group-title="7. Müzik",4 Fun Dance
 http://92.114.85.87:8018/play/a00k/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/rI1wo2l.png",4 Fun TV
+#EXTINF:-1 group-title="7. Müzik",4 Fun TV
 https://stream.4fun.tv:8888/sd/4fun_sd_high.m3u8
 #EXTINF:-1 group-title="7. Müzik",4 Music
 https://musichls.persiana.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.aparatchi.com/images/chanells-logo/4kurd.svg",4Kurd
+#EXTINF:-1 group-title="7. Müzik",4Kurd
 https://4kuhls.persiana.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/UJ5oaeU.png",4ever Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",4ever Music (1080p)
 http://stream.mcquack.net/257/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://radio7note.com/img/favicon/android-icon-192x192.png",7 RadioVisione (720p)
+#EXTINF:-1 group-title="7. Müzik",7 RadioVisione (720p)
 https://stream10.xdevel.com/video1s976543-1932/stream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/y4kNV3Q.png",70-80 TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",70-80 TV (1080p)
 https://585b674743bbb.streamlock.net/9050/9050/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/zDiIhdN.png",7S Music (576p)
+#EXTINF:-1 group-title="7. Müzik",7S Music (576p)
 https://cdn.pishow.tv/ott/live/1257/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/7X_Music.png",7X Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",7X Music (1080p)
 https://7xshreeshyam.akamaized.net/7XPunjabi/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/i3YwORV.png",88 Stereo (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",88 Stereo (720p) [Not 24/7]
 http://k3.usastreams.com/CableLatino/88stereo/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/Kc0xHyBb/8XM-Logo.png",8XM
+#EXTINF:-1 group-title="7. Müzik",8XM
 https://cdn4.mjunoon.tv:8087/streamtest/131M/chunks.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png",9X Jalwa (1080p)
+#EXTINF:-1 group-title="7. Müzik",9X Jalwa (1080p)
 https://wiselp.wiseplayout.com/9X_Jalwa/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://dtil.tmsimg.com/assets/s90012_ld_h15_aa.png?lock=720x540",9X Jhakaas (1080p)
+#EXTINF:-1 group-title="7. Müzik",9X Jhakaas (1080p)
 https://amg01281-9xmediapvtltd-9xjhakaas-samsungin-ci2cs.amagi.tv/playlist/amg01281-9xmediapvtltd-9xjhakaas-samsungin/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_TASHAN/images/LOGO_HD/image.png",9X Tashan (1080p)
+#EXTINF:-1 group-title="7. Müzik",9X Tashan (1080p)
 https://amg01281-9xmediapvtltd-9xtashan-samsungin-xz1sd.amagi.tv/playlist/amg01281-9xmediapvtltd-9xtashan-samsungin/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9XM/images/LOGO_HD/image.png",9XM (1080p)
+#EXTINF:-1 group-title="7. Müzik",9XM (1080p)
 https://9xjio.wiseplayout.com/9XM/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/2pAHdAi.png",A1 (576p)
+#EXTINF:-1 group-title="7. Müzik",A1 (576p)
 http://31.148.48.15/A1/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Fykhzxh.jpg",A2i Music (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",A2i Music (720p) [Not 24/7]
 https://stream.sen-gt.com/A2iMusic/myStream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/8pzEmcJ.jpeg",ACW UG TV (480p)
+#EXTINF:-1 group-title="7. Müzik",ACW UG TV (480p)
 https://live.acwugtv.com/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/LctanF8.png",AFN TV (720p)
+#EXTINF:-1 group-title="7. Müzik",AFN TV (720p)
 https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/yj8RNnG.png",AMC (Afghanistan) (1080p)
+#EXTINF:-1 group-title="7. Müzik",AMC (Afghanistan) (1080p)
 https://amchls.wns.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/06zuf64.png",AMusic Channel (720p)
+#EXTINF:-1 group-title="7. Müzik",AMusic Channel (720p)
 http://mn-nl.mncdn.com/amusictv/amusicsrt.stream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.jagobd.com/wp-content/uploads/2015/12/atnmusic.jpg?x50681",ATN Music (360p)
+#EXTINF:-1 group-title="7. Müzik",ATN Music (360p)
 https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AXS_TV_logo.svg/960px-AXS_TV_logo.svg.png",AXS TV (576p)
+#EXTINF:-1 group-title="7. Müzik",AXS TV (576p)
 https://tvsen3.aynaott.com/P2fJzfsg/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/aryatvtamil.png",Aaryaa TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Aaryaa TV (1080p)
 https://stream.ottlive.co.in/aryatvtamil/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://assets.mbcmood.com/channels/1720184087Abdullah%20Majeed%20Abdullah%20banner.png",Abdulmajeed Abdullah (1080p)
+#EXTINF:-1 group-title="7. Müzik",Abdulmajeed Abdullah (1080p)
 https://d2hng5r56zpsbw.cloudfront.net/out/v1/9c4c990f44bb4767bb46271f326dd574/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/VCUZKiw.png",Activa TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Activa TV (720p)
 https://streamtv.mediasector.es/hls/activatv/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/QoDpnKg.png",Adria Music Television
+#EXTINF:-1 group-title="7. Müzik",Adria Music Television
 https://adriaapp.b-cdn.net/1080p/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/232ndRK.png",Afrobeat TV Entertainment (1080p)
+#EXTINF:-1 group-title="7. Müzik",Afrobeat TV Entertainment (1080p)
 https://stream.ecable.tv/afrobeats/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/o6HSfNg.png",Aghani Aghani TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Aghani Aghani TV (1080p)
 https://cdn.streamlane.tv/hls/aghanitv/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/JdKxscs.png",AlbKanale Music TV HD (1080p)
+#EXTINF:-1 group-title="7. Müzik",AlbKanale Music TV HD (1080p)
 https://albportal.net/albkanalemusic.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/MIBZ2pZ.png",Alegria TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Alegria TV (720p)
 https://lbgo.bozztv.com/ssh101/ssh101/confirmatv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/bRH34Rn.png",Allegro HD (1080p)
+#EXTINF:-1 group-title="7. Müzik",Allegro HD (1080p)
 http://158.172.155.130:8000/play/a0dn/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/KoQPpVh.jpeg",Andina RTV (720p)
+#EXTINF:-1 group-title="7. Müzik",Andina RTV (720p)
 https://live-evg8.tv360.bitel.com.pe/bitel/andinatvSRT/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/rmCBD3e.png",Andy Haryana (576p)
+#EXTINF:-1 group-title="7. Müzik",Andy Haryana (576p)
 https://mumt03.tangotv.in/Dsly5z3HANDYHARYANA/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/nUKFDsb.jpeg",Antenne Kaernten (720p)
+#EXTINF:-1 group-title="7. Müzik",Antenne Kaernten (720p)
 https://60efd7a2b4d02.streamlock.net/a_kaernten/ngrp:livestream_all/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/qnappvd.jpeg",Antenne Steiermark (720p)
+#EXTINF:-1 group-title="7. Müzik",Antenne Steiermark (720p)
 https://60efd7a2b4d02.streamlock.net/a_steiermark/ngrp:livestream_all/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/GW750Zc.png",Antenne Vorarlberg (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Antenne Vorarlberg (720p) [Not 24/7]
 https://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livestream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/sTOoDy1.png",Arabica TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Arabica TV (720p)
 http://istream.binarywaves.com:8081/hls/arabica/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ZbrDIbZ.png",Atomic Academy TV (480p)
+#EXTINF:-1 group-title="7. Müzik",Atomic Academy TV (480p)
 https://atomic.streamnet.ro/academia.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/O4uI0Uy.png",Atomic TV (360p)
+#EXTINF:-1 group-title="7. Müzik",Atomic TV (360p)
 https://atomic.streamnet.ro/atomictv.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.audiokiss.com/audiokiss/wp-content/uploads/sites/4/2021/02/Audio_kiss800-768x405.png",Audiokiss (1080p)
+#EXTINF:-1 group-title="7. Müzik",Audiokiss (1080p)
 https://master.tucableip.com/audiokisstv/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/3I1n7fO.png",Avang TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Avang TV (1080p)
 https://hls.avang.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/g1BFoSs.png",Azahares Radiovisual Multimedia (720p)
+#EXTINF:-1 group-title="7. Müzik",Azahares Radiovisual Multimedia (720p)
 https://streamyes.alsolnet.com/azaharesfm/live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/hytapio.png",B4U Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",B4U Music (1080p)
 https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/720p/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/egK33Dj.png",BEATTV (1080p)
+#EXTINF:-1 group-title="7. Müzik",BEATTV (1080p)
 https://tv.beatfm.nl/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/DfsCJwk/Uz-biz-music-5462.jpg",BIZ Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",BIZ Music (1080p)
 https://fl.biztv.media/music_720_QAKpGmVUjaPApCNjpsgBxrdqNihAkl/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/mcNjuuO.png",BOKTV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",BOKTV (720p) [Not 24/7]
 https://livestream2.bokradio.co.za/hls/Bok5c.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/qYObfrG.png",BRIDGE (576p)
+#EXTINF:-1 group-title="7. Müzik",BRIDGE (576p)
 http://178.134.1.158:8081/BRIDGE/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/JJTQq81.png",BRIDGE Classic (576p)
+#EXTINF:-1 group-title="7. Müzik",BRIDGE Classic (576p)
 http://5.188.159.128:8070/Bridge_TV_Classic/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/EazL8w7.png",BRIDGE Deluxe (1080p)
+#EXTINF:-1 group-title="7. Müzik",BRIDGE Deluxe (1080p)
 http://31.148.48.15/Bridge_TV_HD/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/sIW9oR4.png",BRIDGE Hits (576p)
+#EXTINF:-1 group-title="7. Müzik",BRIDGE Hits (576p)
 http://5.188.159.128:8070/Bridge_TV_Hits/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/MHuwct2.png",BRIDGE Rock (576p)
+#EXTINF:-1 group-title="7. Müzik",BRIDGE Rock (576p)
 http://178.134.1.158:8081/BRIDGEROCK/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/vygOosC.png",BTA TV (720p)
+#EXTINF:-1 group-title="7. Müzik",BTA TV (720p)
 https://cloud.fastchannel.es/manifiest/hls/prog9/btatv.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Balle_Balle_TV.png",Balle Balle (1080p)
+#EXTINF:-1 group-title="7. Müzik",Balle Balle (1080p)
 https://mcncdndigital.com/worldpunjabitv/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/4DfnOTA.png",Bandamax (1080p)
+#EXTINF:-1 group-title="7. Müzik",Bandamax (1080p)
 http://181.78.106.127:5000/play/ca064/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TZ1unwF.png",Baraza TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Baraza TV (1080p)
 https://eco.streams.ovh:8081/barazatv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TZ1unwF.png",Baraza TV Deep House (720p)
+#EXTINF:-1 group-title="7. Müzik",Baraza TV Deep House (720p)
 https://rtmp.streams.ovh:1936/barazarelax/barazazararelax/barazarelax/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TZ1unwF.png",Baraza TV Relaxing (720p)
+#EXTINF:-1 group-title="7. Müzik",Baraza TV Relaxing (720p)
 https://rtmp.streams.ovh:1936/barazarelax/barazarelax/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/0DUprIW.png",Bel RTL (1080p)
+#EXTINF:-1 group-title="7. Müzik",Bel RTL (1080p)
 https://bel-live-hls.akamaized.net/hls/live/2038650/BEL-Live-HLS/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dt-logo-ARVwXaV7R0NW1kmXYBxN0OA78sD706.png",Best of Dance TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Best of Dance TV (1080p)
 https://m1b2.worldcast.tv/dancetelevisionone/dancetelevisionone.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/yIqOcP5.png",Bibel TV Musik (720p)
+#EXTINF:-1 group-title="7. Müzik",Bibel TV Musik (720p)
 https://bibeltv03.iptv-playoutcenter.de/bibeltv03/bibeltv03.stream_1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/iSzAO32.png",Black (1080p)
+#EXTINF:-1 group-title="7. Müzik",Black (1080p)
 http://stream.mcquack.net/283/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Boogle_Bollywood.png",Boogle Bollywood (720p)
+#EXTINF:-1 group-title="7. Müzik",Boogle Bollywood (720p)
 https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://botflix.tv/assets/img/botflix-mark.90c6a6f9a4.webp",Botflix Radioo (1080p)
+#EXTINF:-1 group-title="7. Müzik",Botflix Radioo (1080p)
 https://hls.botflix.tv/radioo/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CjOWx7L.png",CCTV-11 (720p)
+#EXTINF:-1 group-title="7. Müzik",CCTV-11 (720p)
 http://74.91.26.218:82/live/cctv11hd.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CCV0eRG.png",CCTV-15 (720p)
+#EXTINF:-1 group-title="7. Müzik",CCTV-15 (720p)
 http://74.91.26.218:82/live/cctv15hd.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/IiiRmrf.png",CCTV-Storm Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",CCTV-Storm Music (1080p)
 http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/hutdRfk.png",CEACOM TV (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",CEACOM TV (1080p) [Not 24/7]
 https://eu1.servers10.com:8081/ceacom/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/FCb7Ag2.png",CMC TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",CMC TV (1080p)
 https://stream.cmctv.hr:49998/cmc/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/QsANRSu.png",CMC-USA Country Music Channel (720p)
+#EXTINF:-1 group-title="7. Müzik",CMC-USA Country Music Channel (720p)
 https://hwlive.streamingmediahosting.com/14215-live/0_obd393sh/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/S7DOpdY.png",CMT (720p)
+#EXTINF:-1 group-title="7. Müzik",CMT (720p)
 http://23.237.104.106:8080/USA_CMT/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/9ysjkkL.png",CMT Equal Play (720p)
+#EXTINF:-1 group-title="7. Müzik",CMT Equal Play (720p)
 https://jmp2.uk/plu-5f68f53eb1e5800007390bf8.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/3yeGDTP.png",Cadena Elite (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Cadena Elite (720p) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8004/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/FyNot5W.png",California Music Channel (1080p)
+#EXTINF:-1 group-title="7. Müzik",California Music Channel (1080p)
 https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/sgRDRBK.jpg",Canal 3 KMK TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Canal 3 KMK TV (720p)
 https://live20.bozztv.com/giatv/giatv-KMKTV/KMKTV/chunks.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/JigzJck.png",Chamame TV
+#EXTINF:-1 group-title="7. Müzik",Chamame TV
 https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/38Q5L5W.png",City Eden Birma Play [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",City Eden Birma Play [Not 24/7]
 https://cityeden.catcast.tv/content/34364/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/l7BE8l6.png",City Eden Classic Music [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",City Eden Classic Music [Not 24/7]
 https://cityeden.catcast.tv/content/47400/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ozEqob9.png",City Eden Play [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",City Eden Play [Not 24/7]
 https://cityeden.catcast.tv/content/34100/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/V3MTfyc.png",City Eden Sirtaki TV [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",City Eden Sirtaki TV [Not 24/7]
 https://cityeden.catcast.tv/content/46421/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/mFL452f.png",City TV (Bulgaria) (576p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",City TV (Bulgaria) (576p) [Not 24/7]
 https://tv.city.bg/play/tshls/citytv/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/vrSFUwv.png",Claro Musica TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Claro Musica TV (1080p)
 http://45.171.64.30:6060/play/a010
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TpXs1qA.png",Classic Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",Classic Music (1080p)
 http://stream.mcquack.net/312/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/bLjmQTU.png",Classica (720p)
+#EXTINF:-1 group-title="7. Müzik",Classica (720p)
 https://jmp2.uk/plu-5f779951372da90007fd45e8.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/MyiA92q.png",Clubbing TV France
+#EXTINF:-1 group-title="7. Müzik",Clubbing TV France
 https://d1j2csarxnwazk.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-uze1m6xh4fiyr-ssai-prd/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/MyiA92q.png",Clubbing TV UK (720p)
+#EXTINF:-1 group-title="7. Müzik",Clubbing TV UK (720p)
 https://a-cdn.klowdtv.com/live3/clubbingtv_720p/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ccdwsWj.png",Company TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Company TV (720p)
 https://5929b138b139d.streamlock.net/CompanyTV/smil:CompanyTV.smil/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/u2irADf.png",Concert Channel (720p)
+#EXTINF:-1 group-title="7. Müzik",Concert Channel (720p)
 https://jmp2.uk/plu-6868152657543d1f8be4ece3.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/qEk0QGa.png",Conecta TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Conecta TV (720p)
 https://stream8.mexiserver.com:19360/conectatvx/conectatvx.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/HVdbXku.png",Corazon TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Corazon TV (720p)
 http://181.79.86.130:8000/play/a05d/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/VOIwYYd.png",Couleur 3 (720p)
+#EXTINF:-1 group-title="7. Müzik",Couleur 3 (720p)
 https://visualradio-rts-couleur3-d.akamaized.net/out/v1/6a1472634ad745f59a9e63ee8adbbc00/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6901dfd41a05195b77301d7b/b306e57e4_Logo-TV-C.png",Cumbia Mix (720p)
+#EXTINF:-1 group-title="7. Müzik",Cumbia Mix (720p)
 https://cloud.tvomix.com/CUMBIAMIX/index.m3u8
 #EXTINF:-1 group-title="7. Müzik",D Music (1280p) [Not 24/7]
 http://43.252.18.195:5080/live/streams/WCVNews.playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/BmklHs8.png",DASDING 90.8 (720p)
+#EXTINF:-1 group-title="7. Müzik",DASDING 90.8 (720p)
 https://swrdasdingvr-hls.akamaized.net/hls/live/2018681/dasdingvr/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ab6p2SW.png",DBM TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",DBM TV (1080p)
 https://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/sJaBU7X.jpeg",DMF (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",DMF (1080p) [Not 24/7]
 https://d-m-f.iptv-playoutcenter.de/dmf/dmf1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik",DREAM TURK
-https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/YMgzzkf.png",DSTV (Bulgaria) (614p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",DSTV (Bulgaria) (614p) [Not 24/7]
 http://46.249.95.140:8081/hls/data.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://pbs.twimg.com/profile_images/1268129322730127364/OJlQBZpS_400x400.jpg",Dance Television (1080p)
+#EXTINF:-1 group-title="7. Müzik",Dance Television (1080p)
 https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/uMw3kks.png",DanceHits80
+#EXTINF:-1 group-title="7. Müzik",DanceHits80
 http://dancehits80.denvs.ru:8080/index.m3u8
 #EXTINF:-1 group-title="7. Müzik",DanceTV Algorhythm (1080p)
 https://m2b2.worldcast.tv:7443/dancetelevisionfour/dancetelevisionfour.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dhd-logo-GjMR8ITxgPd9PDBLDf0I87dajJTZnb.png",DanceTV Deep House District (1080p)
+#EXTINF:-1 group-title="7. Müzik",DanceTV Deep House District (1080p)
 https://m1b2.worldcast.tv/dancetelevisiontwo/dancetelevisiontwo.m3u8
 #EXTINF:-1 group-title="7. Müzik",DanceTV EDM Mainstage (1080p)
 https://mbit1.worldcast.tv/dancetelevisionseven/multibit.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hf-logo-uDcW7mhXn7bEtZ18czXFyZDlhj8ayX.png",DanceTV House Floor (1080p)
+#EXTINF:-1 group-title="7. Müzik",DanceTV House Floor (1080p)
 https://m2b2.worldcast.tv:7443/dancetelevisionfive/dancetelevisionfive.m3u8
 #EXTINF:-1 group-title="7. Müzik",DanceTV Minimal Tech (1080p)
 https://mbit1.worldcast.tv/dancetelevisionsix/multibit.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tw-logo-dqofMpknglzhuurr3HkwtzR7cqGZHj.png",DanceTV Techno Warehouse (1080p)
+#EXTINF:-1 group-title="7. Müzik",DanceTV Techno Warehouse (1080p)
 https://m2b2.worldcast.tv:7443/dancetelevisionthree/dancetelevisionthree.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/IV2Qvc0.png",Deep House District (1080p)
+#EXTINF:-1 group-title="7. Müzik",Deep House District (1080p)
 https://eu-nl-012.worldcast.tv/dancetelevisiontwo/dancetelevisiontwo.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/xIYITQ9.png",Deewana HD (540p)
+#EXTINF:-1 group-title="7. Müzik",Deewana HD (540p)
 https://live20.bozztv.com/giatvplayout7/giatv-209592/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/ZTYvHyR/DEGA-TV-TELEPACK.jpg",Dega TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Dega TV (720p) [Not 24/7]
 https://59d39900ebfb8.streamlock.net/saintlouisltv/saintlouisltv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Qu7t15Y.png",Deluxe Dance (1080p)
+#EXTINF:-1 group-title="7. Müzik",Deluxe Dance (1080p)
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/pgCA35z.png",Deluxe Lounge (720p)
+#EXTINF:-1 group-title="7. Müzik",Deluxe Lounge (720p)
 https://jmp2.uk/stvp-CHAJ0500413A
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/HimuPPb.png",Deluxe Music (720p)
+#EXTINF:-1 group-title="7. Müzik",Deluxe Music (720p)
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/s3h67hx.png",Deluxe Rap (1080p)
+#EXTINF:-1 group-title="7. Müzik",Deluxe Rap (1080p)
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Dhamaal_TV.png",Dhamaal (576p) [Geo-blocked]
+#EXTINF:-1 group-title="7. Müzik",Dhamaal (576p) [Geo-blocked]
 https://tvsen6.aynaott.com/F4Z6es8E/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/DhoolTV.png",Dhool TV (576p)
+#EXTINF:-1 group-title="7. Müzik",Dhool TV (576p)
 https://d1msejlow1t3l4.cloudfront.net/fta/subhartitv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DHOOM_MUSIC/images/LOGO_HD/image.png",Dhoom Music (720p)
+#EXTINF:-1 group-title="7. Müzik",Dhoom Music (720p)
 https://cdn.pishow.tv/ott/live/1456/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.discomix.ro/wp-content/uploads/2023/03/Disco-Mix-1.png",Disco Mix (576i) [Geo-blocked]
+#EXTINF:-1 group-title="7. Müzik",Disco Mix (576i) [Geo-blocked]
 https://vs2129.vcdn.biz/781da550c3e711e56f17de33318050f9_megogo/live/hls/b/700_2490_4000/u_sid/0/o/183395021/rsid/39f910cb-e9d4-46a0-b2fb-a12bfc104baf/u_uid/2260062697/u_vod/0/u_device/cms_html5/u_devicekey/_site/lip/81.196.174.41*asn/u_srvc/109126/u_did/web_c02d0d195494991ada83b5ae2a2f87d6041c11b1b8f79fc86ae5b7b557894fa0/type.live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ZZbuTv7.png",Disco Polo Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",Disco Polo Music (1080p)
 http://92.114.85.87:8014/play/a007/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/lSpplhD.png",EBS Musika (720p)
+#EXTINF:-1 group-title="7. Müzik",Dream Turk (720p)
+https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
+#EXTINF:-1 group-title="7. Müzik",EBS Musika (720p)
 https://rpn.bozztv.com/ebstv/ebsmusika/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/B5zssCz.png",EMI TV (576i)
+#EXTINF:-1 group-title="7. Müzik",EMI TV (576i)
 https://hls01ns.antenaplay.ro/hls/emi-tv-sd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETVBeats1.png",ETV Beats (1080p)
+#EXTINF:-1 group-title="7. Müzik",ETV Beats (1080p)
 https://jmp2.uk/stvp-IN4900002RV
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETVMusic12.png",ETV Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",ETV Music (1080p)
 https://mumbai-edge.smartplaytv.in/ETVABHIRUCHI/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/fJdvyrG.png",EU Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",EU Music (1080p)
 http://stream.mcquack.net/261/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TIH3zlP.png",El Sol Network TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",El Sol Network TV (1080p)
 https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHOWBOX/images/LOGO_HD/image.png",Epic Music (576p)
+#EXTINF:-1 group-title="7. Müzik",Epic Music (576p)
 http://66.102.126.10:8000/play/a01i/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHOWBOX/images/LOGO_HD/image.png",Epic Music Digital (1080p)
+#EXTINF:-1 group-title="7. Müzik",Epic Music Digital (1080p)
 https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3cyxq80qusspd/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/o0Fg19Q.png",Eska Rock TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Eska Rock TV (1080p)
 http://92.114.85.87:8016/play/a005/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/N0eH0Cg.png",Eska TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Eska TV (1080p)
 http://92.114.85.87:8018/play/a00h/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/pZAFshQ.png",Eska TV Extra (1080p)
+#EXTINF:-1 group-title="7. Müzik",Eska TV Extra (1080p)
 http://92.114.85.87:8016/play/a008/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/lF0iofX.png",Euro Indie Music Chart TV (360p)
+#EXTINF:-1 group-title="7. Müzik",Euro Indie Music Chart TV (360p)
 http://178.33.224.197:1935/euroindiemusic/euroindiemusic/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/GLc4qrc.png",Europa Plus TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Europa Plus TV (1080p)
 http://31.148.48.15/Europa_Plus_HD/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/GLc4qrc.png",Europa Plus TV Belarus (576p)
+#EXTINF:-1 group-title="7. Müzik",Europa Plus TV Belarus (576p)
 http://46.53.200.153:7777/play/EuropaPlus/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/vPxvbVv.png",FMTV [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",FMTV [Not 24/7]
 https://s2.tvdatta.com:3307/hybrid/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/tXABQDE.png",FON Music (576p)
+#EXTINF:-1 group-title="7. Müzik",FON Music (576p)
 https://stream8.cinerama.uz/1272/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/7lpISyN.jpg",FTV (Uzbekistan) (576p)
+#EXTINF:-1 group-title="7. Müzik",FTV (Uzbekistan) (576p)
 https://stream8.cinerama.uz/1018/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/WMrYEgH.png",FUSION TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",FUSION TV (1080p)
 https://edge20.vedge.infomaniak.com/livecast/ik:fusiontv/manifest.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://shahid.mbc.net/mediaObject/f809d51c-e83d-43c9-8236-78731c2216ad?type=png",Fairuz (1080p)
+#EXTINF:-1 group-title="7. Müzik",Fairuz (1080p)
 https://shd-amg-fast.edgenextcdn.net/tx029/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/6B3Cims.png",Falastini TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Falastini TV (1080p)
 https://rp.tactivemedia.com/palestiniantv_source/live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/bXWzstH.png",Farra Play (576p)
+#EXTINF:-1 group-title="7. Müzik",Farra Play (576p)
 https://stream.farra.com.py/live/farra_low.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/42wImV2.png",Fiesta TV
+#EXTINF:-1 group-title="7. Müzik",Fiesta TV
 https://panelvideo1.intermediahost.co:3286/live/ruzfpkqklive.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/1uoP10V.png",Finest TV (288p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Finest TV (288p) [Not 24/7]
 https://media.finest.tv/hls/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/YdyFJrl.png",First Music Channel (1080p)
+#EXTINF:-1 group-title="7. Müzik",First Music Channel (1080p)
 http://rtmp.one.by:1300
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/rEo7nR1.png",First Music Channel Russia (1080p)
+#EXTINF:-1 group-title="7. Müzik",First Music Channel Russia (1080p)
 http://rtmp.one.by:2300
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Seq7Od7.png",Folk Klub TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Folk Klub TV (720p)
 http://tv1.intv.mk:1935/live2/folkklub/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/4b9aZ9P.png",Folk TV (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Folk TV (1080p) [Not 24/7]
 https://stream.nasatv.com.mk/folktv/hls/folktv_live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/QdOGJes.png",Folklore TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Folklore TV (720p)
 https://play.folkloretv.pe/StreamSD/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ze04puX.png",Folx Music Television
+#EXTINF:-1 group-title="7. Müzik",Folx Music Television
 https://folxapp.b-cdn.net/1080p/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/RK1IASU.png",Folx Slovenija
+#EXTINF:-1 group-title="7. Müzik",Folx Slovenija
 https://folxsloapp.b-cdn.net/1080p/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/T9vWjeB.png",Fuego TV [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Fuego TV [Not 24/7]
 https://streamunoapp.com:3553/live/cromtvlive.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/AhkKr7Y.png",Fun Vision
+#EXTINF:-1 group-title="7. Müzik",Fun Vision
 https://funradiovisionhd.vedge.infomaniak.com/livecast/ik:funradiovisionhd/manifest.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/8LgdPst.png",GEM 24B
+#EXTINF:-1 group-title="7. Müzik",GEM 24B
 https://ca-rt.onetv.app/gem24b/index-0.m3u8?token=onetv202
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/qlI7o7V.png",GEM Mifa
+#EXTINF:-1 group-title="7. Müzik",GEM Mifa
 https://ca-rt.onetv.app/gemmifa/index-0.m3u8?token=onetv202
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/8FIAqR5.png",GEM Mifa +
+#EXTINF:-1 group-title="7. Müzik",GEM Mifa +
 https://ca-rt.onetv.app/gemmifaplus/index-0.m3u8?token=onetv202
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/GJYb8c8.png",GMTV (1080p)
+#EXTINF:-1 group-title="7. Müzik",GMTV (1080p)
 https://livechannel.mdc.akamaized.net/stitch/livechannel/1341/master1400000.m3u8;session=live_stream_1341
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/jkvYVyz/Captura.png",GO TV (720p)
+#EXTINF:-1 group-title="7. Müzik",GO TV (720p)
 https://rds3.desdeparaguay.net/gotv/gotv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/byL1zCV.jpeg",Galactica TV
+#EXTINF:-1 group-title="7. Müzik",Galactica TV
 https://stream.neux.site/memfs/e3f59eec-6b93-45e1-a2ab-c82381c2a9ec.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/uBC8e96.png",Genial TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Genial TV (720p)
 https://v1.tustreaming.cl/genialtv/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://gextv.com/LOGO-WHITE.png",Gex TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Gex TV (1080p)
 https://live20.bozztv.com/akamaissh101/ssh101/gextvaccess/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Ey7Htm8.png",Gugak TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Gugak TV (1080p)
 https://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/sqC2hqV.png",H!t Music Channel (480p)
+#EXTINF:-1 group-title="7. Müzik",H!t Music Channel (480p)
 http://hitmusic.hu/hitmusic.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://watchhmtv.com/hmtv_logo.svg",HMTV (Nigeria) (720p)
+#EXTINF:-1 group-title="7. Müzik",HMTV (Nigeria) (720p)
 https://customer-yzxu6n447dx2x45h.cloudflarestream.com/f255a1e5ef17a8277e15e5f409951e98/manifest/video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/NlKFNHS.png",HTV (720p)
+#EXTINF:-1 group-title="7. Müzik",HTV (720p)
 http://45.171.64.30:6060/play/a012/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/NlKFNHS.png",HTV Argentina (720p)
+#EXTINF:-1 group-title="7. Müzik",HTV Argentina (720p)
 http://45.134.141.161:2200/ARG/HTV/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/iDiGBE3.png",Harmony Gospel Music TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Harmony Gospel Music TV (1080p)
 https://tgn.bozztv.com/watc57/watc57-harmony/watc57-harmony/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/zhCgoru.png",High Vision TV (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",High Vision TV (1080p) [Not 24/7]
 https://streamer1.connectto.com/HIGHVISION_WEB_1205/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/SwWjbPSv/hindi-hits-hd.png",Hindi Hits SD (1080p)
+#EXTINF:-1 group-title="7. Müzik",Hindi Hits SD (1080p)
 http://146.59.253.52:8080/hindihitshd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hitradio_%C3%963.svg/960px-Hitradio_%C3%963.svg.png",Hitradio O3 (720p)
+#EXTINF:-1 group-title="7. Müzik",Hitradio O3 (720p)
 https://studiocam-oe3.mdn.ors.at/orf/studiocam_oe3/q6a/manifest.mpd
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Cx5V233.jpg",Hits 360 TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Hits 360 TV (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/hits360tv/hits360HD.myStream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/VDyf36C.png",Hope Channel PROYECTO JA (360p)
+#EXTINF:-1 group-title="7. Müzik",Hope Channel PROYECTO JA (360p)
 https://edge1-us-miami.picarto.tv/stream/hls/golive%2bXSTUDIOCODE/0_1/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/hwuaomt.png",IQ Channel (720p)
+#EXTINF:-1 group-title="7. Müzik",IQ Channel (720p)
 https://rtmp.info/iqtv/envivo/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Atsf6Cd.png",Identite Tele Caraibes (548p)
+#EXTINF:-1 group-title="7. Müzik",Identite Tele Caraibes (548p)
 https://vdo2.pro-fhi.net:3769/stream/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/1nHxdkR.png",Infinita TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Infinita TV (1080p)
 https://s2.tvdatta.com:3753/hybrid/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Insync.png",Insync (576p)
+#EXTINF:-1 group-title="7. Müzik",Insync (576p)
 https://d1msejlow1t3l4.cloudfront.net/fta/insync/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ISAI_ARUVI/images/LOGO_HD/image.png",Isai Aruvi (396p)
+#EXTINF:-1 group-title="7. Müzik",Isai Aruvi (396p)
 https://segment.yuppcdn.net/140622/isaiaruvi/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/EfsHaMQ.png",Isango TV (480p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Isango TV (480p) [Not 24/7]
 http://80.241.215.175:1935/isangostar/isangostar/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/qzApokm.png",Ishtar TV SD (1080p)
+#EXTINF:-1 group-title="7. Müzik",Ishtar TV SD (1080p)
 https://stream.ishtartv.com/live/iShtarHD/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/JCpbUZB.png",Italianissimo (360p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Italianissimo (360p) [Not 24/7]
 https://vcp.myplaytv.com/italianissimo/italianissimo/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/gKbNqQv.png",Ivoire Channel (720p)
+#EXTINF:-1 group-title="7. Müzik",Ivoire Channel (720p)
 https://video1.getstreamhosting.com:1936/8244/8244/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jarviradio.fi/jrtv2/wp-content/uploads/2022/01/jrtv1.jpg",JRTV Jarviradio (720p)
+#EXTINF:-1 group-title="7. Müzik",JRTV Jarviradio (720p)
 https://streamer.radiotaajuus.fi/memfs/47f113bf-04ea-493b-a9d4-52945fd9db31.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/HWb5Iat.png",Jalwa TV
+#EXTINF:-1 group-title="7. Müzik",Jalwa TV
 http://119.156.228.231:9983/stream/channelid/1893273325?profile=pass&ticket=B3DB50D5930411D593B973B8404789C46D3559B8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CbQlSFX.png",Jazz TV (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Jazz TV (1080p) [Not 24/7]
 https://stream.nasatv.com.mk/jazztv/hls/jazztv_live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/KHuKQQL.png",JooMusic (720p)
+#EXTINF:-1 group-title="7. Müzik",JooMusic (720p)
 https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/1DE7Gmw.png",Jordan Songs (1080p)
+#EXTINF:-1 group-title="7. Müzik",Jordan Songs (1080p)
 https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Song/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/WaaaW0w.png",Juice TV (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Juice TV (1080p) [Not 24/7]
 https://juicex.nz/hls/mystream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/tv60ogG.png",K100 (1080p)
+#EXTINF:-1 group-title="7. Müzik",K100 (1080p)
 https://k100streymi.mbl.is/beint/k100/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.knmusictv.com/wp-content/uploads/2026/01/LOGO2112.png",KN Music TV
+#EXTINF:-1 group-title="7. Müzik",KN Music TV
 https://cdn4.yayin.com.tr/kntv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="7. Müzik",KRAL POP
-http://dygvideo.dygdigital.com/live/hls/kralpop
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/XWXFoJA.png",Kalika TV (576p)
+#EXTINF:-1 group-title="7. Müzik",Kalika TV (576p)
 http://server.applelive.in/kalikatv/kalikatv.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/cgHjg1e.png",Karibena (720p)
+#EXTINF:-1 group-title="7. Müzik",Karibena (720p)
 http://187.102.210.46/KARIBENA/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/2MDjU7x.png",Kayhan TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Kayhan TV (720p)
 https://playout395.livestreamingcdn.com/live/Stream1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/RsGiBwE.png",Kiss Kiss Napoli TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Kiss Kiss Napoli TV (720p)
 https://58f12ffd2447a.streamlock.net/KKTVNapoli/livestream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ja6c2YZ.png",Kiss Kiss TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Kiss Kiss TV (1080p)
 https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/NKfVymH.png",Kiss TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Kiss TV (1080p)
 https://tv.broadcasting.ro/kisstv/a629c031-2170-4ee9-a36d-87a891aa3131.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/sKj3dgc.png",Klape i Tambure TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Klape i Tambure TV (1080p)
 https://stream.cmctv.hr:49998/kit/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/YdDkSJW/VRT-Klara-2020-svg.png",Klara (720p)
+#EXTINF:-1 group-title="7. Müzik",Klara (720p)
 https://live.vrtcdn.be/groupb/live/9c429b62-e160-417a-b438-cdf985bcd352/live.isml/.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Tf0vweF.png",KpopTV Play (576p)
+#EXTINF:-1 group-title="7. Müzik",KpopTV Play (576p)
 https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ch365lh.png",Kral Pop TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Kral Pop TV (720p)
 https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/dQJQv1X.png",Kronehit (1080p)
+#EXTINF:-1 group-title="7. Müzik",Kronehit (1080p)
 https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Zl40NYi.jpg",Kuriakos Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",Kuriakos Music (1080p)
 http://195.23.211.179:1935/kmusic/smil:kmusic.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/KFzEoed.png",LIVExLIVE (1080p)
+#EXTINF:-1 group-title="7. Müzik",LIVExLIVE (1080p)
 https://livestream.liveone.com/lc1/p1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Fa8Vhu0.png",LRT Klasika (1080p)
+#EXTINF:-1 group-title="7. Müzik",LRT Klasika (1080p)
 https://stream-live.lrt.lt/klasika/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/oLuZTMH.png",LRT Opus (1080p)
+#EXTINF:-1 group-title="7. Müzik",LRT Opus (1080p)
 https://stream-live.lrt.lt/opus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/CZJMM4BJVRFANO4VGMMYWSTEVE.png",La 100 (1080p)
+#EXTINF:-1 group-title="7. Müzik",La 100 (1080p)
 https://mdstrm.com/live-stream-playlist/68b74fd1d6512526f1f7c75a.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/7380kTN.png",La 98.1 TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",La 98.1 TV (720p) [Not 24/7]
 https://6019dcac4147f.streamlock.net:9443/la98/Invosa/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://cdn.m3u.cl/logo/1270_La_Clave.png",La Clave (720p)
+#EXTINF:-1 group-title="7. Müzik",La Clave (720p)
 https://unlimited1-cl-isp.dps.live/laclavetv/laclavetv.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/zdrbjDc.png",La Elegida Television
+#EXTINF:-1 group-title="7. Müzik",La Elegida Television
 https://stmv.gmpro.top/laelegidatv/laelegidatv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/GjME5H0.png",La Fabulosa TV (720p)
+#EXTINF:-1 group-title="7. Müzik",La Fabulosa TV (720p)
 https://eu1.servers10.com:8081/8004/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/7Wlt6bc.png",La Hermandad Salsera (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",La Hermandad Salsera (1080p) [Not 24/7]
 https://streamlov.alsolnet.com/hermandadsalsera/live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.tdtparatodos.tv/sites/default/files/la_kalle.png",La Kalle (1080p)
+#EXTINF:-1 group-title="7. Müzik",La Kalle (1080p)
 http://200.122.223.13:55000/play/la-kalle-tdt/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://iili.io/JysD2a4.png",La Que Buena Atlanta
+#EXTINF:-1 group-title="7. Müzik",La Que Buena Atlanta
 https://streamyes.alsolnet.com/quebuenaatlanta/live/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ZqwLPag.jpg",La Top 102.9 (720p)
+#EXTINF:-1 group-title="7. Müzik",La Top 102.9 (720p)
 https://59d39900ebfb8.streamlock.net/top102/top102/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/vgHhh1W.jpg",La Top 107.7 (720p)
+#EXTINF:-1 group-title="7. Müzik",La Top 107.7 (720p)
 https://59d39900ebfb8.streamlock.net/top107/top107/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/hythjEn.png",La Urban TV (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",La Urban TV (1080p) [Not 24/7]
 https://urbanrevolution.es:8443/live/TV/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/DKDFpHt.png",La Voz del Tropico (480p) [Geo-blocked]
+#EXTINF:-1 group-title="7. Müzik",La Voz del Tropico (480p) [Geo-blocked]
 https://ss2.tvrdomi.com:1936/lavozdeltropico/lavozdeltropico/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/i2GnQTq.png",La-X (720p)
+#EXTINF:-1 group-title="7. Müzik",La-X (720p)
 https://stream.eleden.com/livelax/ngrp:livelax_all/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/EJf1eRt.png",LaPuraCrema Television
+#EXTINF:-1 group-title="7. Müzik",LaPuraCrema Television
 https://streamlov.alsolnet.com/lapuracrema/live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Pt4F9Xz.png",LaXitosa Panama (360p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",LaXitosa Panama (360p) [Not 24/7]
 https://stmvideo2.livecastv.com/lax953/lax953/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.lamorerockshowwebtv.com.br/wp-content/uploads/2024/11/logo_rockshow.avif",Lamore Rock Show WebTV (720p)
+#EXTINF:-1 group-title="7. Müzik",Lamore Rock Show WebTV (720p)
 https://a.cdni.live/rodrigo2364/rodrigo2364/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/4kYF4bK.png",Lausitzwelle (1080p)
+#EXTINF:-1 group-title="7. Müzik",Lausitzwelle (1080p)
 https://h056.video-stream-hosting.de/easycast11-live/_definst_/mp4:livestreamhd2/playlist.m3u8?ref=
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://lingkartv.com/assets/img/logo-square.png",Lingkar TV
+#EXTINF:-1 group-title="7. Müzik",Lingkar TV
 https://lingkartv.my.id/hls/lingkartv.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/9qJkxV9.png",Live Music Channel HD (1080p)
+#EXTINF:-1 group-title="7. Müzik",Live Music Channel HD (1080p)
 http://46.53.200.153:7777/play/Live_music_channel/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/U43UrQT.png",Live99FM (1080p)
+#EXTINF:-1 group-title="7. Müzik",Live99FM (1080p)
 https://media.streambrothers.com:1936/8014/8014/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/3fA50RJ.png",Lobo TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Lobo TV (720p)
 https://5ca3e84a76d30.streamlock.net/tvlobo/videotvlobo/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/eT7iE34.png",Look Thoong TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Look Thoong TV (720p) [Not 24/7]
 https://livefta.malimarcdn.com/ftaedge00/lookthoongtv.sdp/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/B8iaejQ.png",Love TV (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Love TV (1080p) [Not 24/7]
 https://stream.nasatv.com.mk/lovetv/hls/lovetv_live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/gb4NmNHT/M1-2025.png",M-1 (480p)
+#EXTINF:-1 group-title="7. Müzik",M-1 (480p)
 https://m-1.data.lt/m-1/smil:m-1.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/wbRdUw8.png",M1 (Ukraine) (1080p)
+#EXTINF:-1 group-title="7. Müzik",M1 (Ukraine) (1080p)
 http://dtv.vol.net.ua/M1-HD/index.m3u8
 #EXTINF:-1 group-title="7. Müzik",M6 Music (1080p)
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/m6_music_hits/live.livx/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/RRc23ra.png",MBC America (1080p)
+#EXTINF:-1 group-title="7. Müzik",MBC America (1080p)
 https://cdn-us-east-prod-ingest-infra-dacast-com.akamaized.net/624ff8f9-db18-da92-4d42-896fa2ff3eb3/source/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/mptwwLs.png",MBC Loud
+#EXTINF:-1 group-title="7. Müzik",MBC Loud
 https://radio-loud-fm.mbc.net/radio-loud-fm_1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://shahid.mbc.net/mediaObject/c2b6a882-458b-446e-b0fe-f97f7992149a?height=auto&width=144&croppingPoint=&version=1&type=png",MBC Mood (1080p)
+#EXTINF:-1 group-title="7. Müzik",MBC Mood (1080p)
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-mood/78367bf48ccdba501d0d014a10c21031/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/j31lBL7.png",MCM Pop
+#EXTINF:-1 group-title="7. Müzik",MCM Pop
 http://176.65.153.78:8201/play/a070/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/EVtWQLd.png",MCM Top (France)
+#EXTINF:-1 group-title="7. Müzik",MCM Top (France)
 http://185.228.163.146:8000/play/a00g/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/j6IiysJ.png",MCN6 Music Channel (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",MCN6 Music Channel (1080p) [Not 24/7]
 https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_MUSIC.smil/Playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/L4cD18H.png",MNM (720p)
+#EXTINF:-1 group-title="7. Müzik",MNM (720p)
 https://live-radio-cf-vrt.akamaized.net/groupa/live/bac277a1-306d-44a0-8e2e-e5b9c07fa270/live.isml/.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/6047fbdbbb776a0007e7f2ff/colorLogoPNG.png",MTV Biggest Pop (1080p)
+#EXTINF:-1 group-title="7. Müzik",MTV Biggest Pop (1080p)
 https://jmp2.uk/plu-5d14fd1a252d35decbc4080c.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/6047fbdbbb776a0007e7f2ff/colorLogoPNG.png",MTV Biggest Pop BR (1080p)
+#EXTINF:-1 group-title="7. Müzik",MTV Biggest Pop BR (1080p)
 https://jmp2.uk/plu-6047fbdbbb776a0007e7f2ff.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/6047fbdbbb776a0007e7f2ff/colorLogoPNG.png",MTV Biggest Pop CA (1080p)
+#EXTINF:-1 group-title="7. Müzik",MTV Biggest Pop CA (1080p)
 https://jmp2.uk/plu-65410176770cf1000866bf31.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/6047fbdbbb776a0007e7f2ff/colorLogoPNG.png",MTV Biggest Pop LatAm (1080p)
+#EXTINF:-1 group-title="7. Müzik",MTV Biggest Pop LatAm (1080p)
 https://jmp2.uk/plu-6047fabfce6e8e00070bcc9f.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png",MTV Classic BR (720p)
+#EXTINF:-1 group-title="7. Müzik",MTV Classic BR (720p)
 https://jmp2.uk/plu-66a01dcb8561260008b0a41d.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png",MTV Classic CA (720p)
+#EXTINF:-1 group-title="7. Müzik",MTV Classic CA (720p)
 https://jmp2.uk/plu-654100b4bdf3cf0008aa49c7.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png",MTV Classic LatAm (720p)
+#EXTINF:-1 group-title="7. Müzik",MTV Classic LatAm (720p)
 https://jmp2.uk/plu-66a11a21a79dea0008aa90ca.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/62b218fc511d4b00070ddc0c/colorLogoPNG.png",MTV Flow Latino (720p)
+#EXTINF:-1 group-title="7. Müzik",MTV Flow Latino (720p)
 https://jmp2.uk/plu-5d3609cd6a6c78d7672f2a81.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/62b218fc511d4b00070ddc0c/colorLogoPNG.png",MTV Flow Latino LatAm (720p)
+#EXTINF:-1 group-title="7. Müzik",MTV Flow Latino LatAm (720p)
 https://jmp2.uk/plu-62b218fc511d4b00070ddc0c.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/3UByLqb.png",MTV Live (720p)
+#EXTINF:-1 group-title="7. Müzik",MTV Live (720p)
 http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/6541010f770cf1000866be98/colorLogoPNG.png",MTV Spankin' New (1080p)
+#EXTINF:-1 group-title="7. Müzik",MTV Spankin' New (1080p)
 https://jmp2.uk/plu-5d14fdb8ca91eedee1633117.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/6541010f770cf1000866be98/colorLogoPNG.png",MTV Spankin' New CA (1080p)
+#EXTINF:-1 group-title="7. Müzik",MTV Spankin' New CA (1080p)
 https://jmp2.uk/plu-6541010f770cf1000866be98.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/R74gG7U.png",MagentaMusik 360 (1080p)
+#EXTINF:-1 group-title="7. Müzik",MagentaMusik 360 (1080p)
 https://streaming.magentamusik.de/csm/573870/magentamusik1/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/n7bcrrp.png",Magic TV (Bulgaria) (720p)
+#EXTINF:-1 group-title="7. Müzik",Magic TV (Bulgaria) (720p)
 https://bss1.neterra.tv/magictv/magictv.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/C8CCjZK.png",Maidan (720p)
+#EXTINF:-1 group-title="7. Müzik",Maidan (720p)
 https://live-maidantv.cdnvideo.ru/maidantv/maidantv.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/twldaaC.png",Maimon TV Canal 3 (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Maimon TV Canal 3 (720p) [Not 24/7]
 https://tele-stream.telecasa.net/live/st3/maimontv-hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.discogs.com/Fk9Bm8gTYJYeVXIJKX-EOGmYQ90sVQPtkIW5ZK4fydo/rs:fit/g:sm/q:90/h:372/w:412/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTE2OTY4/MzMtMTU2ODk0NjI5/MC01Njk2LmpwZWc.jpeg",Majid Al Mohandis (1080p)
+#EXTINF:-1 group-title="7. Müzik",Majid Al Mohandis (1080p)
 https://shd-amg-fast.edgenextcdn.net/tx019/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/asD5y7i.png",Makao TV (1080i)
+#EXTINF:-1 group-title="7. Müzik",Makao TV (1080i)
 https://live.obslivestream.com/makaomux/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/F2PzEaw.png",Marina TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Marina TV (1080p)
 https://ffs.gulfsat.com/Marina-TV-HD/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/y0h8dlX.png",Mas23 TV
+#EXTINF:-1 group-title="7. Müzik",Mas23 TV
 https://movil.ejeserver.com/live/mas23tv.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/lxgXHx4.png",Mastiii (576p)
+#EXTINF:-1 group-title="7. Müzik",Mastiii (576p)
 https://mumbai-edge.smartplaytv.in/MastiMusic/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/P7PUHIx.png",Mazzika (576p)
+#EXTINF:-1 group-title="7. Müzik",Mazzika (576p)
 http://149.100.11.235:8080/Mazzika/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/gtUFmCD.png",Med Muzik (1080p)
+#EXTINF:-1 group-title="7. Müzik",Med Muzik (1080p)
 http://54.36.110.140/live3/live3.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/JqaW7Ei.png",MegaBox (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",MegaBox (720p) [Not 24/7]
 https://hdbox.chunklistv.com/live?stream=megabox
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/9GVyQ6x.png",Melody (720p)
+#EXTINF:-1 group-title="7. Müzik",Melody (720p)
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/melody/live.livx/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/WEYrIrC.png",Messatida TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Messatida TV (720p)
 https://rtmp.streams.ovh:8081/mtv/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://new.opencaster.com/uploads/logos/logo_14_1752798826.png",Metaleitor TV
+#EXTINF:-1 group-title="7. Müzik",Metaleitor TV
 https://vs20.live.opencaster.com/metaleitortv_423d3342/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/yID5T2S.jpg",Metropoli Medios TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Metropoli Medios TV (720p)
 https://eu1.servers10.com:8081/8214/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/0B04qgM.png",Metropolitana del Cuzco
+#EXTINF:-1 group-title="7. Müzik",Metropolitana del Cuzco
 https://video1.earthcam.com/myearthcam/075ff02f78c35af55564cf3af3b3f750.flv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/H9ytKPN.png",Mezzo Live (1080p)
+#EXTINF:-1 group-title="7. Müzik",Mezzo Live (1080p)
 http://stream.mcquack.net/276/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://dtil.tmsimg.com/assets/s143539_ld_h15_aa.png?lock=720x540",Mh 1 Music (720p)
+#EXTINF:-1 group-title="7. Müzik",Mh 1 Music (720p)
 https://livestream.jswk.online/playlisttest/live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/z9MlLFL.png",Mi Musica Hits (720p)
+#EXTINF:-1 group-title="7. Müzik",Mi Musica Hits (720p)
 http://38.188.186.47:4000/play/a04n/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/auW6Ve1.png",Mi Musica Popular (1080p)
+#EXTINF:-1 group-title="7. Müzik",Mi Musica Popular (1080p)
 http://45.226.205.96:48000/play/a0f8/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/MMb9u4u.png",Mi Musica Reggaeton (1080p)
+#EXTINF:-1 group-title="7. Müzik",Mi Musica Reggaeton (1080p)
 http://181.78.12.119:16123/play/ch53/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/eIaRv0U.png",Mi Musica Romantica (1080p)
+#EXTINF:-1 group-title="7. Müzik",Mi Musica Romantica (1080p)
 http://168.228.44.241:9999/play/a054/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/sT91t83.png",Mi Musica Salsa (1080p)
+#EXTINF:-1 group-title="7. Müzik",Mi Musica Salsa (1080p)
 http://181.78.12.119:16123/play/ch55/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/dPSFrCs.png",Miel TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Miel TV (720p)
 https://live-evg5.tv360.bitel.com.pe/bitel/mieltvSRT/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://assets.mbcmood.com/channels/1720184012Mohammed%20Abdo%20banner.png",Mohammed Abdo (1080p)
+#EXTINF:-1 group-title="7. Müzik",Mohammed Abdo (1080p)
 https://d2ow8h651gs7dx.cloudfront.net/out/v1/371fb663da604e659a2fb99bf89d92d4/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/FYcLtqT.png",Molahits TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Molahits TV (720p)
 http://ventdelnord.tv:8080/mola/directe.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://montonestv.com/wp-content/uploads/2025/11/montones-logo.png",Montones TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Montones TV (720p) [Not 24/7]
 https://183.giatvcdn.com/ssh101/ssh101/montonestv1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/aX70RD2.png",Mooz Dance HD (1080i) [Geo-blocked]
+#EXTINF:-1 group-title="7. Müzik",Mooz Dance HD (1080i) [Geo-blocked]
 https://meta.vcdn.biz/bb45aeed3156b62f01b6ca222920d46b_megogo/live/hls/b/700_2500/u_sid/0/o/183161921/rsid/20877e0c-fb47-4c47-a29d-19fadadbccb7/u_uid/2260062697/u_vod/0/u_device/cms_html5/u_devicekey/_site/lip/81.196.174.41*asn/u_srvc/109126/u_did/web_c02d0d195494991ada83b5ae2a2f87d6041c11b1b8f79fc86ae5b7b557894fa0/type.live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.utrk.kg/img/stream/45.png",Music (480p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Music (480p) [Not 24/7]
 https://st2.mediabay.tv/KG_KTRK-Muzika/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CDPCF2X.png",Music Box Brazil (720p)
+#EXTINF:-1 group-title="7. Müzik",Music Box Brazil (720p)
 http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://musicboxclassic.com/music_box_classic_logo.png",Music Box Classic
+#EXTINF:-1 group-title="7. Müzik",Music Box Classic
 http://88.212.15.50/live/mb_classic/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://musicboxdance.com/music_box_dance_logo.png",Music Box Dance
+#EXTINF:-1 group-title="7. Müzik",Music Box Dance
 http://88.212.15.50/live/mb_dance/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://musicboxhits.com/music_box_hits_logo.png",Music Box Hits
+#EXTINF:-1 group-title="7. Müzik",Music Box Hits
 http://88.212.15.50/live/mb_hits/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://musicboxsexy.com/music_box_sexy_logo.png",Music Box Sexy
+#EXTINF:-1 group-title="7. Müzik",Music Box Sexy
 http://88.212.15.50/live/mb_sexy/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/Swd9NP7n/music-tv-granada.png",Music TV Granada (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Music TV Granada (1080p) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8032/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://cdn.mitvstatic.com/channels/ar_musictop_m.png",MusicTop (1080p)
+#EXTINF:-1 group-title="7. Müzik",MusicTop (1080p)
 http://190.128.214.97:64333/play/a06o/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Puk1Bhx.png",Muz Soyuz (576p)
+#EXTINF:-1 group-title="7. Müzik",Muz Soyuz (576p)
 https://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://s8.vcdn.biz/static/f/6010782281/image.jpg",Muz TV Uzbekistan
+#EXTINF:-1 group-title="7. Müzik",Muz TV Uzbekistan
 https://stream8.cinerama.uz/1063/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/BtqrHmz.png",Muz-TV (576p)
+#EXTINF:-1 group-title="7. Müzik",Muz-TV (576p)
 http://31.148.5.241/kanal_20/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/fBeaJoS.png",Muzangala TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Muzangala TV (1080p)
 https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Klu5k9U.png",Muzvar (1080p)
+#EXTINF:-1 group-title="7. Müzik",Muzvar (1080p)
 https://cdn15.live-tv.cloud/ua_infinitas_tv/muzvar-abr/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/DIKe5vA.png",Muzyka 1 [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Muzyka 1 [Not 24/7]
 https://kino-1.catcast.tv/content/37745/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/2SG0Swa.png",Muzyka Kino [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Muzyka Kino [Not 24/7]
 https://kino-1.catcast.tv/content/37739/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/RH6hTWG.png",Muzyka Live (576p)
+#EXTINF:-1 group-title="7. Müzik",Muzyka Live (576p)
 http://stream.mcquack.net/303/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/U0vKj3P.png",Muzyka Pervogo (576p)
+#EXTINF:-1 group-title="7. Müzik",Muzyka Pervogo (576p)
 http://88.212.15.50/live/test_muzyka_pervogo/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ienkbOc.png",NASHE Music (720p)
+#EXTINF:-1 group-title="7. Müzik",NASHE Music (720p)
 https://cdn15.live-tv.cloud/ua_infinitas_tv/nashemus-abr/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/B7ILXMc.png",NEW K-POP (1080p)
+#EXTINF:-1 group-title="7. Müzik",NEW K-POP (1080p)
 https://ads.its-newid.net/api/manifest.m3u8?ads.service_id=GB17000088V&channel_id=newid_086&tp=samsung_tvplus
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/BKB9mv1K/NH-Bolly-Raga.png",NH BollyRaga (1080p)
+#EXTINF:-1 group-title="7. Müzik",NH BollyRaga (1080p)
 https://jmp2.uk/stvp-IN460001373
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/GuM4GnX.png",NOW Rock (1080p)
+#EXTINF:-1 group-title="7. Müzik",NOW Rock (1080p)
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik",NR1
-https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e17cd6360b_1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik",NR1 ASK
-https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9cea15_1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik",NR1 DANCE
-https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/HV0x9JZ/fashion-one.png",NR1 FASHION ONE
-http://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2ee6997cb_1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/1Zl1OJ5.png",NRG 91 (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",NRG 91 (720p) [Not 24/7]
 http://tv.nrg91.gr:1935/onweb/live/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/2xDVwOh.png",NRJ Hits
+#EXTINF:-1 group-title="7. Müzik",NRJ Hits
 https://test.946985.filegear-sg.me/proxy/a23981548880f405
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/3taT6JK.jpeg",Nande Portetepe TV
+#EXTINF:-1 group-title="7. Müzik",Nande Portetepe TV
 https://video.hostingcaaguazu.com:19360/nandeportetepe/nandeportetepe.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/YteKXJy.png",Navahang TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Navahang TV (720p)
 https://hls.navahang.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/c2rF3SS.png",Next HD (480p)
+#EXTINF:-1 group-title="7. Müzik",Next HD (480p)
 https://live.enhdtv.com:19360/nexthd/nexthd.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/krp3kgv.png",NogoumFMTV (672p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",NogoumFMTV (672p) [Not 24/7]
 https://nogoumtv.nrpstream.com/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/XvYqpqG.png",Noroc TV
+#EXTINF:-1 group-title="7. Müzik",Noroc TV
 https://media.noroc.tv/noroc/bitrate_1080p.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/qiCCX5X.png",Now 70s (720p)
+#EXTINF:-1 group-title="7. Müzik",Now 70s (720p)
 https://lightningnow70-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/YyPnMeB.png",Now 80s (1080p)
+#EXTINF:-1 group-title="7. Müzik",Now 80s (1080p)
 https://lightningnow80-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/660c209e19ca71000846cf38/colorLogoPNG.png",Now 90s00s (1080p)
+#EXTINF:-1 group-title="7. Müzik",Now 90s00s (1080p)
 https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/rYtbAGZ.png",Number 1 Damar (720p)
+#EXTINF:-1 group-title="7. Müzik",Number 1 Ask (720p)
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9cea15_1/playlist.m3u8
+#EXTINF:-1 group-title="7. Müzik",Number 1 Damar (720p)
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e198784bdc_1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/02cDIBi.png",Number 1 TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Number 1 Dance (720p)
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8
+#EXTINF:-1 group-title="7. Müzik",Number 1 TV (720p)
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/DHk2gv86/IMG-2524.webp",ON Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",ON Music (1080p)
 https://freem3u.xyz/api/live/play.m3u8?vid=185
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/%C3%93%C4%8Dko_logo_2012.png/960px-%C3%93%C4%8Dko_logo_2012.png",Ocko (540p)
+#EXTINF:-1 group-title="7. Müzik",Ocko (540p)
 https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/5rw9tWy.png",Ocko Black
+#EXTINF:-1 group-title="7. Müzik",Ocko Black
 https://dash2.antik.sk/live/test_ocko_black/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%C3%93%C4%8Dko_Expres_logo.png/960px-%C3%93%C4%8Dko_Expres_logo.png",Ocko Expres (540p)
+#EXTINF:-1 group-title="7. Müzik",Ocko Expres (540p)
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/nrWNyLc.jpg",Ocko Gold (540p)
+#EXTINF:-1 group-title="7. Müzik",Ocko Gold (540p)
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/%C3%93%C4%8Dko_Star_logo.png/960px-%C3%93%C4%8Dko_Star_logo.png",Ocko Star
+#EXTINF:-1 group-title="7. Müzik",Ocko Star
 https://dash4.antik.sk/live/test_ocko_star/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/mUrZz9O.png",Onda 15 TV (224p)
+#EXTINF:-1 group-title="7. Müzik",Onda 15 TV (224p)
 https://cloudvideo.servers10.com:8081/8034/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/6HxLUQd.png",Onda Valencia TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Onda Valencia TV (720p)
 https://cloudvideo.servers10.com:8081/8116/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/u5804Au.jpg",Ondambiental TV (360p)
+#EXTINF:-1 group-title="7. Müzik",Ondambiental TV (360p)
 https://stmv4.voxtvhd.com.br/ondastereo/ondastereo/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/NYkMamU.png",One Adria
+#EXTINF:-1 group-title="7. Müzik",One Adria
 https://oneadriaapp.b-cdn.net/1080p/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/dLgoKJ0.png",One Music Television
+#EXTINF:-1 group-title="7. Müzik",One Music Television
 https://oneapp.b-cdn.net/1080p/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/O4DuR9G.png",One TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",One TV (720p) [Not 24/7]
 https://hms.pfs.gdn/v1/broadcast/one/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/Vp2G9wTz/onefmlb.png",OneFM (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",OneFM (720p) [Not 24/7]
 https://hms.pfs.gdn/v1/broadcast/onefm/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/E9CCIpP.jpg",Online TV Nusantara (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Online TV Nusantara (720p) [Not 24/7]
 https://5bf7b725107e5.streamlock.net/onlinetvnusantara/onlinetvnusantara/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/wjSaHj5.png",Orange Bangla TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Orange Bangla TV (720p)
 https://cdn.pishow.tv/ott/live/1499/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8b/Orizont_TV.svg/revision/latest/scale-to-width-down/1000?cb=20241219232954",Orizont TV (576i)
+#EXTINF:-1 group-title="7. Müzik",Orizont TV (576i)
 https://hls01ns.antenaplay.ro/hls/orizont-tv-sd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/n3PweBQ.png",Oxigeno TV (360p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Oxigeno TV (360p) [Not 24/7]
 https://vcp.myplaytv.com/oxigenotv/oxigenotv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://oxygenmusic.hu/static/media/logo.png",Oxygen Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",Oxygen Music (1080p)
 https://oxygenmusic.hu:2443/hls/oxygenmusic.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TrecSeG.png",P2M TV (720p)
+#EXTINF:-1 group-title="7. Müzik",P2M TV (720p)
 https://vdo2.pro-fhi.net:3207/stream/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/AbrHI7K.png",PMC
+#EXTINF:-1 group-title="7. Müzik",PMC
 https://pmchls.wns.live/hls/stream.m3u8
 #EXTINF:-1 group-title="7. Müzik",PMC Royale (1080p)
 https://pmcrohls.wns.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/LQB6G3s.jpg",POP World TV (720p)
+#EXTINF:-1 group-title="7. Müzik",POP World TV (720p)
 https://janus.xpbroadcasting.com:8443/hls/popworld.m3u8
-#EXTINF:-1 group-title="7. Müzik",POWER DANCE
-https://listen.powerapp.com.tr/dance/dance.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik",POWER LOVE
-https://listen.powerapp.com.tr/plove/love.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik",POWER TURK
-https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlists.m3u8
-#EXTINF:-1 group-title="7. Müzik",POWER TURK TAPTAZE
-http://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik",POWER TV AKUSTiK
-https://listen.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_CHAKDE/images/LOGO_HD/image.png",PTC Chakde (720p)
+#EXTINF:-1 group-title="7. Müzik",PTC Chakde (720p)
 https://cdn.pishow.tv/ott/live/449/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_MUSIC/images/LOGO_HD/image.png",PTC Music (720p)
+#EXTINF:-1 group-title="7. Müzik",PTC Music (720p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/f913cf893c594f73b114216e74a2efbc/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/sCBbBOj.png",Pamir TV (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Pamir TV (1080p) [Not 24/7]
 http://live.stream.cdn.pamirtv.com/ptv/d0dbe915091d400bd8ee7f27f0791303.sdp/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/13C3CPr.png",Panik TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Panik TV (1080p)
 https://livetv.streams.ovh:1936/paniktv/paniktv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://papaji.freetvindia.com/media/pankh.png",Pankh (360p)
+#EXTINF:-1 group-title="7. Müzik",Pankh (360p)
 https://samitaorigin.tangotv.in/PANKH/SAMITAORIGIN/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/BzBX7Qx.jpeg",Parranda Vallenata (720p)
+#EXTINF:-1 group-title="7. Müzik",Parranda Vallenata (720p)
 https://backupmaxmedia.hvmultiplay.com/hls/stream3/parrandavallenata.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_lCn4ThcMw7giX9jeLHURb1oqoNIYN3YlObhwLkrsSNfg=w226-c-h226-k-c0x00ffffff-no-l90-rj",Party Mix HD (1080p)
+#EXTINF:-1 group-title="7. Müzik",Party Mix HD (1080p)
 https://hls02ns.antenaplay.ro/hls/party-mix-hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/UAKLJAt.png",Pauta (1080p)
+#EXTINF:-1 group-title="7. Müzik",Pauta (1080p)
 https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/pautatv/pautatv.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Peppers_TV.png",Peppers TV (751p)
+#EXTINF:-1 group-title="7. Müzik",Peppers TV (751p)
 https://cdn.pishow.tv/ott/live/1383/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/BNqZwxS.png",Pequeradio (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Pequeradio (720p) [Not 24/7]
 https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
 #EXTINF:-1 group-title="7. Müzik",Persiana Folk
 https://sonhls.persiana.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/SWO9CKA.png",Persiana Nostalgia
+#EXTINF:-1 group-title="7. Müzik",Persiana Nostalgia
 https://noshls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 group-title="7. Müzik",Persiana Vibe
 https://raphls.persiana.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/AGFeu7r.png",Picosa TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Picosa TV (720p)
 http://45.167.2.101:8000/play/a0sd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/UaQC0l8.jpeg",Pindin TV
+#EXTINF:-1 group-title="7. Müzik",Pindin TV
 https://sistemastr.tropicalmoonmedia.com/live/7C452409423F57ADC960F6405635267F/7.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/1dmBqpf.png",Play TV (Cameroon) (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Play TV (Cameroon) (720p) [Not 24/7]
 http://connectiktv.ddns.net:5000/playtv/@playtv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/5f85cf621d6d2200079f1de0/colorLogoPNG.png",Pluto TV Karaoke por Stingray (720p)
+#EXTINF:-1 group-title="7. Müzik",Pluto TV Karaoke por Stingray (720p)
 https://jmp2.uk/plu-604b99d633a72b00078e05ad.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/5f85cf621d6d2200079f1de0/colorLogoPNG.png",Pluto TV Karaoke por Stingray LatAm (720p)
+#EXTINF:-1 group-title="7. Müzik",Pluto TV Karaoke por Stingray LatAm (720p)
 https://jmp2.uk/plu-5f85cf621d6d2200079f1de0.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/604b91e0692f770007d9f33f/colorLogoPNG.png",Pluto TV Shows por Stingray (720p)
+#EXTINF:-1 group-title="7. Müzik",Pluto TV Shows por Stingray (720p)
 https://jmp2.uk/plu-604b91e0692f770007d9f33f.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/uXygf1l.png",Polsat Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",Polsat Music (1080p)
 http://92.114.85.87:8001/play/a00z/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/driabBO.png",PowerTurk Akustik (1080p)
+#EXTINF:-1 group-title="7. Müzik",Power Dance (1080p)
+https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8
+#EXTINF:-1 group-title="7. Müzik",Power Love (1080p)
+https://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
+#EXTINF:-1 group-title="7. Müzik",Power TV (Turkiye) (1080p)
+https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
+#EXTINF:-1 group-title="7. Müzik",PowerTurk Akustik (1080p)
 https://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/tQSoQXW.png",PowerTurk Slow (1080p)
+#EXTINF:-1 group-title="7. Müzik",PowerTurk Slow (1080p)
 https://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/a5nW3HU.png",PowerTurk Taptaze (1080p)
+#EXTINF:-1 group-title="7. Müzik",PowerTurk TV (720p)
+https://live.artidijitalmedya.com/artidijital_powerturktv/powerturktv/playlist.m3u8
+#EXTINF:-1 group-title="7. Müzik",PowerTurk Taptaze (1080p)
 https://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/1Za9gNQ.jpg",Punjabi Beats HD (720p)
+#EXTINF:-1 group-title="7. Müzik",Punjabi Beats HD (720p)
 https://mumt01.tangotv.in/O5aw8Zn3PUNJABIBEATSHD/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540",Punjabi Hits (1080p)
+#EXTINF:-1 group-title="7. Müzik",Punjabi Hits (1080p)
 https://legitpro.co.in/punjabihits/punjabihits/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://papaji.freetvindia.com/media/Punjabi_Music_HD.png",Punjabi Music HD (720p)
+#EXTINF:-1 group-title="7. Müzik",Punjabi Music HD (720p)
 https://samitaorigin.tangotv.in/PUNJABIMUSICHD/SAMITAORIGIN/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/VX5e9Xt.png",Q-Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",Q-Music (1080p)
 https://live-video.dpgmedia.net/e087512ad0c32643/out/v1/82d59bbe343b4d0896f829c59da82dc0/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/IRyFTWq.png",Qello Concerts by Stingray (1080p)
+#EXTINF:-1 group-title="7. Müzik",Qello Concerts by Stingray (1080p)
 https://lotus.stingray.com/manifest/qello-qello001-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/fMTuqDu.png",Qmusic (720p)
+#EXTINF:-1 group-title="7. Müzik",Qmusic (720p)
 https://stream.qmusic.nl/qmusic/videohls.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/RO9Dz3X.png",Quiero Musica en mi Idioma (1080p)
+#EXTINF:-1 group-title="7. Müzik",Quiero Musica en mi Idioma (1080p)
 http://158.172.155.130:8000/play/a00a/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/DjgNNHK.png",Qwest TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Qwest TV (1080p)
 https://qwestjazz-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-qwestjazz-rakuten/CDN/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/89yWH5L.png",Qwest TV Jazz & Beyond (1080p)
+#EXTINF:-1 group-title="7. Müzik",Qwest TV Jazz & Beyond (1080p)
 https://samsungau-qwestjazz-samsungtv-zw2jc.amagi.tv/playlist/samsungau-qwestjazz-samsungtv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/I60nQuR.png",RFPtv (360p)
+#EXTINF:-1 group-title="7. Müzik",RFPtv (360p)
 https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/hQ0Q6nE.png",RHT Guadeloupe (720p)
+#EXTINF:-1 group-title="7. Müzik",RHT Guadeloupe (720p)
 https://edge12.vedge.infomaniak.com/livecast/ik:livehautetension/manifest.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/a1zuW2C.png",RJTV (1080p)
+#EXTINF:-1 group-title="7. Müzik",RJTV (1080p)
 https://rjtvhls.wns.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/9PNlbaq.png",RTL 102.5 Best (1080p)
+#EXTINF:-1 group-title="7. Müzik",RTL 102.5 Best (1080p)
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S76960628/OEPHRUIctA0M/playlist_video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/EWbK4XZ.png",RTL 102.5 Bro&Sis (1080p)
+#EXTINF:-1 group-title="7. Müzik",RTL 102.5 Bro&Sis (1080p)
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S75007890/MUGHuxc9dQ3b/playlist_video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/P0zsi6I.png",RTL 102.5 Caliente (1080p)
+#EXTINF:-1 group-title="7. Müzik",RTL 102.5 Caliente (1080p)
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S8448465/zTYa1Z5Op9ue/playlist_video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/JA1OPrz.png",RTL 102.5 Disco (1080p)
+#EXTINF:-1 group-title="7. Müzik",RTL 102.5 Disco (1080p)
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S51100361/0Fb4R3k82b5Z/playlist_video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/HFPw1YW.png",RTL 102.5 Napule (1080p)
+#EXTINF:-1 group-title="7. Müzik",RTL 102.5 Napule (1080p)
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S27134503/0f9AhuwKlhnZ/playlist_video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/75qUdR7.png",RTL 102.5 TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",RTL 102.5 TV (1080p)
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist_video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/EBftMcB.png",RTL 102.5 Traffic (1080p)
+#EXTINF:-1 group-title="7. Müzik",RTL 102.5 Traffic (1080p)
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist_video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/LzHQoUv.png",RTL Gold (Luxembourg) (1080p)
+#EXTINF:-1 group-title="7. Müzik",RTL Gold (Luxembourg) (1080p)
 https://stream.rtl.lu/data/live/tele/rtlgold/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/n8p11NI.png",RTS Muzika (576p)
+#EXTINF:-1 group-title="7. Müzik",RTS Muzika (576p)
 https://de1.dstv.cx/RTSMuzika/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/9NgxOdb.png",RTV Glas Drine (404p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",RTV Glas Drine (404p) [Not 24/7]
 http://glasdrine.cutuk.net:8081/433ssdsw/GlasDrineSD/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/EqUfEAh.png",RTV Vida (1080p)
+#EXTINF:-1 group-title="7. Müzik",RTV Vida (1080p)
 https://vidartv2.todostreaming.es/live/radiovida-emisiontvhd.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Z7HUU7V.png",RU.TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",RU.TV (1080p)
 https://bl.rutube.ru/livestream/b1eb8e90d7e636677b3eb73b4fcbb717/index.m3u8?e=2069285076&s=d-E-bxKy2v3EEJ94RQX9CA&scheme=https
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://shahid.mbc.net/mediaObject/b98b0635-c8ed-4a7c-9efa-5856e278f54b?type=png",Rabeh Saqer (1080p)
+#EXTINF:-1 group-title="7. Müzik",Rabeh Saqer (1080p)
 https://shd-amg-fast.edgenextcdn.net/tx004/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TVaMJYB.png",RadioNL TV (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",RadioNL TV (1080p) [Not 24/7]
 https://stream.radionl.tv/radionltv/radionltv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/RxeRlar.png",Radiofreccia (1080p)
+#EXTINF:-1 group-title="7. Müzik",Radiofreccia (1080p)
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/0tuSetc8UFkF/playlist_video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/3AXjotA.jpg",Radiola TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Radiola TV (1080p)
 http://158.172.217.18:8000/play/a01k/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/z7fhhyX.png",Raj Musix Kannada (576p)
+#EXTINF:-1 group-title="7. Müzik",Raj Musix Kannada (576p)
 https://mumt01.tangotv.in/O5aw8Zn3RAJMUSIXKANDA/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_MUSIX_MALAYALAM/images/LOGO_HD/image.png",Raj Musix Malayalam (576p)
+#EXTINF:-1 group-title="7. Müzik",Raj Musix Malayalam (576p)
 https://cdn.pishow.tv/ott/live/1073/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_MUSIX_TAMIL/images/LOGO_HD/image.png",Raj Musix Tamil (1080p)
+#EXTINF:-1 group-title="7. Müzik",Raj Musix Tamil (1080p)
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/Raj_Musix/master_1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_MUSIX_TELUGU/images/LOGO_HD/image.png",Raj Musix Telugu (720p)
+#EXTINF:-1 group-title="7. Müzik",Raj Musix Telugu (720p)
 https://cdn.pishow.tv/ott/live/1213/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TCv5NqN.png",Ranchenato TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Ranchenato TV (1080p)
 http://181.78.12.119:16123/play/ch15/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/vTpfxUG.png",Rararadio (720p)
+#EXTINF:-1 group-title="7. Müzik",Rararadio (720p)
 https://58c04fb1d143f.streamlock.net/rararadio/rararadio/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://assets.mbcmood.com/channels/1720177618Rashid%20AlMajed.webp",Rashid AlMajed (1080p)
+#EXTINF:-1 group-title="7. Müzik",Rashid AlMajed (1080p)
 https://dphwv2ufgnfsq.cloudfront.net/out/v1/59cd80dfe93a479eb8b4d79bc6f225ca/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/pyOjdZs.png",Retro Music TV (360p)
+#EXTINF:-1 group-title="7. Müzik",Retro Music TV (360p)
 https://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://cdn.m3u.cl/logo/1765_Retromusica_Television.png",Retromusica Television (720p)
+#EXTINF:-1 group-title="7. Müzik",Retromusica Television (720p)
 https://vdochile.com:3864/stream/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/OG0RC2e.png",Rewind TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Rewind TV (1080p)
 https://tls-cl.cdnz.cl/rewindtv/live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/YmFjnsF.png",Reyali (614p)
+#EXTINF:-1 group-title="7. Müzik",Reyali (614p)
 https://eu1.servers10.com:8081/8090/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/nTVJcFA.png",Ritoque TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Ritoque TV (720p)
 https://streaming.purum.cl/ritoquetv/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://fmrockandpop.com/images/ryp/R&P_Logo_web_207x112px.png",Rock & Pop (1080p)
+#EXTINF:-1 group-title="7. Müzik",Rock & Pop (1080p)
 http://190.128.214.97:64333/play/a032/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Y9miDQo.png",Rock TV (North Macedonia) (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Rock TV (North Macedonia) (1080p) [Not 24/7]
 https://stream.nasatv.com.mk/rocktv/hls/rocktv_live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/WtVpWwI.png",Rumba TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Rumba TV (1080p)
 http://38.134.250.110:8000/play/a01p/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/rwA3HIp.png",RumbaMix TV (720p)
+#EXTINF:-1 group-title="7. Müzik",RumbaMix TV (720p)
 https://live-evg5.tv360.bitel.com.pe/bitel/mixtvSRT/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ZkJ3Rh9.png",Russian MusicBox (576p)
+#EXTINF:-1 group-title="7. Müzik",Russian MusicBox (576p)
 http://stream.mcquack.net/319/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/nM7LbmV.png",SONGTV Russia
+#EXTINF:-1 group-title="7. Müzik",SONGTV Russia
 https://songtv.hls.iptvdc.com/web-russia/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/P4kpMgk/1689344714578.jpg",SOY Plancha TV (720p)
+#EXTINF:-1 group-title="7. Müzik",SOY Plancha TV (720p)
 https://59ef525c24caa.streamlock.net/vmtv/soyplancha/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://cdn.m3u.cl/logo/416_Sabor_TV.png",Sabor TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Sabor TV (720p)
 https://v1.tustreaming.cl/sabortv/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/3IhYd7G.jpg",Salsa Gorda Television (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Salsa Gorda Television (1080p) [Not 24/7]
 https://live20.bozztv.com/akamaissh101/ssh101/qMUAZEy/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.vimeocdn.com/portrait/31947989_640x640",Salto Brasa Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",Salto Brasa Music (1080p)
 https://salto-streams.nl/hls/sotv1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/N6tKUZv.png",Sana Plus (1080p)
+#EXTINF:-1 group-title="7. Müzik",Sana Plus (1080p)
 https://mumbai-edge.smartplaytv.in/SanaPlusHD/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sangeet%20Bangla.png",Sangeet Bangla (720p)
+#EXTINF:-1 group-title="7. Müzik",Sangeet Bangla (720p)
 https://cdn.pishow.tv/ott/live/1143/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SANGEET_MARATHI/images/LOGO_HD/image.png",Sangeet Marathi (720p)
+#EXTINF:-1 group-title="7. Müzik",Sangeet Marathi (720p)
 https://cdn.pishow.tv/ott/live/1229/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CNszwj1.png",Scorch TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Scorch TV (1080p)
 https://w6oy7x7jlxrg-hls-live.5centscdn.com/MandETV/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/oYQoWAB.png",Sensacion Costa (1080p)
+#EXTINF:-1 group-title="7. Müzik",Sensacion Costa (1080p)
 https://tvcosta.gleeze.com/memfs/4d48db09-0b1e-4803-8da7-22be388bdd7e.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Fk4sd8t.png",Shanson TV SD (576p)
+#EXTINF:-1 group-title="7. Müzik",Shanson TV SD (576p)
 http://46.53.200.153:7777/play/Shanson_TV/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/AJIN8Dc.png",ShowVen TV (720p)
+#EXTINF:-1 group-title="7. Müzik",ShowVen TV (720p)
 https://cdnbarinas.tvzamora.com/showven/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3226-294x165-FFFFFF.jpg",Siembra TV (Dominican Republic) (720p)
+#EXTINF:-1 group-title="7. Müzik",Siembra TV (Dominican Republic) (720p)
 https://streamunoapp.com:3809/live/siembratvlive.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ya5xpUL.png",Sky Folk TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Sky Folk TV (720p) [Not 24/7]
 https://eu.live.skyfolk.mk/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/hKdXwrW.png",Slager Muzika
+#EXTINF:-1 group-title="7. Müzik",Slager Muzika
 https://stream-23.mazana.tv/slagrmuzika.m3u8s
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/0YjeWcq.png",Slager Original
+#EXTINF:-1 group-title="7. Müzik",Slager Original
 https://stream-13.mazana.tv/slagroriginal.m3u8s
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/rbJrmPw.png",Sol Musica (720p)
+#EXTINF:-1 group-title="7. Müzik",Sol Musica (720p)
 https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/SImJE7c.png",Solo Bailalo (480p)
+#EXTINF:-1 group-title="7. Müzik",Solo Bailalo (480p)
 https://5ff3d9babae13.streamlock.net/8000/8000/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://dtil.tmsimg.com/assets/s142920_ld_h9_aa.png?lock=720x540",Songdew TV (396p)
+#EXTINF:-1 group-title="7. Müzik",Songdew TV (396p)
 https://yuppnimrestreammum.akamaized.net/181224/smil:songdewtv.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/yCp6vXz.png",Spirit TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Spirit TV (720p) [Not 24/7]
 https://cdnlive.myspirit.tv/LS-ATL-43240-2/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/01yz22a.png",Star Plus Televizija (1080p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Star Plus Televizija (1080p) [Not 24/7]
 https://live.muzickatv.mk/live/StarMusic2.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Steelbird_Music.png",Steelbird Music (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Steelbird Music (720p) [Not 24/7]
 https://cdn2.in/SteelbirdMusicTVhls/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlXPCl4ze9lr2DnadYazKxuyyEEWmgO1O1Q&s",Stingray Cityscapes (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Cityscapes (1080p)
 https://aka-live1050.delivery.roku.com/7572d640-7373-4137-8b14-a3afff395349/t2-origin/out/v1/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/FBgu8yB.png",Stingray Classic Rock (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Classic Rock (1080p)
 https://lotus.stingray.com/manifest/ose-101ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/nh1k5RC.png",Stingray Classica (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Classica (1080p)
 https://lotus.stingray.com/manifest/classica-cla008-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-PtqqxxfI0SgHcNO5YJqxdufqnVtPFwpDvQ&s",Stingray Cozy Cafe (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Cozy Cafe (1080p)
 https://aka-live1050.delivery.roku.com/372c813e-1fb9-41d4-a4d0-5fbd803659c5/t2-origin/out/v1/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Stingray_Djazz.png/960px-Stingray_Djazz.png",Stingray DJAZZ (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray DJAZZ (1080p)
 https://lotus.stingray.com/manifest/djazz-djaads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Stingray_Music_logo.svg/960px-Stingray_Music_logo.svg.png",Stingray Easy Listening (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Easy Listening (1080p)
 https://lotus.stingray.com/manifest/ose-137ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/6E3wYrb.png",Stingray Everything '80s (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Everything '80s (1080p)
 https://lotus.stingray.com/manifest/ose-128ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/jf5C9QF.png",Stingray Flashback 70's (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Flashback 70's (1080p)
 https://lotus.stingray.com/manifest/ose-115ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Hz2d6og.png",Stingray Greatest Holiday Hits
+#EXTINF:-1 group-title="7. Müzik",Stingray Greatest Holiday Hits
 https://d39g1vxj2ef6in.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/54947915-6504-4548-aaef-eabd451f8607/1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/lgpIwId.png",Stingray Hit List (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Hit List (1080p)
 https://lotus.stingray.com/manifest/ose-107ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/4xVVKH8.png",Stingray Holiday Hits (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Holiday Hits (1080p)
 https://lotus.stingray.com/manifest/ose-155ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.plex.tv/photo?size=large-1920&scale=1&url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2F9cb4b15c-8244-4499-ae2c-9a92d4cdff6d%2F13895_SHS_Plex_Logos_Holidays_1500x1000_Dark-Background.png",Stingray Holidayscapes (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Holidayscapes (1080p)
 https://d10cyxntpn0bwm.cloudfront.net/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/PZhxyIT.png",Stingray Hot Country (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Hot Country (1080p)
 https://lotus.stingray.com/manifest/ose-108ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Stingray_Music_logo.svg/960px-Stingray_Music_logo.svg.png",Stingray Jukebox Oldies (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Jukebox Oldies (1080p)
 https://lotus.stingray.com/manifest/ose-021ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/9TLTLS3.png",Stingray Karaoke (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Karaoke (1080p)
 https://lotus.stingray.com/manifest/karaoke-kar000-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/882kd90.png",Stingray Naturescape (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Naturescape (1080p)
 https://lotus.stingray.com/manifest/naturescape-a003-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Tq3I0po.png",Stingray Nothin' But 90s (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Nothin' But 90s (1080p)
 https://lotus.stingray.com/manifest/ose-142ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/duwc8E8.png",Stingray Remember the 80s
+#EXTINF:-1 group-title="7. Müzik",Stingray Remember the 80s
 https://d39g1vxj2ef6in.cloudfront.net/v1/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/68cc5f97-cf6c-4ff7-9125-f56f272dbcb6/1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Stingray_Music_logo.svg/960px-Stingray_Music_logo.svg.png",Stingray Romance Latino (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Romance Latino (1080p)
 https://lotus.stingray.com/manifest/ose-202ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/h1DsOzH.png",Stingray Smooth Jazz (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Smooth Jazz (1080p)
 https://lotus.stingray.com/manifest/ose-140ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/dU1KC3f.png",Stingray Soul Storm (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Soul Storm (1080p)
 https://lotus.stingray.com/manifest/ose-134ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ywAN923.png",Stingray The Spa (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray The Spa (1080p)
 https://lotus.stingray.com/manifest/ose-122ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/mMbntB5.png",Stingray Today's K-Pop (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Today's K-Pop (1080p)
 https://lotus.stingray.com/manifest/ose-317ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Os3kRRP.png",Stingray Today's Latin Pop (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stingray Today's Latin Pop (1080p)
 https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/GKc7RFz.png",Stingray iConcerts HD
+#EXTINF:-1 group-title="7. Müzik",Stingray iConcerts HD
 https://dash4.antik.sk/live/test_stingray_iconcerts_hd_hevc50/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/rKkHhkX.png",Stryk TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Stryk TV (1080p)
 https://fffffff110156200.tvustream.com:8298/ryfy.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/y0TcsXw/512px-VRT-Stu-Bru-logo-svg.png",StuBru (1080p)
+#EXTINF:-1 group-title="7. Müzik",StuBru (1080p)
 https://live.vrtcdn.be/groupb/live/450aa9d1-7173-47f3-aaaa-9701426f8ddd/live.isml/.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ocTnqi7.png",Super Q Panama (1080p)
+#EXTINF:-1 group-title="7. Müzik",Super Q Panama (1080p)
 https://vcp8.myplaytv.com:1936/superq/superq/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/pzxUE0O.png",Super TV (Romania) (576p)
+#EXTINF:-1 group-title="7. Müzik",Super TV (Romania) (576p)
 http://iptv.supertv.ro:8000/play/a001/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/MiVs42N.jpeg",Supermusica TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Supermusica TV (720p)
 https://backupmaxmedia.hvmultiplay.com/hls/stream4/supermusica.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Wu8MBb7.png",T2 TV
+#EXTINF:-1 group-title="7. Müzik",T2 TV
 https://t2hls.wns.live/hls/stream.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/1iOAl2j.png",TMA (1080p)
+#EXTINF:-1 group-title="7. Müzik",TMA (1080p)
 http://hls.tmacaraibes.com/live/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.maxx-xs.nl/images/assets/3/c/3c123778ef66464786705dc4138303ec/COV/cover_l_01.png",TMF (1080p)
+#EXTINF:-1 group-title="7. Müzik",TMF (1080p)
 https://tmf-nl-nl.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-yourchannels-10-restreaming/bitok/eyJzdGlkIjoiMzUzNGNiZTAtNWY4MS00ZmU4LWE1NGYtYjgyMjJmMTM3ZmZjIiwibWt0IjoibmwiLCJjaCI6IjEwIiwicHRmIjo1fQ%3D%3D/mpgmedia/TMF/TMF_NL/TMF_NL.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/turkey/trt-muzik-tr.png",TRT MUZIK
+#EXTINF:-1 group-title="7. Müzik",TRT Muzik (720p)
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/06/TV_AS.png/revision/latest/scale-to-width-down/1000?cb=20241117150631",TV AS
+#EXTINF:-1 group-title="7. Müzik",TV AS
 https://hls01ns.antenaplay.ro/hls/tv-as-sd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/zLRzyVS.png",TV Arberia 4 Muzike (720p)
+#EXTINF:-1 group-title="7. Müzik",TV Arberia 4 Muzike (720p)
 https://ssh101.bozztv.com/ssh101/rtvarberia4/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/zLRzyVS.png",TV Arberia Retro Hits (720p)
+#EXTINF:-1 group-title="7. Müzik",TV Arberia Retro Hits (720p)
 https://ssh101.bozztv.com/ssh101/rtvarberiaretro/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://radiobozsike.com/img/icons/android-chrome-512x512.png",TV Bozsike Hamburg HD (1080p)
+#EXTINF:-1 group-title="7. Müzik",TV Bozsike Hamburg HD (1080p)
 https://rtmp.radiobozsike.com/hls/stream1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/gmSu21X.jpg",TV Cidade
+#EXTINF:-1 group-title="7. Müzik",TV Cidade
 https://stmv1.srvif.com/tvcidade/tvcidade/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/qZV3JW5.png",TV Duga+ (480p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",TV Duga+ (480p) [Not 24/7]
 http://109.92.29.10:1935/tvduga/tvduga/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ahz7X7u.png",TV Exitos (720p)
+#EXTINF:-1 group-title="7. Müzik",TV Exitos (720p)
 https://streaming.grupomediosdelnorte.com:19360/tvexitos/tvexitos.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/m50qAVY.png",TV Peruanisima (720p)
+#EXTINF:-1 group-title="7. Müzik",TV Peruanisima (720p)
 https://k20.usastreams.com:8081/tvperuanisima/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://ugc.production.linktr.ee/7ef61237-c46d-456b-afe3-a42ef49a979e_Mejorado2.png",TVOMIX (1080p)
+#EXTINF:-1 group-title="7. Müzik",TVOMIX (1080p)
 https://cloud.tvomix.com/TVOMIX/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/FNk6rdz.png",TVONE Nicaragua (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",TVONE Nicaragua (720p) [Not 24/7]
 https://hdbox.chunklistv.com/live?stream=tvone
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TVR_Folclor_Logo_2023.svg/960px-TVR_Folclor_Logo_2023.svg.png",TVR Folclor (1440p)
+#EXTINF:-1 group-title="7. Müzik",TVR Folclor (1440p)
 https://tvr-folclor.lg.mncdn.com/tvrfolclor/smil:tvrfolclor.smil/playlist.m3u8
 #EXTINF:-1 group-title="7. Müzik",TVS Music Network (720p)
 https://rpn.bozztv.com/gusa/gusa-tvsmusic/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/dht94P4.png",TVUNO (720p)
+#EXTINF:-1 group-title="7. Müzik",TVUNO (720p)
 https://streamtv.onliv3.online:1936/karibtv/karibtv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TAagRkn.png",TZiK [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",TZiK [Not 24/7]
 https://54627d4fc5996.streamlock.net/tzik/tzik/chunklist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TABBAR_HITS/images/LOGO_HD/image.png",Tabbar Hits (1080p)
+#EXTINF:-1 group-title="7. Müzik",Tabbar Hits (1080p)
 https://livingindiaottlive.akamaized.net/tabbarhits/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://assets.mbcmood.com/channels/1738059679TARAB_Logo.png",Tarab (1080p)
+#EXTINF:-1 group-title="7. Müzik",Tarab (1080p)
 https://shd-amg-fast.edgenextcdn.net/tx002/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/oSm8zFD.png",Tarang Music (720p)
+#EXTINF:-1 group-title="7. Müzik",Tarang Music (720p)
 https://livetv.tarangplus.in/tarangmusic-origin/live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://vercanalesdominicanos.com/wp-content/uploads/2026/03/tarima.png",Tarima TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Tarima TV (720p)
 http://190.122.104.210:5080/LiveApp/streams/tarima.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://dominicanchannels.com/wp-content/uploads/teledominicana.png",Tele Dominicana TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Tele Dominicana TV (720p) [Not 24/7]
 https://vdopanel.jlahozconsulting.com/p/3417/hybrid/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/lWYKgPC.png",Tele Zoukla
+#EXTINF:-1 group-title="7. Müzik",Tele Zoukla
 https://vdo.pro-fhi.net:3228/stream/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/11b5W8u.png",Tele7music (576i)
+#EXTINF:-1 group-title="7. Müzik",Tele7music (576i)
 https://live.tele7music.ro/hls/stream/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/NVxHxJn.png",TeleHit (1080p)
+#EXTINF:-1 group-title="7. Müzik",TeleHit (1080p)
 http://186.148.196.100:8000/play/a01s
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/dPAPLsd.png",TeleMusik Senegal (720p)
+#EXTINF:-1 group-title="7. Müzik",TeleMusik Senegal (720p)
 https://58c04fb1d143f.streamlock.net/rezopropartner_1_live/rezopropartner_1_live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CofYjWh.png",Telehit Musica
+#EXTINF:-1 group-title="7. Müzik",Telehit Musica
 http://190.61.55.34:2401/play/a06t/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://tequilamusic.net/imagini/tv-logo.png",Tequila Music TV
+#EXTINF:-1 group-title="7. Müzik",Tequila Music TV
 https://stream.tequilamusic.net/hls/tequila_tv.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/eAagwLW.png",Tezaur TV (576i)
+#EXTINF:-1 group-title="7. Müzik",Tezaur TV (576i)
 https://tezaurtv.md/stream/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/j2q53JQ.png",That's 70s (720p)
+#EXTINF:-1 group-title="7. Müzik",That's 70s (720p)
 https://jmp2.uk/plu-69ef53e12f4d2b4f9c582e76.m3u8
 #EXTINF:-1 group-title="7. Müzik",That's 80s (720p)
 https://jmp2.uk/plu-69ef54f3c700cf0140272def.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/dd/The_Country_Network_Logo.png",The Country Network (1080p)
+#EXTINF:-1 group-title="7. Müzik",The Country Network (1080p)
 https://amg00600-amg00600c1-thecountrynetwork-us-5497.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/OoJSmoj.png",The Voice (720p)
+#EXTINF:-1 group-title="7. Müzik",The Voice (720p)
 https://bss1.neterra.tv/thevoice/thevoice.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/VKY4q64.png",Tiankov Folk (576p)
+#EXTINF:-1 group-title="7. Müzik",Tiankov Folk (576p)
 https://streamer103.neterra.tv/tiankov-folk/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/33LexyP.png",Tiankov Orient Folk (576p)
+#EXTINF:-1 group-title="7. Müzik",Tiankov Orient Folk (576p)
 https://streamer103.neterra.tv/tiankov-orient/live.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/iBbawJ0.png",Tjil TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Tjil TV (720p)
 https://hls-1zdhtxpm-livepush.akamaized.net/live_cdn/nsM12Xw0C1xXdJ/em0Wx71z-ec6EWJb/rewind-3600.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/VRl8nPZ.png",Top Latino TV
+#EXTINF:-1 group-title="7. Müzik",Top Latino TV
 http://38.87.224.20:2220/play/a02b/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/UJqbKEC.png",Top TV (Serbia) (1080p)
+#EXTINF:-1 group-title="7. Müzik",Top TV (Serbia) (1080p)
 http://82.165.71.58:8081/TopTV/live/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/0Dh1FJZ.png",TopEstrada TV (720p)
+#EXTINF:-1 group-title="7. Müzik",TopEstrada TV (720p)
 http://live.topestrada.com/live/topestrada/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3900-294x165-FFFFFF.jpg",Topical Moon RD (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Topical Moon RD (720p) [Not 24/7]
 https://sistemastr.tropicalmoonmedia.com/live/56BE17DB16EB76C9F2DDB8346F4DFA4E/30.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://static.elektamedia.com/ch/tmc_main.png",Totalmusic (1080p)
+#EXTINF:-1 group-title="7. Müzik",Totalmusic (1080p)
 https://cdn.global.elektamedia.com/live/c7eds/Totalmusic/SA_LIVE_hls_enc/master.m3u8
 #EXTINF:-1 group-title="7. Müzik",Totalmusic 2000s (720p)
 https://cdn.global.elektamedia.com/live/c7eds/Totalmusic_00s/SA_LIVE_hls_enc/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://static.elektamedia.com/ch/tmc_80s.png",Totalmusic 80s (720p)
+#EXTINF:-1 group-title="7. Müzik",Totalmusic 80s (720p)
 https://cdn.global.elektamedia.com/live/c7eds/Totalmusic_80s/SA_LIVE_hls_enc/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://static.elektamedia.com/ch/tmc_concerts.png",Totalmusic Concerts (720p)
+#EXTINF:-1 group-title="7. Müzik",Totalmusic Concerts (720p)
 https://cdn.global.elektamedia.com/live/c7eds/Totalmusic_Concerts/SA_LIVE_hls_enc/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://static.elektamedia.com/ch/tmc_dance.png",Totalmusic Dance (720p)
+#EXTINF:-1 group-title="7. Müzik",Totalmusic Dance (720p)
 https://cdn.global.elektamedia.com/live/c7eds/Totalmusic_Dance/SA_LIVE_hls_enc/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://totovision.net/wp-content/uploads/2022/05/cropped-LOGO-PAGINA-22.png",Totovision
+#EXTINF:-1 group-title="7. Müzik",Totovision
 https://cdn.streamhispanatv.net:3652/live/totovisiongtlive.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/kPUkoS7.png",Trace Africa (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Africa (1080p)
 https://channels.trace.plus/Traceprod/AFRICA_FR_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CQDdnhp.png",Trace Afrikora (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Afrikora (1080p)
 https://channels.trace.plus/Traceprod/TERANGA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/KkJ6fet.png",Trace Ayiti (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Ayiti (1080p)
 https://channels.trace.plus/Traceprod/AYITI_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/DFBocPu.png",Trace Brazuca (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Brazuca (1080p)
 https://amg01131-tracetv-amg01131c4-stirr-us-4390.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ZHD7Vxy.png",Trace Caribbean (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Caribbean (1080p)
 https://channels.trace.plus/Traceprod/CARIBBEAN_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/X0UmU3K.png",Trace Gospel (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Gospel (1080p)
 https://channels.trace.plus/Traceprod/GOSPEL_FR_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/X0UmU3K.png",Trace Gospel Nigeria and East Africa (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Gospel Nigeria and East Africa (1080p)
 https://channels.trace.plus/Traceprod/GOSPEL_ROA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/X0UmU3K.png",Trace Gospel Southern Africa (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Gospel Southern Africa (1080p)
 https://channels.trace.plus/Traceprod/GOSPEL_SA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/W2l3rVx.png",Trace Ivoire (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Ivoire (1080p)
 https://channels.trace.plus/Traceprod/TRACE_IVOIRE_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/pthX34m.png",Trace Jama (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Jama (1080p)
 https://channels.trace.plus/Traceprod/JAMA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/q6vkMrU.png",Trace Kitoko (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Kitoko (1080p)
 https://channels.trace.plus/Traceprod/KITOKO_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CUVAi4u.png",Trace Latina (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Latina (1080p)
 https://channels.trace.plus/Traceprod/LATINA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/cYwkCj2.png",Trace Mboa (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Mboa (1080p)
 https://channels.trace.plus/Traceprod/MBOA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/xsEGIXO.png",Trace Muzika (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Muzika (1080p)
 https://channels.trace.plus/Traceprod/MUZIKA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/l3X9Gg4.png",Trace Mziki (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Mziki (1080p)
 https://channels.trace.plus/Traceprod/MZIKI_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Rguekcp.png",Trace Naija (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Naija (1080p)
 https://channels.trace.plus/Traceprod/NAIJA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.hypresslive.com/wp-content/uploads/2025/12/9cf0931b-5e1e-16da-515a-bd203ca3c928-1536x1074.png",Trace Ngoma (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Ngoma (1080p)
 https://channels.trace.plus/Traceprod/AFRICA_EN_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/6SpWnBR.png",Trace Toca (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Toca (1080p)
 https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://a.jsrdn.com/hls/23073/trace-uk/logo_20240627_183320_70.png",Trace UK (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace UK (1080p)
 https://channels.trace.plus/Traceprod/UK_FAST_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/DLIbUMx.png",Trace Urban (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Urban (1080p)
 https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/DLIbUMx.png",Trace Urban Africa Franco (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Urban Africa Franco (1080p)
 https://channels.trace.plus/Traceprod/URBAN_AFRIC_FR_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/DLIbUMx.png",Trace Urban Caribbean And Indian Ocean (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Urban Caribbean And Indian Ocean (1080p)
 https://channels.trace.plus/Traceprod/URBAN_DOM_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/DLIbUMx.png",Trace Urban International HD (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Urban International HD (1080p)
 https://channels.trace.plus/Traceprod/URBAN_INTER_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/DLIbUMx.png",Trace Urban Southern Africa (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Urban Southern Africa (1080p)
 https://channels.trace.plus/Traceprod/URBAN_SA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/ngF58fe.png",Trace Vanilla Islands (1080p)
+#EXTINF:-1 group-title="7. Müzik",Trace Vanilla Islands (1080p)
 https://channels.trace.plus/Traceprod/VANILLA_hd/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.ibb.co/G5bNH48/Traditional-TV-HD.png",Traditional TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Traditional TV (1080p)
 http://83.103.149.75:8085/udp/239.30.0.9:4000
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/jL1kLyS.png",Tropical Moon Cumbia TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Tropical Moon Cumbia TV (720p)
 https://srv2.tropicalmoonmedia.com/cumbiatv/cumbiatv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/WcM7BP5.png",Tropical Moon Urban TV [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Tropical Moon Urban TV [Not 24/7]
 https://sistemastr.tropicalmoonmedia.com/live/D8E123ACA054EF85B153C354A481A406/4.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Tunes_6.png",Tunes 6 (720p)
+#EXTINF:-1 group-title="7. Müzik",Tunes 6 (720p)
 https://stream.d6-pro.com/Tunes6music/live/video.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Ap7l2jC.png",Turkmen Owazy (406p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Turkmen Owazy (406p) [Not 24/7]
 https://alpha.tv.online.tm/hls/ch005.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/UA_Music.png?_=20230223183537",UA Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",UA Music (1080p)
 http://stream.mcquack.net/281/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/utvtamil.png",Ultimate TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Ultimate TV (1080p)
 https://stream.ottlive.co.in/utvtamil/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/KVVU9PI.png",Urbano TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Urbano TV (720p)
 https://59ef525c24caa.streamlock.net/tvurbano/tvurbano/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/WIACJSy.png",V Classic TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",V Classic TV (1080p)
 http://186.148.196.100:8000/play/a02z
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CD1PffA.png",VAM TV (720p)
+#EXTINF:-1 group-title="7. Müzik",VAM TV (720p)
 https://sincerecloud.stream/loadbalancer/public/J9EmQQGf.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/VH1_logonew.svg/960px-VH1_logonew.svg.png",VH1 (1080p)
+#EXTINF:-1 group-title="7. Müzik",VH1 (1080p)
 http://23.237.104.106:8080/USA_VH1/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/6N0qITv.png",VIP TV (720p)
+#EXTINF:-1 group-title="7. Müzik",VIP TV (720p)
 https://ed5ov1.live.opencaster.com/bkyqeDgfaukC/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/OFhQQCD.png",VIVA Russia
+#EXTINF:-1 group-title="7. Müzik",VIVA Russia
 https://live20.bozztv.com/akamaissh101/ssh101/vivarussia/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Dvo1b82.png",VM Latino (1080p)
+#EXTINF:-1 group-title="7. Müzik",VM Latino (1080p)
 http://45.163.139.42:8000/play/a03d/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/N993msF.png",VOX Music TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",VOX Music TV (1080p)
 http://92.114.85.87:8016/play/a00a/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Vaanavil_TV.png",Vaanavil TV (720p)
+#EXTINF:-1 group-title="7. Müzik",Vaanavil TV (720p)
 https://6n3yope4d9ok-hls-live.5centscdn.com/vaanavil/TV.stream/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/rVKroNW.png",Vallenato Internacional (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Vallenato Internacional (720p) [Not 24/7]
 https://59a564764e2b6.streamlock.net/vallenato/vallenatom/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://vantagetv.ee/vantage_classic.png",Vantage Classic (720p)
+#EXTINF:-1 group-title="7. Müzik",Vantage Classic (720p)
 https://cdn-backup.lulzy.eu/vclassic_stream/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://vantagetv.ee/vantage_dance.png",Vantage Dance (720p)
+#EXTINF:-1 group-title="7. Müzik",Vantage Dance (720p)
 https://cdn-backup.lulzy.eu/vdance_stream/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://vantagetv.ee/vantage_music.png",Vantage Music (720p) [Geo-blocked]
+#EXTINF:-1 group-title="7. Müzik",Vantage Music (720p) [Geo-blocked]
 https://cdn-backup.lulzy.eu/vmusic_stream/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://vantagetv.ee/vantage_music.png",Vantage Music UK (1080p) [Geo-blocked]
+#EXTINF:-1 group-title="7. Müzik",Vantage Music UK (1080p) [Geo-blocked]
 https://hls.vantagetv.co.uk/vmusicuk_stream/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://vantagetv.ee/vantage_rock.png",Vantage Rock (720p) [Geo-blocked]
+#EXTINF:-1 group-title="7. Müzik",Vantage Rock (720p) [Geo-blocked]
 https://hls.vantagetv.ee/vrock_stream/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/XwmUbfp.png",Venus Media (1080p)
+#EXTINF:-1 group-title="7. Müzik",Venus Media (1080p)
 https://tigocloud.desdeparaguay.net/venusmedia/venusmedia/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/5f32f26bcd8aea00071240e5/featuredImage.jpg",Vevo '70s (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo '70s (1080p)
 https://amg00056-vevotv-vevo70saunz-samsungau-xzszd.amagi.tv/playlist/amg00056-vevotv-vevo70saunz-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/5fd7b8bf927e090007685853/featuredImage.jpg",Vevo '80s (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo '80s (1080p)
 https://amg00056-vevotv-vevo80saunz-samsungau-rp5e3.amagi.tv/playlist/amg00056-vevotv-vevo80saunz-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/5fd7bb1f86d94a000796e2c2/featuredImage.jpg",Vevo '90s (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo '90s (1080p)
 https://amg00056-vevotv-vevo90saunz-samsungau-n6a0d.amagi.tv/playlist/amg00056-vevotv-vevo90saunz-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/5fd7bca3e0a4ee0007a38e8c/featuredImage.jpg",Vevo 2K (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo 2K (1080p)
 https://d1s6jz7jeei17.cloudfront.net/playlist/amg00056-vevotv-vevo2kau-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/5da0d75e84830900098a1ea0/featuredImage.jpg",Vevo Country (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo Country (1080p)
 https://amg00056-vevotv-vevocountryau-samsungau-ktmqm.amagi.tv/playlist/amg00056-vevotv-vevocountryau-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Lbc9cYw.png",Vevo Hip Hop (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo Hip Hop (1080p)
 https://d3vgs3ro3x6v8a.cloudfront.net/Vevo_Hip_Hop.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/D7SwmuB.png",Vevo Latino (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo Latino (1080p)
 https://amg00056-amg00056c13-rakuten-es-3246.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/dZHktKR.png",Vevo Pop (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo Pop (1080p)
 https://d128y56w6v2kax.cloudfront.net/playlist/amg00056-vevotv-vevopopau-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/5da0d83f66c9700009b96d0e/featuredImage.jpg",Vevo R&B (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo R&B (1080p)
 https://d1hf773q57zx9s.cloudfront.net/Vevo_R_B.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/H1Aap4E.png",Vevo Retro Rock (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vevo Retro Rock (1080p)
 https://d2lyea6if8kkz9.cloudfront.net/playlist/amg00056-vevotv-vevoretrorockau-samsungau/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/owUXUih.png",Vevo True School Hip-Hop
+#EXTINF:-1 group-title="7. Müzik",Vevo True School Hip-Hop
 https://jmp2.uk/plu-61d4c2817a823d00070ba53e.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/nyLrIPP.png",Video Mix TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Video Mix TV (1080p)
 https://2-fss-2.streamhoster.com/pl_118/206436-3189488-1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/9w54eVy.png",Video Rola (1080p)
+#EXTINF:-1 group-title="7. Müzik",Video Rola (1080p)
 https://d3b2epqdk0p7vd.cloudfront.net/out/v1/8a448b5e16384af4a3c8146a7b049c32/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/zEi8eMC.png",Video Tour Channel
+#EXTINF:-1 group-title="7. Müzik",Video Tour Channel
 https://59ef525c24caa.streamlock.net/videotour/videotour/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://dtil.tmsimg.com/assets/s144078_ld_h15_aa.png?lock=720x540",Vijay Takkar APAC (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vijay Takkar APAC (1080p)
 https://tglmp01.akamaized.net/out/v1/c1071012b73f4f189b202e1529e8f802/manifest.mpd
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://raw.githubusercontent.com/HaNoiIPTV/HaNoiIPTV.m3u/refs/heads/master/Truy%E1%BB%81n%20h%C3%ACnh%20V%C4%A9nh%20Long%205%20HD.png",Vinh Long TV 5 (1080p)
+#EXTINF:-1 group-title="7. Müzik",Vinh Long TV 5 (1080p)
 https://freem3u.xyz/api/live/play.m3u8?vid=91
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/KImqYnN.jpeg",Vintage Music (720p)
+#EXTINF:-1 group-title="7. Müzik",Vintage Music (720p)
 https://59ef525c24caa.streamlock.net/vmtv/tvvintage/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/lxR5FKh.png",Vision Beats (720p)
+#EXTINF:-1 group-title="7. Müzik",Vision Beats (720p)
 http://a-edge.bliscdn.com/Visionbeats/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/HV5tgcM.png",Vision Television (720p)
+#EXTINF:-1 group-title="7. Müzik",Vision Television (720p)
 https://cloudvideo.servers10.com:8081/8016/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/EsWuCJ3.png",Volksmusik TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Volksmusik TV (1080p)
 https://vmtv.iptv-playoutcenter.de/vmtv/vmtv1/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/294FDCB.png",Vos y TV (720p) [Not 24/7]
+#EXTINF:-1 group-title="7. Müzik",Vos y TV (720p) [Not 24/7]
 https://cloud37.ecuatel.com/vostv/live/manifest.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://image.roku.com/developer_channels/prod/7e6a7c4835ec344de629865f7a36feb4058001e7a3d9bc8dd0d1f3dc8e754cd7.png",WOX TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",WOX TV (1080p)
 https://tuvideoonline.com.ar:3332/live/xlevelmedialive.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/0f/WVCU-LP_2015.PNG",WVCU-LP (1080p)
+#EXTINF:-1 group-title="7. Müzik",WVCU-LP (1080p)
 https://video1.getstreamhosting.com:1936/8152/8152/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Wah_Punjabi.png",Wah Punjabi (720p)
+#EXTINF:-1 group-title="7. Müzik",Wah Punjabi (720p)
 https://yuppnimrestreammum.akamaized.net/181224/smil:wahpunjabi.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/jxuwGRi.png",XITE (720p)
+#EXTINF:-1 group-title="7. Müzik",XITE (720p)
 https://xite-rakuten.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/vwpOzuz.png",XITE 90's Throwback (1080p)
+#EXTINF:-1 group-title="7. Müzik",XITE 90's Throwback (1080p)
 https://d284aawtm5vi48.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-fjdfi2br1jtq7/XITE_90s_Throwback.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/XQrMCkT.png",XITE Classic Country (720p)
+#EXTINF:-1 group-title="7. Müzik",XITE Classic Country (720p)
 https://jmp2.uk/plu-623b92a2ccefed0007b1db48.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/N51Rp7E.png",XITE Hits (1080p)
+#EXTINF:-1 group-title="7. Müzik",XITE Hits (1080p)
 https://d726x48n2pd5h.cloudfront.net/XITE_Hits.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/N51Rp7E.png",XITE Hits Germany (1080p)
+#EXTINF:-1 group-title="7. Müzik",XITE Hits Germany (1080p)
 https://d726x48n2pd5h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-skxr1pazhltvp/XITE_Hits.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/N51Rp7E.png",XITE Hits UK (1080p)
+#EXTINF:-1 group-title="7. Müzik",XITE Hits UK (1080p)
 https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg01243-xitenetworksint-hitsuk-samsunguk/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://provider-static.plex.tv/epg/cms/production/927dd614-017d-49dd-9eb9-0ed79d09084e/xitejustchill_logo_light_-_Arlette_FiranRDX.png",XITE Just Chill (1080p)
+#EXTINF:-1 group-title="7. Müzik",XITE Just Chill (1080p)
 https://dvnftgdlbnemm.cloudfront.net/XITE_Just_Chill.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/2qyl2y3.png",XITE Nuevo Latino (1080p)
+#EXTINF:-1 group-title="7. Müzik",XITE Nuevo Latino (1080p)
 https://d3bsgqzbpkrvbb.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-w288eaw03izg1/XITE_Nuevo_Latino.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://provider-static.plex.tv/epg/cms/production/c7506335-967f-46a9-917a-2a35475cd96c/xitereggaevibes_logo_light_-_Arlette_FiranRDX.png",XITE Reggae Vibes (1080p)
+#EXTINF:-1 group-title="7. Müzik",XITE Reggae Vibes (1080p)
 https://dw2m7yrngfg8c.cloudfront.net/XITE_Reggae_Vibes.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/uIIUIuN.png",XITE Rock x Metal (1080p)
+#EXTINF:-1 group-title="7. Müzik",XITE Rock x Metal (1080p)
 https://d198ro05q94rc4.cloudfront.net/XITE_Rock_On.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/bwmIEgG.png",XITE Siempre Latino (1080p)
+#EXTINF:-1 group-title="7. Müzik",XITE Siempre Latino (1080p)
 https://d1xc25jm9e0l4b.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-xplkt8i7m24dc/XITE_Siempre_Latino.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/Ty7GkoN.png",XPTV1 (720p)
+#EXTINF:-1 group-title="7. Müzik",XPTV1 (720p)
 https://janus.xpbroadcasting.com:8443/hls/xptv1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/pKj3F4M.png",YRF Music (1080p)
+#EXTINF:-1 group-title="7. Müzik",YRF Music (1080p)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/mxx05Z9.png",YRF Music Nepal
+#EXTINF:-1 group-title="7. Müzik",YRF Music Nepal
 https://vidaa.kableone.com/hls/live/2111218/YrfMusic/1.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/YleX.svg/960px-YleX.svg.png",YleX (720p)
+#EXTINF:-1 group-title="7. Müzik",YleX (720p)
 https://ylestudiolive.akamaized.net/hls/live/2007826/ylestudiolive-YleX/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/654102ed770cf1000866c307/colorLogoPNG.png",Yo! MTV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Yo! MTV (1080p)
 https://jmp2.uk/plu-5d14fc31252d35decbc4080b.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://images.pluto.tv/channels/654102ed770cf1000866c307/colorLogoPNG.png",Yo! MTV CA (1080p)
+#EXTINF:-1 group-title="7. Müzik",Yo! MTV CA (1080p)
 https://jmp2.uk/plu-654102ed770cf1000866c307.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/zbmusic.png",ZB Music (720p)
+#EXTINF:-1 group-title="7. Müzik",ZB Music (720p)
 https://server.zillarbarta.com/zbmusic/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/vrjACvy.png",ZFM Zoetermeer TV (720p)
+#EXTINF:-1 group-title="7. Müzik",ZFM Zoetermeer TV (720p)
 https://zfmzoetermeer.nl/live/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/8wbTnNW.png",ZICO TV (720p)
+#EXTINF:-1 group-title="7. Müzik",ZICO TV (720p)
 https://gjirafa-video-live.gjirafa.net/gjvideo-live/j3a-n14-2pf-g3s/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/NuzyhVM.png",Zo'r TV (576p)
+#EXTINF:-1 group-title="7. Müzik",Zo'r TV (576p)
 https://stream8.cinerama.uz/1016/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/TJ5l9iI.png",Zona Music TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",Zona Music TV (1080p)
 https://acceso.radiosportstv.online:3022/stream/play.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png",Zoom (India) (720p)
+#EXTINF:-1 group-title="7. Müzik",Zoom (India) (720p)
 https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/RbdpCNf.png",Zwei Music Television
+#EXTINF:-1 group-title="7. Müzik",Zwei Music Television
 https://zweiapp.b-cdn.net/1080p/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Radio_m2o_-_Logo_2019.svg/500px-Radio_m2o_-_Logo_2019.svg.png",m2o TV (1080p)
+#EXTINF:-1 group-title="7. Müzik",m2o TV (1080p)
 https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://www.mtv.com.lb/images/header/mfm-logo.svg",mfm (1080p)
+#EXTINF:-1 group-title="7. Müzik",mfm (1080p)
 https://hms.pfs.gdn/hms/v1/broadcast/hlmvmp2hfriode891/playlist.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/CM6z7fA.png",o2tv (720p)
+#EXTINF:-1 group-title="7. Müzik",o2tv (720p)
 http://31.148.48.15/O2_HD/index.m3u8
-#EXTINF:-1 group-title="7. Müzik" tvg-logo="https://i.imgur.com/KRakHAq.png",¡Viva Latino! (1080p)
+#EXTINF:-1 group-title="7. Müzik",¡Viva Latino! (1080p)
 http://stream.mcquack.net/285/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://i.postimg.cc/NGKPwybC/A3-BIKINI-MODIFICADA.png",A3BIKINI - USA (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",A3BIKINI - USA (+18) | HD
 https://vcnbikininetwork.teleosmedia.com/stream/bikininetwork/a3bikini/seglist_720p.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Anal
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Anal
 http://cdn.adultiptv.net/anal.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Asian
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Asian
 http://cdn.adultiptv.net/asian.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Big Ass
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Big Ass
 http://cdn.adultiptv.net/bigass.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Big Dick
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Big Dick
 http://cdn.adultiptv.net/bigdick.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Big Tits
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Big Tits
 http://cdn.adultiptv.net/bigtits.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Blonde
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Blonde
 http://cdn.adultiptv.net/blonde.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Blowjob
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Blowjob
 http://cdn.adultiptv.net/blowjob.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Brunette
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Brunette
 http://cdn.adultiptv.net/brunette.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Compilation
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Compilation
 http://cdn.adultiptv.net/compilation.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Cuckold
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Cuckold
 http://cdn.adultiptv.net/cuckold.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Fetish
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Fetish
 http://cdn.adultiptv.net/fetish.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Gangbang
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Gangbang
 http://cdn.adultiptv.net/gangbang.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Gay
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Gay
 http://cdn.adultiptv.net/gay.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Hardcore
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Hardcore
 http://cdn.adultiptv.net/hardcore.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Interracial
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Interracial
 http://cdn.adultiptv.net/interracial.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Latina
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Latina
 http://cdn.adultiptv.net/latina.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Lesbian
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Lesbian
 http://cdn.adultiptv.net/lesbian.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Live Cams
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Live Cams
 http://cdn.adultiptv.net/livecams.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net MILF
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net MILF
 http://cdn.adultiptv.net/milf.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net POV
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net POV
 http://cdn.adultiptv.net/pov.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Pornstar
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Pornstar
 http://cdn.adultiptv.net/pornstar.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Rough
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Rough
 http://cdn.adultiptv.net/rough.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Russian
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Russian
 http://cdn.adultiptv.net/russian.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Teen
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Teen
 http://cdn.adultiptv.net/teen.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://files.adultiptv.net/adultiptvnet.jpg",AdultIPTV.net Threesome
+#EXTINF:-1 group-title="8. Yetişkin",AdultIPTV.net Threesome
 http://cdn.adultiptv.net/threesome.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/54/BangBros_logo.svg",Bang Bros HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6173/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5a/Blacked_logo.svg",Blacked HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6178/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/Brazzers_logo.svg",Brazzers HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6182/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/23/Dorcel_TV_logo.svg",Dorcel TV HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/245/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://i.postimg.cc/NGKPwybC/A3-BIKINI-MODIFICADA.png",FASHION TV - USA (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",FASHION TV - USA (+18) | HD
 https://fash1043.cloudycdn.services/slive/ftv_ftv_midnite_k1y_27049_midnite_secr_108_hls.smil/playlist.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://i.postimg.cc/NGKPwybC/A3-BIKINI-MODIFICADA.png",FASHION TV MIDNIGHT SECRETS - USA (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",FASHION TV MIDNIGHT SECRETS - USA (+18) | HD
 https://fash1043.cloudycdn.services/slive/ftv_midnite_secrets_adaptive.smil/chunklist_b1300000_t64MzYwcA==.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hustler_TV.svg/1200px-Hustler_TV.svg.png",Hustler HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/9065/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://vivaespaña.tv/user/live-tv/miamitv-latino/31",MIAMI TV - USA (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",MIAMI TV - USA (+18) | HD
 https://59ec5453559f0.streamlock.net/miamitv/smil:WEB/playlist.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREBiSUXjULWkg9ugs9mSztJg9uuUd3g9QCgHjl1ttF2kgi9CollR2tN6aXMczPlMl_0To&usqp=CAU",Playboy (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",Playboy (+18) | HD
 https://edge3.prepro.cvattv.com.ar/live/vod/Playboy/SA_Live_WebVTT_FTA/Playboy.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e0/Playboy_TV_logo.svg",Playboy TV
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/527/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/30/Private_Media_Group_logo.svg",Private TV
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/243/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://i.imgur.com/H2ugC9L.png",Stingray Pop Adult (1080p)
+#EXTINF:-1 group-title="8. Yetişkin",Stingray Pop Adult (1080p)
 https://lotus.stingray.com/manifest/ose-104ads-montreal/samsungtvplus/master.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo=" tvg-name=",TV Adultos Blonde (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",TV Adultos Blonde (+18) | HD
 http://cdn.adultiptv.net/blonde.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo=" tvg-name=",TV Adultos Brunette (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",TV Adultos Brunette (+18) | HD
 http://cdn.adultiptv.net/brunette.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo=" tvg-name=",TV Adultos GangBang (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",TV Adultos GangBang (+18) | HD
 http://cdn.adultiptv.net/gangbang.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo=" tvg-name=",TV Adultos Latina (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",TV Adultos Latina (+18) | HD
 http://cdn.adultiptv.net/latina.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo=" tvg-name=",TV Adultos Live Cams (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",TV Adultos Live Cams (+18) | HD
 http://cdn.adultiptv.net/livecams.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo=" tvg-name=",TV Adultos MILF (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",TV Adultos MILF (+18) | HD
 http://cdn.adultiptv.net/milf.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo=" tvg-name=",TV Adultos POV (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",TV Adultos POV (+18) | HD
 http://cdn.adultiptv.net/pov.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo=" tvg-name=",TV Adultos Pornstars (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",TV Adultos Pornstars (+18) | HD
 http://cdn.adultiptv.net/pornstar.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo=" tvg-name=",TV Adultos Teens (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",TV Adultos Teens (+18) | HD
 http://cdn.adultiptv.net/teen.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/08/Tushy_logo.svg",Tushy HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6261/index.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Old_Canal_Venus_logo.svg/2560px-Old_Canal_Venus_logo.svg.png",VENUS - USA (+18) | HD
+#EXTINF:-1 group-title="8. Yetişkin",VENUS - USA (+18) | HD
 https://edge4-sl.cvattv.com.ar/live/c6eds/Venus/SA_SAGEMCOM/Venus.m3u8
-#EXTINF:-1 group-title="8. Yetişkin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cf/Vixen_logo.svg",Vixen HD
-http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6265/index.m3u8
