@@ -11,9 +11,9 @@ TIMEOUT = 4
 MAX_WORKERS = 30
 
 SOURCES = {
-    "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
-    "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
-    "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
+    "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u"
+   # "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
+   # "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
 # 🇹🇷 Sadece Kabul Edilecek Temel Ulusal TV Kanalları
@@ -28,7 +28,7 @@ EXCLUDE_KEYWORDS = [
     "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon","turk","türk","dost","film","top","tv","fb","bjk","gs" 
     "avaz","halk","diyanet","beyaz","arabi","eba","life","tempo","ton","fanatik","mercan","vuslat","sun","arma","hür","damar","bürüksel"
     "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya","sağlık","sinema","kurdi","sıla","ezo","zeyno","bengü","tjk",
-    "","","","","","","","","","","","","","","","","","","","","","",
+    "ada","avrupa","euro","tabii","plus","fırat","krt","genc","mbc","spor","next","maisum","persiana","hope"
     "eskişehir", "samsun", "mersin", "gaziantep", "balıkesir", "isparta", "tokat", 
     "elazığ", "kocaeli", "çorum", "manisa", "antalya", "bodrum", "çanakkale", "kahramanmaraş",
     "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli"
