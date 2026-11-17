@@ -13,7 +13,8 @@ CHECK_LINKS = False
 
 # 🌐 TÜM KAYNAKLAR
 SOURCES = {
-    "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
+    "turk": "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
+   # "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
    # "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u",
    # "Free-TV Türkiye": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_turkey.m3u8",
     "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u",
