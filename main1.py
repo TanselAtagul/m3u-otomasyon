@@ -11,28 +11,24 @@ TIMEOUT = 5
 MAX_WORKERS = 30
 CHECK_LINKS = False 
 
+# 🌐 Sadece Türkiye kaynakları aktif
 SOURCES = {
     "Türk Ulusal": "https://onureroz.com/indirmeler/turk/index.m3u",
     "Türk Yayınları (IPTV-Org)": "https://iptv-org.github.io/iptv/countries/tr.m3u"
-   # "Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
-# 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları
+# 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları (ATV eklendi, gereksizler çıkarıldı)
 NATIONAL_WHITELIST = [
-    "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
-    "TV 8", "TV8", "TV 8.5", "TV8.5", "TV8,5", "TV85", "KANAL 7", "KANAL7", "BEYAZ TV", "BEYAZTV",
-    "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", "TABII", "TABİİ",
+    "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
+    "TV 8", "TV8", "KANAL 7", "KANAL7", "TEVE 2", "TEVE2", "TV 2", "TV2", "DMAX", "D MAX", "TLC", "CNBC-E", "CNBCE", 
     "HABERTÜRK", "HABERTURK", "HABER TÜRK", "HABER TURK", "NTV", "CNN TÜRK", "CNN TURK", "CNNTÜRK", "CNNTURK",
     "A HABER", "AHABER", "TGRT HABER", "TGRTHABER", "HABER GLOBAL", "HABERGLOBAL",
     "24 TV", "24TV", "TV 24", "TV24", "YİRMİDÖRT", "YIRMIDORT", "HALK TV", "HALKTV",
-    "SÖZCÜ TV", "SOZCU TV", "SÖZCÜTV", "SOZCUTV", "SZC TV", "SZCTV", "TV 100", "TV100", "TVNET", "TV NET",
-    "TELE 1", "TELE1", "KRT TV", "KRT", "ULUSAL KANAL", "ULUSALKANAL",
-    "BENGÜTÜRK", "BENGUTURK", "BENGÜ TÜRK", "BENGU TURK",
-    "TRT 1", "TRT1", "TRT 2", "TRT 3", "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
-    "TRT TÜRK", "TRT TURK", "TRT WORLD",
-    "TRT SPOR", "TRTSPOR", "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
+    "TV 100", "TV100", "TELE 1", "TELE1", "KRT TV", "KRT", "ULUSAL KANAL", "ULUSALKANAL",
+    "TRT 1", "TRT1", "TRT 4K", "TRT HABER", "TRTHABER", "TRT BELGESEL", "TRTBELGESEL",
+    "TRT WORLD", "TRT SPOR", "TRTSPOR", "TRT ÇOCUK", "TRT COCUK", "TRTÇOCUK", "TRTCOCUK",
     "TRT MÜZİK", "TRT MUZIK", "TRTMÜZİK", "TRTMUZIK",
-    "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA", "VAV TV", "VAVTV"
+    "A SPOR", "ASPOR", "A NEWS", "ANEWS", "MİNİKA", "MINIKA"
 ]
 
 # 🛑 MUTLAK YASAKLILAR (Bu kelimeler varsa kanal Whitelist'te olsa bile SİLİNİR)
@@ -40,14 +36,17 @@ STRICT_BLOCK_WORDS = [
     "DIYANET", "DİYANET", "SEMERKAND", "LALEGUL", "LALEGÜL", "KABE", "QURAN", "MENZIL", 
     "MEKKE", "MEDINE", "MADINAH", "MAKKAH", "ZAHRA", "RAFIDAIN", "THAQALAYN", "MUKABELE", 
     "SERCEM", "IKRA", "İSVİÇRE", "ISVICRE", "AVRUPA", "GURBET", "TAGESSCHAU", "RAKUTEN", 
-    "SHEMAROO", "ALMAHRIAH", "MEKAMELEEN", "NDR", "INTV", "AUSTRALIA", "AL QURAN"
+    "SHEMAROO", "ALMAHRIAH", "MEKAMELEEN", "NDR", "INTV", "AUSTRALIA", "AL QURAN",
+    "BENGU", "BENGÜ", "BEYAZ", "SOZCU", "SÖZCÜ", "SZC", "TABII", "TABİİ", "TRT 2", "TRT 3", 
+    "TRT TURK", "TRT TÜRK", "TV 8.5", "TV8.5", "TV 8,5", "TV85", "TVNET", "TV NET", "VAV",
+    "TV 25", "TV 264", "HABER 61", "HABER61", "AS TV", "OLAYTURK", "TH TURK HABER", "TURKHABER"
 ]
 
 # 🚫 Engellenecek Şehir / Bölge / Yerel Kelimeler
 EXCLUDE_KEYWORDS = [
     "yerel", "local", "fatsa", "ordu", "bursa", "ege", "adana", "rize", "trabzon", "dost", "fb", "bjk", "gs", 
     "avaz", "arabi", "eba", "tempo", "fanatik", "mercan", "vuslat", "arma", "hür", "damar", "bürüksel",
-    "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya", "sağlık", "kurdi", "sıla", "ezo", "zeyno", "bengü", 
+    "antakya", "denizli", "kayseri", "konya", "edirne", "afyon", "sivas", "malatya", "sağlık", "kurdi", "sıla", "ezo", "zeyno", 
     "fırat", "genc", "mbc", "maisum", "persiana", "hope", "eskişehir", "samsun", "mersin", "gaziantep", "balıkesir", "isparta", "tokat", 
     "elazığ", "kocaeli", "çorum", "manisa", "antalya", "bodrum", "çanakkale", "kahramanmaraş",
     "anadolu", "karadeniz", "akdeniz", "doğu", "güneydoğu", "trakya", "rumeli",
@@ -58,20 +57,16 @@ EXCLUDE_KEYWORDS = [
 
 def is_radio(name, group=""):
     text_to_check = f"{name} {group}".upper()
-    
     if re.search(r'\b(FM|RADYO|RADIO|AUDIO|PODCAST|LISTEN|RADIOS)\b', text_to_check):
         return True
-        
     radio_clues = [
         "POWER FM", "SUPER FM", "PAL FM", "SLOW TURK", "VIRGIN", "METRO FM", 
         "JOY FM", "KRAL FM", "ALEM FM", "FENOMEN", "SHOW RADYO", "BEST FM", 
         "BABA RADYO", "LIG RADYO", "TRT FM", "RJD"
     ]
-    
     for clue in radio_clues:
         if clue in text_to_check:
             return True
-            
     return False
 
 def normalize_channel_name(name):
@@ -84,7 +79,6 @@ def get_category(name, original_group=""):
     name_upper = name.upper()
     orig_upper = original_group.upper()
 
-    # 1'DEN 7'YE NUMARALANDIRILMIŞ KATEGORİLER
     if any(k in name_upper for k in ["SPOR", "SPORT", "TJK", "BEIN", "S SPORT"]): return "3. Spor"
     if any(k in name_upper for k in ["HABER", "NTV", "CNN", "24 TV", "TV 100", "TV100", "HALK", "TELE 1", "TELE1", "KRT", "BLOOMBERG", "NEWS", "A NEWS"]): return "2. Haber"
     if any(k in name_upper for k in ["BELGESEL", "DISCOVERY", "NAT GEO", "HISTORY", "TLC", "DMAX", "WILD", "ANIMAL"]): return "5. Belgesel"
@@ -144,7 +138,7 @@ def threaded_verify_links(entries):
         return entries
         
     valid_results = []
-    print(f"[{len(entries)} kanal için link doğrulaması yapılıyor. Bu işlem uzun sürebilir...]")
+    print(f"[{len(entries)} kanal için link doğrulaması yapılıyor...]")
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_map = {
             executor.submit(verify_link, link): (name, group, link)
@@ -197,12 +191,13 @@ def main():
 
     for name, group, url in raw_channels:
         normalized_name = normalize_channel_name(name)
+        nospace_name = normalized_name.replace(" ", "")
         
-        if url in seen_urls or normalized_name in seen_normalized_names:
+        if url in seen_urls or nospace_name in seen_normalized_names:
             continue
 
         seen_urls.add(url)
-        seen_normalized_names.add(normalized_name)
+        seen_normalized_names.add(nospace_name)
 
         final_group = get_category(normalized_name, group)
         
@@ -211,8 +206,19 @@ def main():
 
         cleaned_channels.append((name.strip(), final_group, url))
 
-    # Kategori adının başındaki numaraya göre (Örn: "1. Ulusal") otomatik sıralayacak.
+    # Kategorilere (A-Z) göre sırala
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
+
+    # --- MANUEL YETİŞKİN KANALLARI EKLEME BLOĞU ---
+    adult_channels = [
+        ("Brazzers TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin1.m3u8"),
+        ("Hustler TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin2.m3u8"),
+        ("Dorcel TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin3.m3u8"),
+        ("Playboy TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin4.m3u8"),
+        ("Private TV", "8. Yetişkin", "http://ornek-link-buraya.com/yayin5.m3u8")
+    ]
+    cleaned_channels.extend(adult_channels)
+    # ----------------------------------------------
 
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
