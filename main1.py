@@ -17,6 +17,36 @@ SOURCES = {
     #"Müzik TV (Global)": "https://iptv-org.github.io/iptv/categories/music.m3u"
 }
 
+# 🇹🇷 Kanal Logoları (tvg-logo) Kütüphanesi
+LOGOS = {
+    "ATV": "https://upload.wikimedia.org/wikipedia/commons/e/e0/ATV_logo.png",
+    "KANAL D": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kanal_D_logo_2013.png",
+    "SHOW TV": "https://upload.wikimedia.org/wikipedia/commons/9/90/Show_TV_logo.png",
+    "STAR TV": "https://upload.wikimedia.org/wikipedia/commons/8/87/Star_TV_logo_2020.png",
+    "NOW TV": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Now_TV_Turkey_logo.png",
+    "TV 8": "https://upload.wikimedia.org/wikipedia/commons/0/07/TV8_logo.png",
+    "KANAL 7": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kanal_7_logo.png",
+    "TRT 1": "https://upload.wikimedia.org/wikipedia/commons/9/94/TRT_1_logo_2021.png",
+    "TRT HABER": "https://upload.wikimedia.org/wikipedia/commons/b/b3/TRT_Haber_logo_2021.png",
+    "TRT SPOR": "https://upload.wikimedia.org/wikipedia/commons/a/ae/TRT_Spor_logo_2021.png",
+    "TRT BELGESEL": "https://upload.wikimedia.org/wikipedia/commons/8/82/TRT_Belgesel_logo_2021.png",
+    "TRT ÇOCUK": "https://upload.wikimedia.org/wikipedia/commons/7/7b/TRT_%C3%87ocuk_logo_2021.png",
+    "TRT MÜZİK": "https://upload.wikimedia.org/wikipedia/commons/8/8f/TRT_M%C3%BCzik_logo_2021.png",
+    "A SPOR": "https://upload.wikimedia.org/wikipedia/commons/2/23/A_Spor_logo.png",
+    "A HABER": "https://upload.wikimedia.org/wikipedia/commons/5/52/A_Haber_logo.png",
+    "NTV": "https://upload.wikimedia.org/wikipedia/commons/3/36/NTV_logo.png",
+    "CNN TURK": "https://upload.wikimedia.org/wikipedia/commons/8/80/CNN_T%C3%BCrk_logo.png",
+    "HABERTURK": "https://upload.wikimedia.org/wikipedia/commons/6/61/Habert%C3%BCrk_TV_logo.png",
+    "HALK TV": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Halk_TV_logo.png",
+    "TELE 1": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Tele1_logo.png",
+    "KRT TV": "https://upload.wikimedia.org/wikipedia/commons/7/7c/KRT_TV_logo.png",
+    "TV 100": "https://upload.wikimedia.org/wikipedia/commons/5/55/Tv100_logo.png",
+    "24 TV": "https://upload.wikimedia.org/wikipedia/commons/5/50/24_TV_logo.png",
+    "DMAX": "https://upload.wikimedia.org/wikipedia/commons/8/87/DMAX_Turkey_logo.png",
+    "TLC": "https://upload.wikimedia.org/wikipedia/commons/3/36/TLC_Turkey_logo.png",
+    "CNBC-E": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CNBC-e_logo.png"
+}
+
 # 🇹🇷 Kabul Edilecek Temel Ulusal TV Kanalları
 NATIONAL_WHITELIST = [
     "ATV", "KANAL D", "KANALD", "SHOW TV", "SHOWTV", "STAR TV", "STARTV", "NOW TV", "NOWTV", 
@@ -103,30 +133,24 @@ def is_local_or_unwanted(name, group=""):
     name_upper = name.strip().upper()
     group_upper = group.upper()
 
-    # 1. KESİN YASAKLILAR
     if any(block in name_upper for block in STRICT_BLOCK_WORDS):
         return True
 
-    # 2. Radyo Kontrolü
     if is_radio(name, group):
         return True
 
-    # 3. MÜZİK KANALLARINA ÖZEL İZİN
     if "MUSIC" in group_upper or any(m in name_upper for m in ["MUSIC", "MTV", "VEVO", "TRACE", "STINGRAY", "XITE"]):
         return False
 
-    # 4. YEREL/ŞEHİR FİLTRESİ (Beyaz listeden önce kontrol edilecek, Alanya ATV'yi engelleyecek)
     name_lower = name.lower()
     pattern = r'\b(' + '|'.join(re.escape(kw) for kw in EXCLUDE_KEYWORDS) + r')\b'
     if re.search(pattern, name_lower):
         return True
 
-    # 5. ULUSAL KANAL ONAYI
     for national in NATIONAL_WHITELIST:
         if national in name_upper:
             return False
 
-    # 6. Numaralı yerel TV'ler (TV 41 vb.)
     if re.search(r"(KANAL|TIVI|TV)\s*\d+", name_upper):
         return True
 
@@ -170,7 +194,6 @@ def parse_m3u(url, default_label):
                 group_match = re.search(r'group-title="([^"]+)"', line_info)
                 group = group_match.group(1) if group_match else default_label
                 
-                # Orijinal logoyu (varsa) yakala
                 logo_match = re.search(r'tvg-logo="([^"]+)"', line_info, re.IGNORECASE)
                 logo = logo_match.group(1) if logo_match else ""
 
@@ -211,32 +234,35 @@ def main():
         seen_normalized_names.add(nospace_name)
 
         final_group = get_category(normalized_name, group)
-        
         if final_group == "Diğer":
             continue
 
-        cleaned_channels.append((name.strip(), final_group, logo, url))
+        # LOGO KONTROLÜ: Sözlükte varsa kullan, yoksa orijinalini bırak
+        dict_logo = LOGOS.get(normalized_name, "")
+        final_logo = dict_logo if dict_logo else logo
 
-    # A-Z Sıralama
+        cleaned_channels.append((name.strip(), final_group, final_logo, url))
+
     cleaned_channels.sort(key=lambda x: (x[1], x[0]))
 
-    # --- MANUEL YETİŞKİN KANALLARI ---
-    # Logosu olmayanlar için logo parametresini boş ("") bırakıyoruz.
+    # --- MANUEL YETİŞKİN KANALLARI (tvg-logo adresleri dahil) ---
     adult_channels = [
-        ("Brazzers TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin1.m3u8"),
-        ("Hustler TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin2.m3u8"),
-        ("Dorcel TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin3.m3u8"),
-        ("Playboy TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin4.m3u8"),
-        ("Private TV", "8. Yetişkin", "", "http://ornek-link-buraya.com/yayin5.m3u8")
+        ("Brazzers HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/e/e1/Brazzers_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6182/index.m3u8"),
+        ("Dorcel TV HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/2/23/Dorcel_TV_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/245/index.m3u8"),
+        ("Hustler HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hustler_TV.svg/1200px-Hustler_TV.svg.png", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/9065/index.m3u8"),
+        ("Playboy TV", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/e/e0/Playboy_TV_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/527/index.m3u8"),
+        ("Private TV", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/3/30/Private_Media_Group_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/243/index.m3u8"),
+        ("Vixen HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/c/cf/Vixen_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6265/index.m3u8"),
+        ("Blacked HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/5/5a/Blacked_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6178/index.m3u8"),
+        ("Tushy HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/0/08/Tushy_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6261/index.m3u8"),
+        ("Bang Bros HD", "8. Yetişkin", "https://upload.wikimedia.org/wikipedia/commons/5/54/BangBros_logo.svg", "http://qnh9pyox.russtv.net/iptv/BQG985S7RZNZCG/6173/index.m3u8")
     ]
     cleaned_channels.extend(adult_channels)
 
-    # M3U Dosyasını Yaz
     with open("channels1.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write("# Otomatik Oluşturulan Playlist - Sadece TV Kanalları (Radyosuz)\n")
         for name, group, logo, url in cleaned_channels:
-            # tvg-logo özelliğini koruyarak satırı oluştur
             logo_attr = f' tvg-logo="{logo}"' if logo else ""
             f.write(f'#EXTINF:-1 group-title="{group}"{logo_attr},{name}\n{url}\n')
             
