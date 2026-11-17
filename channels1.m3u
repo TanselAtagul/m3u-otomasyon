@@ -2,8 +2,6 @@
 # Otomatik Oluşturulan Playlist - Sadece TV Kanalları (Radyosuz)
 #EXTINF:-1 group-title="1. Ulusal",ATV (Turkiye) (1080p)
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-#EXTINF:-1 group-title="1. Ulusal",CNBC-e
-https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
 #EXTINF:-1 group-title="1. Ulusal",Kanal D (Turkiye) (1080p)
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 #EXTINF:-1 group-title="1. Ulusal",NOW TV
@@ -112,6 +110,8 @@ https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://65.108.239.207/sinema2/i
 https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://apx-me.com:8880/live/live:persian_share/Hs6guU9ziF/49303.m3u8
 #EXTINF:-1 group-title="4. Sinema & Dizi",SiNEMA Yerli 2
 https://m3u8-proxy-1-urh0.onrender.com/proxy?url=http://apx-me.com:8880/live/live:persian_share/Hs6guU9ziF/49293.m3u8
+#EXTINF:-1 group-title="5. Belgesel",CNBC-e
+https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
 #EXTINF:-1 group-title="5. Belgesel",DMAX
 http://c3921155.edmonst.net/iptv/DVHP2VB5QXL7UC/2290/index.m3u8
 #EXTINF:-1 group-title="5. Belgesel",GZT (1080p)
